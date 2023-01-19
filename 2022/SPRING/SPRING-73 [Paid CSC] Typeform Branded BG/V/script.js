@@ -75,6 +75,17 @@
                     });
                 }
             });
+            live('click', 'button.fe_msf-submit.primary-button', function(e) {
+	            var email = document.querySelector('input.fe_form-input').value;
+	            if (validateEmail(email)) {
+		            e.preventDefault();
+		            e.stopPropagation();
+		            sendData(email);
+		            window._vis_opt_queue.push(function() {
+			            _vis_opt_goal_conversion(246);
+		            });
+	            }
+            });
         }
         function sendData(email) {
             var i = getVwoCampaignId();
@@ -197,6 +208,7 @@
         }
         /* Initialise variation */
         waitForElement(".formGroupEmail input", init, 50, 15000);
+        waitForElement("input.fe_form-input", init, 50, 15000);
     } catch (e) {
         if (debug) console.log(e, "error in Test" + variation_name);
     }
