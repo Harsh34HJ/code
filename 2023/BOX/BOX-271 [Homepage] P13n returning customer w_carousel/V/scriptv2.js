@@ -144,7 +144,6 @@
             '      <div class="glide__track" data-glide-el="track">' +
             '          <ul class="glide__slides ">' +
             slides +
-            slides +
             "          </ul>" +
             "      </div>" +
             '      <div class="glide__arrows" data-glide-el="controls">' +
