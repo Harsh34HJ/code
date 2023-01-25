@@ -129,6 +129,10 @@ html body.box-271 br.desk-only {
   html body.box-271 #block-box-shiny-content {
     margin-top: 30px
   }
+  html body.box-271 .fe_slider_section .fe_left .fe_slider_subtitle p{
+  	max-width: 500px;
+    width: 100%;
+  }
 }
 html body.box-271 .fe_slider_section .fe_left .fe_slider_tag {
   font-size: 14px;
@@ -148,7 +152,7 @@ html body.box-271 .fe_slider_section .fe_slider_content.two .fe_left .fe_slider_
   background-color: #f16430
 }
 html body.box-271 .fe_slider_section .fe_left {
-  padding: 0 10px;
+  padding: 0 37px 0 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
