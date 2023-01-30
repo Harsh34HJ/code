@@ -106,7 +106,7 @@
             "                         </div>" +
             "                   </div>" +
             '                   <div class="fe_right">' +
-            '                          <img src="'+awsURL+'blade-box-sign1-v1.png">' +
+            '                          <img src="'+awsURL+'blade-box-sign1-v1-n.png">' +
             "                   </div>" +
             "                 </div>" +
             "              </li>" +
@@ -173,7 +173,7 @@
             });
 			
             // add hero img/video
-            var bannersnack_embed = {"hash":"bdps70009","width":881,"height":600,"t":1673555892,"userId":40644008,"responsive":true,"type":"html5"} || {},
+            var bannersnack_embed = {"hash":"bdps70009","width":974,"height":663,"t":1673555892,"userId":40644008,"responsive":true,"type":"html5"} || {},
 		    protocol = "file:" == window.location.protocol ? "http:" : "";
 		    var a = "html5" === bannersnack_embed.type,
 		        b = "banners/" + bannersnack_embed.hash + "/" + (void 0 !== bannersnack_embed.networkId ? "adtag/embed/" + bannersnack_embed.networkId : "embed") + "/index.html",

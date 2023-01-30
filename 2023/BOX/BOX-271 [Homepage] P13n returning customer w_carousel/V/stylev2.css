@@ -1,7 +1,6 @@
 html body.box-271 .left-align {
   background: #f8f8f8
 }
-html body.box-271 .hero--half-n-half .hero--image iframe,
 html body.box-271 .hero--half-n-half .hero--image img,
 html body.box-271 .hero--half-n-half .hero--image video {
   max-width: 881px;
@@ -117,11 +116,17 @@ html body.box-271 br.desk-only {
   html body.box-271 .fe_slider_section .fe_slider_wrapper .glide__arrow--left {
     left: -5px
   }
+  html body.box-271 .hero--half-n-half .hero--media {
+    width: calc(54.57143% + 2.125rem)
+  }
 }
 @media (min-width:90em) {
   html body.box-271 .fe_slider_section {
     padding-right: calc(3.38298% + 0.9375rem);
     padding-left: calc(3.38298% + 0.9375rem)
+  }
+  html body.box-271 .hero--half-n-half .hero--media {
+    width: calc(61.93617% + 0.9375rem)
   }
 }
 @media (min-width:100em) {
@@ -254,7 +259,6 @@ html body.box-271 .slideshow--arrows .prev::before {
   }
 }
 @media only screen and (max-width:63.9375em) {
-  html body.box-271 .hero--half-n-half .hero--image iframe,
   html body.box-271 .hero--half-n-half .hero--image img,
   html body.box-271 .hero--half-n-half .hero--image video {
     max-width: 630px
@@ -269,7 +273,6 @@ html body.box-271 .slideshow--arrows .prev::before {
     max-height: inherit;
     margin: 0
   }
-  html body.box-271 .hero--half-n-half .hero--image iframe,
   html body.box-271 .hero--half-n-half .hero--image img,
   html body.box-271 .hero--half-n-half .hero--image video {
     max-height: inherit;
@@ -312,7 +315,6 @@ html body.box-271 .slideshow--arrows .prev::before {
     width: 100%!important;
     max-height: inherit!important
   }
-  html body.box-271 .hero--half-n-half .hero--image iframe,
   html body.box-271 .hero--half-n-half .hero--image img,
   html body.box-271 .hero--half-n-half .hero--image video {
     max-height: 18.25rem;
