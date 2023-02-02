@@ -329,3 +329,8 @@ html body.box-271 .slideshow--arrows .prev::before {
     max-height: 19.25rem
   }
 }
+@media only screen and (max-width:1400px) and (min-width:1250px){
+	html body.box-271 .hero--half-n-half .container {
+    	width: calc(48.57143% + 7.85714%);
+	}
+}
