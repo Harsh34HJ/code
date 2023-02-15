@@ -1,0 +1,2829 @@
+@font-face {
+    font-family: Athelas !important;
+    src: url("https://bm-test-dev.s3.us-east-2.amazonaws.com/FE/SPRING-14/Athelas.otf") format("opentype");
+  }
+  
+  html body {
+    display: block;
+  }
+  
+  html body.fe-course-page.fe-sec-page .style-module--rowWrapper--2T6Qn:first-child .style-module--cell--1sVIR:first-child {
+    color: #000000 !important;
+  }
+  
+  
+  html body.fe-course-page.fe-dec-page .fe-banner-img {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  html body.fe-csc-page #hero .content,
+  html body.fe-course-page [class^="styles__HeroWrapper"] .content {
+    margin: 0 !important;
+    color: #000;
+    box-sizing: content-box !important;
+    max-width: 850px;
+  }
+  
+  html body .bAQXFL .container .imageWrapper h6 {
+    font-size: 18px
+  }
+  
+  .fe-tech-sales-page #hero .content .header {
+    font-family: Athelas !important;
+    font-style: normal;
+  }
+  
+  html body .career-container .item-title {
+    font-family: Athelas !important;
+    font-style: normal;
+    font-weight: bold !important;
+    font-size: 24px !important;
+    line-height: 27px !important;
+  }
+  
+  /* Homepage CSS */
+  html body.fe-homepage div,
+  html body.fe-homepage li,
+  html body.fe-homepage p,
+  html body.fe-homepage span,
+  html body.fe-homepage h4,
+  html body.fe-homepage h3,
+  html body.fe-homepage h2,
+  html body.fe-homepage h1,
+  html body li,
+  html body p,
+  html body h4,
+  html body h5,
+  html body h6,
+  html body h3,
+  html body h2,
+  html body h1,
+  html body .arrowLink,
+  html body.fe-course-page #outcomes .contentWrapper .outcomesContainer .outcome:not(:nth-child(2))>div,
+  html body.fe-course-page .prereqAndCard span,
+  html body.fe-course-page #features>div,
+  html body.fe-course-page .enrollmentCard .cardText,
+  html body.fe-course-page .bhcSyH .activeStepDetail,
+  html body.fe-course-page .bAQXFL .contentWrapper .avatar,
+  html body.fe-course-page .avatar-quote,
+  html body.fe-course-page .avatar-details,
+  html body.fe-course-page .dOWPnd,
+  html body.fe-course-page .hJyCMM,
+  html body.fe-course-page .gLluVi,
+  html body.fe-course-page .hzHMk,
+  html body.fe-course-page .dqSPF,
+  html body.fe-course-page .gsGfzS,
+  html body.fe-course-page #mentors .fkOmYG,
+  html body.fe-course-page .bAQXFL p.description,
+  html body.fe-course-page .iSKqjq,
+  html body.fe-course-page .iICybA,
+  html body.fe-course-page .cTPIAp,
+  html body.fe-course-page .cQjaXP,
+  html body.fe-course-page .dZHaHJ,
+  html body.fe-course-page .cOzzOc,
+  html body.fe-course-page .headerText,
+  html body.fe-csc-page #hero .ratingContainer:not(.right) .ratingText a,
+  html body.fe-csc-page #hero .ratingContainer:not(.bottom) .ratingText a,
+  html body.fe-course-page .hoQyHk .ratingContainer:not(.right) .ratingText a,
+  html body.fe-course-page .hoQyHk .ratingContainer:not(.bottom) .ratingText a,
+  html body.fe-course-page .hnInBR,
+  html body.fe-course-page .gJwchZ .pricePreview .name,
+  html body.fe-course-page .gJwchZ .pricePreview .description,
+  html body.fe-course-page .kknsVJ,
+  html body.fe-course-page .jyrxez,
+  html body.fe-course-page .pricingComponents .component .name,
+  html body.fe-course-page .fMlgzb .pricingComponents .footerText,
+  html body.fe-course-page .frbxzh .card .studentDetails h3,
+  html body.fe-course-page .frbxzh .card .studentDetails .detail,
+  html body.fe-course-page .frbxzh .quote,
+  html body.fe-course-page .dUDwze .detail p,
+  html body.fe-course-page .dUDwze .detail ol,
+  html body.fe-course-page .dUDwze .detail ul,
+  html body.fe-course-page .iuOEoE,
+  html body.fe-course-page .jyrxez .actualPrice,
+  html body.fe-course-page .bEQvJL .container .scholarshipOptions .scholarshipEligibility b,
+  html body.fe-course-page .bEQvJL .container .scholarshipOptions .scholarshipEligibility,
+  html body.fe-course-page .style-module--cell--1sVIR:first-child,
+  html body.fe-course-page .gJwchZ .pricePreview .subtext,
+  html body.fe-course-page .gJwchZ .pricePreview .actualPrice,
+  html body.fe-course-page .bEQvJL .description a,
+  html body.fe-course-page .dheDcZ .pricingComponents .component .detail,
+  html body.fe-course-page .dheDcZ .pricePreview .description,
+  html body.fe-course-page .hnYaw,
+  html body.fe-course-page .YSaUH,
+  html body.fe-course-page .enrollmentCard .cardText,
+  html body.fe-course-page .enrollmentCard .cardDate,
+  .content-container[_ngcontent-c11] .overview-pointer[_ngcontent-c11] h3[_ngcontent-c11],
+  .content-container[_ngcontent-c11] .overview-pointer[_ngcontent-c11] p[_ngcontent-c11],
+  .content-container[_ngcontent-c11] .overview-pointer[_ngcontent-c11] h3[_ngcontent-c11],
+  .content-container[_ngcontent-c11] .overview-pointer[_ngcontent-c11] p[_ngcontent-c11],
+  .content-container[_ngcontent-c11] h1[_ngcontent-c11],
+  .content-container[_ngcontent-c11] h2[_ngcontent-c11],
+  .sa-about[_ngcontent-c11] .heavy-font[_ngcontent-c11],
+  html body.fe-course-page .bhcSyH .step:nth-child(1) .stepName,
+  html body.fe-course-page .iZbsKX .pricePreview .name,
+  html body.fe-course-page #Outcomes .name,
+  html body.fe-course-page .EUOip .bulletPointWrapper .bulletPoint,
+  html body.fe-course-page .BOtmR,
+  html body.fe-course-page .cjiANb,
+  html body.fe-course-page #Pricing .hioTbn,
+  html body.fe-course-page.fe-dscp-page .goMsFf,
+  html body.fe-course-page.fe-dscp-page .dqSPF span,
+  html body.fe-course-page.fe-dec-page-new .aYRrt .contentWrapper .outcomesContainer .outcome:not(:nth-child(2)) .detail .outcomeDescription,
+  html body.fe-course-page.fe-dec-page-new .aYRrt .contentWrapper .outcomesContainer .outcome:not(:nth-child(2)) .value,
+  html body.fe-scholarships-page .jJeUgQ,
+  html body.fe-course-page .description .designation,
+  html body.fe-course-page .description .name,
+  html body.fe-course-page .text {
+    color: #000 !important;
+  }
+  
+  html body .eVrzOR {
+    border-color: #000000 !important;
+  }
+  
+  html body .hero-banner-container section {
+    opacity: 1;
+  }
+  
+  html body.fe-course-page #Outcomes,
+  html body #career-content .section {
+    background: #fff !important;
+  }
+  
+  /* Hero Section */
+  
+  html body.fe-scholarships-page .kSpEHL {
+    background-image: url("https://res.cloudinary.com/springboard-images/image/upload/v1651061585/vwo-exp-assets/Sping-14/SPbackground.webp") !important;
+  }
+  
+  html body.fe-scholarships-page #secondaryNav .stickyWrapper .ctaWrapper {
+    min-width: auto;
+    margin-left: 0px;
+  }
+  
+  html body.fe-scholarships-page .goMsFf,
+  html body.fe-scholarships-page .dHvDVC {
+    color: black;
+  }
+  
+  html body.fe-scholarships-page #secondaryNav .stickyWrapper {
+    justify-content: end;
+  }
+  
+  html body.fe-homepage .hero-banner-container section {
+    background-image: url("https://res.cloudinary.com/springboard-images/image/upload/v1651061585/vwo-exp-assets/Sping-14/Bg-home-1.webp") !important;
+    background-color: #1ebf9d !important;
+    align-items: center;
+    background-size: cover;
+  }
+  
+  /* Image Slider Section */
+  html body.fe-homepage .hero-banner-container .alumni-container.desktop {
+    height: 407px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  
+  html body.fe-homepage .hero-banner-container .alumni-container.desktop [imageclass="alumni-pic desktop"] img {
+    height: 338px;
+    width: 338px;
+    border-radius: 100%;
+  }
+  
+  html body.fe-homepage .hero-banner-container .alumni-container.desktop .swiper-slide picture {
+    display: block;
+    position: relative;
+  }
+  
+  html body.fe-homepage .hero-banner-container .alumni-container.desktop .swiper-slide.swiper-slide-duplicate[data-swiper-slide-index="0"] picture:before,
+  html body.fe-homepage .hero-banner-container .alumni-container.desktop .swiper-slide picture:before {
+    position: absolute;
+    content: '';
+    display: block;
+    object-fit: contain !important;
+    height: 338px !important;
+    min-width: 338px !important;
+    border-radius: 100%;
+    left: 0px;
+    top: 0px;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+  }
+  
+  html body.fe-homepage .hero-banner-container .alumni-container.desktop .swiper-slide.swiper-slide-duplicate[data-swiper-slide-index="0"] picture:before,
+  html body.fe-homepage .hero-banner-container .alumni-container.desktop .swiper-slide[data-swiper-slide-index="0"]:not(.swiper-slide-duplicate) picture:before {
+    background: url('https://res.cloudinary.com/springboard-images/image/upload/v1651061590/vwo-exp-assets/Sping-14/Rise_Kavisha_Shroff_2359_color.webp');
+  }
+  
+  html body.fe-homepage .hero-banner-container .alumni-container.desktop .swiper-slide[data-swiper-slide-index="1"]:not(.swiper-slide-duplicate) picture:before {
+    background: url('https://res.cloudinary.com/springboard-images/image/upload/v1657791416/vwo-exp-assets/Sping-14/Trixy_Woodhouse.png');
+  }
+  
+  html body.fe-homepage .hero-banner-container .alumni-container.desktop .swiper-slide[data-swiper-slide-index="2"]:not(.swiper-slide-duplicate) picture:before {
+    background: url('https://res.cloudinary.com/springboard-images/image/upload/v1651061589/vwo-exp-assets/Sping-14/Jeffrey_Surban.webp');
+  }
+  
+  html body.fe-homepage .hero-banner-container .alumni-container.desktop .swiper-slide[data-swiper-slide-index="3"]:not(.swiper-slide-duplicate) picture:before {
+    background: url('https://res.cloudinary.com/springboard-images/image/upload/v1651061587/vwo-exp-assets/Sping-14/Esme_Gaisford2359__1.webp');
+  }
+  
+  html body.fe-homepage .hero-banner-container .alumni-container.desktop .swiper-slide[data-swiper-slide-index="4"]:not(.swiper-slide-duplicate) picture:before {
+    background: url('https://res.cloudinary.com/springboard-images/image/upload/v1657791416/vwo-exp-assets/Sping-14/Jonathan_King.png');
+  }
+  
+  html body.fe-homepage .hero-banner-container .alumni-container.desktop .swiper-slide picture:after {
+    position: absolute;
+    bottom: -36px;
+    left: 0%;
+    width: 100%;
+    max-width: 265px;
+    text-align: center;
+    margin: 0 auto;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 23px;
+    color: #070707;
+  }
+  
+  p.fe-image-heading {
+    width: 338px !important;
+    text-align: center;
+  }
+  
+  .hero-banner-container section {
+    align-items: center;
+  }
+  
+  .alumni-container .desktop img {
+    object-fit: contain !important;
+    height: 338px !important;
+    width: 338px !important;
+    border-radius: 100%;
+  }
+  
+  
+  html body.fe-homepage .swiper-container .swiper-pagination-clickable {
+    right: 200px !important;
+    top: 30% !important;
+  }
+  
+  .swiper-pagination-clickable .swiper-pagination-bullet {
+    width: 6px !important;
+    height: 6px !important;
+    border: 2px solid rgba(255, 255, 255, 0.616) !important;
+  }
+  
+  .swiper-pagination-clickable .swiper-pagination-bullet-active {
+    border: 6px solid #fff !important;
+    box-shadow: 0px 0px 15px #fff !important;
+  }
+  
+  /* Hero Banner Title */
+  
+  html body.fe-homepage .hero-banner-container .hero-banner-title {
+    /* font-weight: 400; */
+    font-size: 75px !important;
+    line-height: 57.12px;
+    letter-spacing: -1;
+    width: 100% !important;
+    font-family: Athelas !important;
+    color: #000 !important;
+  }
+  
+  html body.fe-homepage .hero-banner-container .hero-banner-visited-title span,
+  html body.fe-homepage .hero-banner-container .hero-banner-visited-title {
+    font-family: Athelas !important;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 55px;
+    letter-spacing: -1px;
+    color: #000000;
+  }
+  
+  html body.fe-homepage .fe-msf .primary-button,
+  html body.fe-homepage .jiNgSB .submitButton,
+  html body.fe-homepage .jiNgSB .primary-button {
+    background-color: #000 !important;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 19px;
+  }
+  
+  html body.fe-digital-marketing-page .tabHeaderWrapper .tabList>div>b,
+  html body.fe-tech-sales-page .tabsWrapper .tabHeaderWrapper .tabList div b {
+    display: none;
+  }
+  
+  html body.fe-homepage .jiNgSB .submitButton,
+  html body.fe-homepage .jiNgSB .primary-button {
+    border: none !important;
+  }
+  
+  html body.fe-homepage .hero-banner-container .hero-banner-visited-title span {
+    background-image: url("https://res.cloudinary.com/springboard-images/image/upload/v1651061587/vwo-exp-assets/Sping-14/hero_form_heading.svg") !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    padding: 0px 10px 0px 0px;
+  }
+  
+  /* Explore */
+  html body.fe-homepage #explore-programs .courses picture img {
+    max-width: 106px;
+    height: auto;
+  }
+  
+  html body.fe-homepage #explore-programs .courses picture {
+    display: flex;
+    background: #F4F2F2;
+    max-width: 126px;
+    height: 108px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  html body.fe-homepage #explore-programs .courses:nth-child(3) picture img {
+    max-width: 83px;
+  }
+  
+  html body.fe-homepage .explore-programs-container .header-container .title span {
+    font-family: Athelas !important;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 76.16%;
+    text-align: center;
+    letter-spacing: -1px;
+  }
+  
+  html body.fe-overview-page h2,
+  html body.fe-overview-page h5,
+  html body.fe-mentoring-page h2,
+  html body.fe-mentoring-page h5,
+  html body.fe-tuition-page h2,
+  html body.fe-tuition-page h5,
+  html body.fe-payment-page h2,
+  html body.fe-payment-page h5,
+  html body.fe-course-page .jqxRMJ .lbxxIB h4.header,
+  html body.fe-course-page .jqxRMJ .lbxxIB .prereqAndCard .prereq .prereqHeader,
+  html body.fe-course-page .jqxRMJ .lbxxIB .contactWrapper .header,
+  html body.fe-course-page .BOtmR,
+  html body.fe-course-page .cjiANb,
+  html body.fe-course-page #Pricing .hioTbn,
+  html body.fe-course-page #FAQ .eqXAKi h5.header,
+  html body.fe-homepage #Financing .jDwoSa,
+  html body.fe-homepage #Financing .hnYaw,
+  html body.fe-course-page.fe-uiux-page .bxjLxL .contentWrapper h6,
+  html body.fe-course-page.fe-uiux-page .gIjJBg,
+  html body .fe-quiz-banner16,
+  html body.fe-course-page.fe-csc-page #generalCheckmarks .bAQXFL .contentWrapper h6,
+  html body.fe-course-page.fe-dsc-page .EUOip .bulletPointWrapper h3.header,
+  html body.fe-course-page.fe-dsc-page .gYyNoK .contentContainer .cardHeader,
+  html body.fe-course-page.fe-dsc-page #prereq p.header,
+  html body.fe-overview-page h5,
+  html body.fe-tech-sales-page .bulletPointWrapper h3.header,
+  html body.fe-tech-sales-page .lbxxIB .prereqAndCard .prereq .prereqHeader,
+  html body.fe-tech-sales-page #prereq p.header,
+  html body.fe-mentoring-page .fhgKGR p,
+  html body.fe-mentoring-page .jUplRc,
+  html body.fe-tuition-page .fhgKGR p,
+  html body.fe-tuition-page .jUplRc,
+  html body.fe-payment-page .jUplRc,
+  html body.fe-overview-page #Projects .jJeUgQ,
+  html body.fe-payment-page #projects .cRExzw .cOzzOc,
+  html body.fe-tech-blacks-ixc-page .EUOip .bulletPointWrapper h3.header,
+  html body.fe-tech-blacks-ixc-page .prereqAndCard .prereq .prereqHeader,
+  html body.fe-tech-blacks-sec-page .prereqAndCard .prereq .prereqHeader,
+  html body.fe-tech-blacks-ixc-page .cUZDmS .contentWrapper h6,
+  html body.fe-tech-blacks-sec-page .cUZDmS .contentWrapper h6,
+  html body.fe-tech-blacks-sec-page .cOzzOc,
+  html body.fe-course-page .lbxxIB .prereqAndCard .prereq .prereqHeader,
+  html body.fe-course-page.fe-outcomes-page .ljkrge,
+  html body.fe-course-page.fe-outcomes-page h3.dXFJAS,
+  html body.fe-course-page.fe-outcomes-page .eVXDYh,
+  html body.fe-scholarships-page .jJeUgQ,
+  html body.fe-mentors-page .gtzTHC .contentWrapper h6,
+  html body.fe-mentors-page .gtzTHC .contentWrapper .subHeader,
+  html body.fe-mentors-page .dmgYvC .frCKoH,
+  html body.fe-dscp-page .eqXAKi h5,
+  html body.fe-dec-page-new .dplZxH .eqXAKi h5,
+  html body div#investors .header,
+  html body.fe-course-page [class^="styles__HeroWrapper"] .content .header,
+  html body.fe-homepage .etaukF .bwUJr,
+  .fe-course-page #generalCheckmarks h2,
+  .fe-course-page #pricing h2,
+  .fe-course-page #testimonialCards h2,
+  .fe-course-page #IDP h2,
+  .fe-course-page #testimonial h2,
+  .fe-course-page #prereq h2,
+  .fe-course-page #FAQ h2,
+  .fe-course-page .eqXAKi h2.header,
+  .fe-course-page .lbxxIB h2.header,
+  html body.fe-course-page #Tuition h2,
+  .fe-course-page #curriculum h2,
+  .fe-course-page #generalCheckmarkAndLogos h2,
+  .fe-course-page #Workshops h2,
+  .fe-course-page #Coaching h2,
+  .fe-course-page div#secondaryNav+div>div h2,
+  .fe-course-page.fe-scholarships-page .iLyWYI h2,
+  .eqXAKi h5.header {
+    font-family: 'Athelas' !important;
+  }
+  
+  .fe-course-page.fe-scholarships-page .iLyWYI h2,
+  .fe-course-page div#secondaryNav+div>div h2,
+  .fe-course-page div#Support\ services h2,
+  .fe-course-page #Career h2,
+  .fe-course-page #Coaching h2,
+  .fe-course-page #Workshops h2,
+  .fe-course-page #generalCheckmarkAndLogos h2,
+  .fe-course-page #curriculum h2,
+  html body.fe-course-page #Tuition h2,
+  .fe-course-page .lbxxIB h2.header,
+  .fe-course-page #testimonial h2,
+  .fe-course-page #prereq h2,
+  html body.fe-course-page #IDP h2,
+  html body.fe-course-page #testimonialCards h2,
+  html body.fe-course-page #pricing h2,
+  html body.fe-course-page #generalCheckmarks h2,
+  html body.fe-course-page #investors h2,
+  html body.fe-homepage .etaukF .bwUJr,
+  .fe-course-page.fe-ui-ux-design-career-track-uk #Curriculum h2.header,
+  .fe-course-page.fe-digital-marketing-career-track #Curriculum h2.header,
+  html body.fe-course-page.fe-digital-marketing-page .BOtmR {
+    font-size: 36px;
+    line-height: 1.2;
+  }
+  
+  
+  html body.fe-homepage #Financing .hnYaw {
+    font-size: 24px !important;
+  }
+  
+  .course-name.selected-course {
+    background-color: #000 !important;
+    color: #fff !important;
+  }
+  
+  .arrow-down {
+    border-top: 23px solid #000 !important;
+  }
+  
+  .program-title {
+    font-family: Athelas !important;
+    font-weight: 700 !important;
+    font-style: italic;
+    font-size: 22px !important;
+    line-height: 24.64px;
+  }
+  
+  /* Review Section */
+  html body.fe-homepage .review-data {
+    font-family: Athelas !important;
+    font-weight: 400 !important;
+    font-size: 56px !important;
+    line-height: 62.72px !important;
+    color: #000 !important;
+    background-image: url("https://res.cloudinary.com/springboard-images/image/upload/v1651061589/vwo-exp-assets/Sping-14/Highlight-Blue2.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* background-clip: polygon(5% 45%, 100% 34%, 95% 66%, 0 68%); */
+  }
+  
+  .review .title {
+    text-transform: uppercase !important;
+    color: #000 !important;
+    font-size: 14px;
+    line-height: 16.41px;
+  }
+  
+  .alumni .quote {
+    font-family: Athelas !important;
+    font-size: 20px !important;
+    line-height: 28px;
+  }
+  
+  html body.fe-homepage #explore-programs .header-container {
+    background-color: #a9deff !important;
+  }
+  
+  html body.fe-course-page #Schedule .heading,
+  html body.fe-course-page #Career .bAQXFL h5,
+  .header-container .title,
+  html body.fe-course-page .jqxRMJ .bKXgHM,
+  html body.fe-course-page #Pricing .hOrRPt,
+  html body.fe-course-page.fe-i2d-page .lbxxIB h4.header,
+  html body.fe-course-page.fe-uxc-page .bAQXFL h5,
+  html body.fe-course-page.fe-i2d-page-new .dplZxH h4,
+  html body.fe-tech-sales-page #Workshops h5,
+  html body.fe-tech-sales-page #Instructors h5,
+  html body.fe-tech-sales-page #Coaching h5,
+  html body.fe-payment-page .jUplRc,
+  html body.fe-tuition-page .jipVzl .bAQXFL h5,
+  html body.fe-tech-blacks-ixc-page .cUZDmS h5,
+  html body.fe-tech-blacks-ixc-page .hNrkLH h5,
+  html body.fe-tech-blacks-ixc-page .iLyWYI h5,
+  html body.fe-tech-blacks-sec-page .iLyWYI h5,
+  html body.fe-tech-blacks-sec-page .hNrkLH h5,
+  html body.fe-tech-blacks-sec-page .cUZDmS h5,
+  html body.fe-tech-blacks-ixc-page #courseStart h3,
+  html body.fe-tech-blacks-ixc-page .jYDpxZ .heading,
+  html body.fe-dec-page-new .lbxxIB h4.header,
+  html body.fe-homepage #logos .flOBDp h5.header,
+  html body.fe-scholarships-page .aYRrt h2.header,
+  html body.fe-digital-marketing-page #Support .title,
+  html body.fe-digital-marketing-page #Mentorship h5,
+  html body.fe-mentors-page .hNrkLH h5,
+  html body.fe-mentors-page .gtzTHC h5,
+  html body.fe-mentors-page .gxHze h5,
+  html body.fe-course-page.fe-digital-marketing-career-track #Mentorship h5,
+  html body.fe-course-page.fe-social-media-marketing-page #Mentorship h5,
+  html body.fe-course-page.fe-social-media-marketing-page #Support .title,
+  html body.fe-mentors-page .jipVzl .kzSqNr,
+  html body.fe-course-page.fe-social-media-marketing-page .dCXxWU .BOtmR {
+    font-family: Athelas !important;
+    color: #000 !important;
+    font-size: 36px !important;
+  }
+  
+  html body.fe-course-page .EUOip .applicationFormWrapper h2.header {
+    font-size: 32px !important;
+  }
+  
+  html body.fe-course-page.fe-mentors-page .phpnv,
+  html body.fe-course-page.fe-outcomes-page .phpnv,
+  html body.fe-overview-page .fmPofG .phpnv,
+  html body.fe-mentoring-page .phpnv,
+  .fe-scholarships-page .iLyWYI h5,
+  html body.fe-tuition-page .phpnv,
+  html body.fe-payment-page .phpnv,
+  html body.fe-homepage h3.styles__Title-sc-1pu81u5-2.buEpwR,
+  html body.fe-homepage .build-network-container h3.title,
+  html body.fe-homepage .career-container h3.title,
+  html body.fe-homepage .industry-mentor-container h3.title,
+  html body.fe-homepage .support-network-container h3.title,
+  html body.fe-homepage .job-guarantee-container h3.title {
+    font-family: Athelas !important;
+    color: #000 !important;
+    font-size: 36px !important;
+    line-height: 35px;
+  }
+  
+  .team-title {
+    font-family: Athelas !important;
+    font-weight: bold !important;
+    font-style: italic;
+    font-size: 24px !important;
+    line-height: 27px;
+  }
+  
+  html body.fe-homepage .build-network-container .section {
+    background-color: #a9deff !important;
+  }
+  
+  html body.fe-homepage #industry-mentor,
+  html body.fe-homepage .advance-career-container {
+    background-color: #1ebf9d !important;
+  }
+  
+  html body.fe-payment-page .fmPofG>span,
+  html body.fe-tuition-page .fmPofG>span,
+  html body.fe-mentoring-page .fmPofG>span,
+  html body.fe-overview-page .fmPofG>span,
+  html body.fe-course-page.fe-outcomes-page .fmPofG .ctaButton,
+  html body.fe-course-page.fe-mentors-page .ekdPpI button,
+  html body.fe-homepage .etaukF .dmZdqB {
+    background-color: #000 !important;
+    text-transform: uppercase !important;
+    margin-top: 30px !important;
+    font-size: 14px;
+  }
+  
+  html body.fe-scholarships-page .oRCXC .ctaButton,
+  html body.fe-scholarships-page .pHRgt .ctaButton {
+    background-color: #000 !important;
+    text-transform: uppercase !important;
+    margin-top: 30px !important;
+  }
+  
+  html body.fe-payment-page .fmPofG>span button,
+  html body.fe-tuition-page .fmPofG>span button,
+  html body.fe-mentoring-page .fmPofG>span button,
+  html body.fe-overview-page .fmPofG>span button,
+  html body.fe-course-page.fe-mentors-page .ekdPpI button,
+  html body.fe-course-page.fe-outcomes-page .fmPofG .ctaButton {
+    border-color: #000;
+  }
+  
+  html body.fe-payment-page .hLGZWg .stickyWrapper .ctaWrapper,
+  html body.fe-tuition-page .hLGZWg .stickyWrapper .ctaWrapper,
+  html body.fe-mentoring-page .hLGZWg .stickyWrapper .ctaWrapper,
+  html body.fe-overview-page .hLGZWg .stickyWrapper .ctaWrapper,
+  html body.fe-overview-page .fBJMWH .stickyWrapper .ctaWrapper {
+    justify-content: flex-end;
+  }
+  
+  /**/
+  .hero-banner-container .content-container {
+    width: 680px !important;
+  }
+  
+  .content-container .hero-banner-title span {
+    font-size: 57px;
+    font-style: italic;
+    font-family: Athelas !important;
+    color: #000 !important;
+    font-weight: 400;
+    letter-spacing: -1px;
+    background-image: url("https://res.cloudinary.com/springboard-images/image/upload/v1651061589/vwo-exp-assets/Sping-14/Highlight-Blue1.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 0px 22px 0px 12px;
+    margin-left: 5px;
+  }
+  
+  .springboard-reviews-container .review .title {
+    font-size: 14px !important;
+  }
+  
+  .springboard-reviews-container .review .review-for {
+    font-size: 12px !important;
+  
+  }
+  
+  html body .springboard-reviews-container img.rating {
+    filter: brightness(0) contrast(1);
+  }
+  
+  .springboard-reviews-container .reviews-container+div {
+    max-width: 521px !important;
+    margin-right: 33px !important;
+  }
+  
+  html body.fe-digital-marketing-page .LcDzA .ratingContainer .rating span {
+    margin-right: 0px;
+  }
+  
+  @media screen and (min-width: 1025px) and (max-width:1360px) {
+  
+    html body.fe-csc-page #hero .content h1 span,
+    html body.fe-csc-page #hero .content h1,
+    html body.fe-csc-page #hero .content p.description,
+    html body.fe-course-page .hoQyHk .content h1 span,
+    html body.fe-course-page .hoQyHk .content h1,
+    html body.fe-course-page .hoQyHk .content p.description {
+      max-width: 636px !important;
+      margin-left: 0px !important;
+    }
+  
+    html body.fe-csc-page #hero .content,
+    html body.fe-course-page:not(.fe-dec-page) .hoQyHk .content {
+      padding-left: 6% !important;
+    }
+  
+    html body.fe-course-page .partnershipRatingWrapper .ratingContainer.bottom,
+    html body.fe-course-page .partnershipRatingWrapper .ratingContainer.right {
+      right: 20px !important;
+      text-align: center !important;
+    }
+  }
+  
+  
+  @media screen and (min-width: 1025px) {
+  
+    html body.fe-course-page.fe-foundations-software div[class^="styles__SectionWrapper"] h2,
+    html body.fe-course-page.fe-foundations-data div[class^="styles__SectionWrapper"] h2,
+    html body.fe-course-page.fe-ui-ux-design-career-track-uk div[class^="styles__SectionWrapper"] h2,
+    html body.fe-course-page.fe-digital-marketing-career-track div[class^="styles__SectionWrapper"] h2,
+    html body.fe-course-page.fe-backend-development-java div[class^="styles__SectionWrapper"] h2,
+    html body.fe-digital-marketing-career-track h5 {
+      line-height: 28px !important;
+    }
+  
+    html body.fe-course-page #CTA h2 {
+      line-height: 1.2 !important;
+    }
+  
+    html body.fe-course-page.fe-digital-marketing-career-track [class^="styles__HeroWrapper"] .content .description,
+    html body.fe-course-page.fe-backend-development-java [class^="styles__HeroWrapper"] .content .description {
+      padding-right: 16px;
+    }
+  
+    html body.fe-software-engineering-career-track-prep-page #syllabus .tabHeaderWrapper {
+      width: auto !important;
+    }
+  
+    html body.fe-software-engineering-career-track-prep-page #syllabus .tabHeaderWrapper .tabList>div:nth-child(1) {
+      height: auto;
+    }
+  
+    html body.fe-course-page.fe-digital-marketing-page [class^="styles__HeroWrapper"] .content .header,
+    html body.fe-course-page.fe-dec-page [class^="styles__HeroWrapper"] .content .header {
+      max-width: 700px !important;
+    }
+  
+    html body.fe-course-page.fe-sec-page .content .header {
+      max-width: 850px !important;
+    }
+  
+    html body.fe-course-page .partnershipWrapper {
+      margin-top: 30px !important;
+    }
+  
+    html body.fe-course-page .content .header,
+    html body.fe-tech-sales-page #hero .content .header,
+    html body.fe-course-page.fe-software-engineering-career-track-prep-page .hoQyHk .content h1 {
+      max-width: 807px !important;
+      margin-left: 0px !important;
+    }
+  
+    html body.fe-course-page.fe-backend-development-java .content .header {
+      max-width: 855px !important;
+    }
+  
+    html body.fe-course-page [class^="styles__HeroWrapper"] .content .description {
+      margin-left: 0px !important;
+      margin-top: 0px !important;
+    }
+  
+    html body.fe-course-page.fe-sec-page .hoQyHk .content {
+      max-width: 862px !important;
+    }
+  
+    html body.fe-digital-marketing-page #hero .content {
+      max-width: 540px !important;
+    }
+  
+    html body.fe-uiux-page .content .summary,
+    html body.fe-uiux-page .content .header,
+    html body.fe-uiux-page .content .description,
+    html body.fe-uiux-page .content .buttonWrapper,
+    html body.fe-course-page.fe-social-media-marketing-page #hero .header,
+    html body.fe-course-page.fe-social-media-marketing-page #hero .description,
+    html body.fe-course-page.fe-social-media-marketing-page #hero .summary,
+    html body.fe-course-page.fe-social-media-marketing-page #hero .buttonWrapper,
+    html body.fe-digital-marketing-page #hero .content .header,
+    html body.fe-digital-marketing-page #hero .content .description,
+    html body.fe-course-page .content .header,
+    html body.fe-course-page .content .description,
+    .fe-tech-sales-page #hero .content .description,
+    .fe-tech-sales-page #hero .content .header {
+      text-align: left !important;
+    }
+  
+    html body.fe-course-page #Women [class^="styles__Description"] {
+      max-width: 477px !important;
+    }
+  
+    html body.fe-course-page .content,
+    html body.fe-tech-sales-page #hero .content,
+    html body.fe-digital-marketing-page #hero .content {
+      margin: 0px !important;
+      text-align: left !important;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .fe-course-page #courseDate .applicationDeadlineWrapper {
+      background: #000000 !important;
+    }
+  
+    html body.fe-course-page.fe-csc-page #hero .ratingContainer {
+      background-color: #000000 !important;
+    }
+  
+    .springboard-reviews-container .reviews-container.switchup-margin {
+      margin: 0 auto 0 72px !important;
+    }
+  
+    html body.fe-uiux-page .LcDzA,
+    html body.fe-tech-sales-page #hero .LcDzA,
+    html body.fe-digital-marketing-page #hero .LcDzA,
+    html body.fe-course-page.fe-dec-page .hoQyHk {
+      display: flex;
+      /* max-width: 1235px; */
+      margin: 0 auto;
+      padding-left: 30px;
+      padding-right: 30px;
+      justify-content: space-between;
+    }
+  
+    html body.fe-course-page.fe-social-media-marketing-page .LcDzA .content {
+      max-width: 728px;
+      margin: 0 !important;
+      padding-left: 10% !important;
+      color: #000;
+      box-sizing: content-box !important;
+    }
+  
+    html body.fe-uiux-page .LcDzA .content,
+    html body.fe-tech-sales-page #hero .LcDzA .content,
+    html body.fe-digital-marketing-page #hero .LcDzA .content,
+    html body.fe-course-page.fe-dec-page .hoQyHk .content,
+    html body.fe-csc-page #hero .content,
+    html body.fe-course-page [class^="styles__HeroWrapper"] .content,
+    html body.fe-course-page:not(.fe-dec-page) .hoQyHk .content {
+      margin: 0 !important;
+      padding-left: 10% !important;
+      color: #000;
+      box-sizing: content-box !important;
+      max-width: 850px;
+    }
+  
+    html body.fe-digital-marketing-page .LcDzA .ratingContainer.bottom .ratingWrapper {
+      text-align: center;
+    }
+  
+    html body.fe-course-page .partnershipRatingWrapper .ratingContainer.bottom,
+    html body.fe-course-page .partnershipRatingWrapper .ratingContainer.right {
+      right: 100px;
+      top: 50%;
+      transform: translateY(-50%);
+      text-align: center;
+    }
+  
+    html body.fe-csc-page #hero .partnershipWrapper,
+    html body.fe-csc-page #hero .ratingContainer,
+    html body.fe-course-page .hoQyHk .partnershipWrapper,
+    html body.fe-course-page .hoQyHk .ratingContainer {
+      text-align: left;
+    }
+  
+    html body.fe-digital-marketing-page .ratingContainer.bottom,
+    html body.fe-course-page .hoQyHk .ratingContainer.bottom,
+    html body.fe-csc-page #hero .ratingContainer.bottom {
+      position: absolute;
+      margin-top: 0px;
+      width: 262px;
+      height: 262px;
+      text-align: center;
+      padding: 30px 65px;
+      border-radius: 50%;
+      background-color: rgb(41, 104, 191);
+    }
+  
+    html body.fe-digital-marketing-page .LcDzA .ratingContainer .ratingText a,
+    html body.fe-csc-page #hero .ratingContainer.right .ratingText a,
+    html body.fe-csc-page #hero .partnershipRatingWrapper .ratingContainer.bottom .ratingText a,
+    html body.fe-course-page .hoQyHk .ratingContainer.right .ratingText a,
+    html body.fe-course-page .hoQyHk .partnershipRatingWrapper .ratingContainer.bottom .ratingText a {
+      color: #ffffff !important;
+    }
+  }
+  
+  html body.fe-course-page #valueProps.jqxRMJ {
+    background: #fff;
+  }
+  
+  html body.fe-digital-marketing-page .ratingContainer.bottom .ratingWrapper .rating,
+  html body.fe-csc-page #hero .ratingContainer.bottom .ratingWrapper .rating,
+  html body.fe-course-page .hoQyHk .ratingContainer.bottom .ratingWrapper .rating {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  
+  html body.fe-csc-page #hero .ratingContainer.bottom .ratingText,
+  html body.fe-course-page .hoQyHk .ratingContainer.bottom .ratingText {
+    text-align: center;
+  }
+  
+  html body.fe-csc-page #hero .ratingContainer .rating span,
+  html body.fe-course-page .hoQyHk .ratingContainer .rating span {
+    margin-right: 0px;
+  }
+  
+  html body.fe-course-page #generalText {
+    background: #F4F2F2 !important;
+  }
+  
+  html body.fe-homepage .explore-programs-container .header-container .courses:last-child,
+  html body.fe-homepage .explore-programs-container .cards-container app-program-cards:nth-child(4),
+  html body.fe-homepage .springboard-reviews-container .alumni {
+    display: none !important;
+  }
+  
+  
+  html body.fe-homepage #explore-programs .cards-container .krbboM:nth-child(4),
+  html body.fe-homepage .gRFlVX .alumni {
+    display: none !important;
+  }
+  
+  html body.fe-homepage .desktop-container .quiz-card .text {
+    max-width: 254px !important;
+    margin: 0 auto 18px !important;
+    font-family: Athelas !important;
+    font-style: normal !important;
+    font-weight: bold !important;
+    font-size: 24px !important;
+    line-height: 30px !important;
+    text-align: center !important;
+    color: #000000 !important;
+  }
+  
+  html body.fe-homepage .job-guarantee-container .custom-cards-container .title {
+    font-family: Athelas !important;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 57px;
+    color: #000000;
+  }
+  
+  html body.fe-homepage .owl-wrapper-outer .alumni-name {
+    font-weight: 600;
+    color: #000000;
+  }
+  
+  html body.fe-homepage .job-guarantee-container .custom-cards-container .title,
+  html body.fe-homepage .job-guarantee-container .custom-cards-container .description {
+    padding-left: 10px !important;
+  }
+  
+  html body.fe-course-page .lbxxIB .contactWrapper .contactDetails .ctasWrapper a:last-child button,
+  html body.fe-homepage .quiz-link .iCHJyN.primary-button {
+    color: #000000 !important;
+    border: 2px solid #000000 !important;
+    font-size: 16px !important;
+    background-color: #fff !important;
+  }
+  
+  html body.fe-course-page .lbxxIB .contactWrapper .contactDetails .ctasWrapper a:last-child button:hover,
+  html body.fe-homepage .quiz-link .iCHJyN.primary-button:hover {
+    color: #fff !important;
+    background: #000000 !important;
+    border: 2px solid #000000 !important;
+    font-size: 16px !important;
+  }
+  
+  html body.fe-homepage .desktop-container .quiz-card {
+    width: 290px !important;
+    height: 227px !important;
+  }
+  
+  html body.fe-homepage .fgjElx .desktop-container .header-container .title {
+    line-height: 48px;
+  }
+  
+  html body.fe-homepage .job-guarantee-container .title span,
+  html body.fe-homepage .support-network-container .title span,
+  html body.fe-homepage .industry-mentor-container .title span,
+  html body.fe-homepage #career-content .section .title span,
+  html body.fe-homepage .build-network-container .title span,
+  html body.fe-homepage .etaukF .bwUJr span,
+  html body.fe-overview-page .fmPofG .phpnv span,
+  html body.fe-course-page.fe-mentors-page .fmPofG .phpnv span,
+  html body.fe-course-page.fe-outcomes-page .fmPofG .phpnv span,
+  html body.fe-mentoring-page .phpnv span,
+  html body.fe-tuition-page .phpnv span,
+  html body.fe-payment-page .phpnv span {
+    font-size: 36px !important;
+    font-style: italic;
+    font-family: Athelas !important;
+    color: #000 !important;
+    font-weight: 400;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  html body.fe-homepage .job-guarantee-container .title span {
+    background-image: url("https://res.cloudinary.com/springboard-images/image/upload/v1651061587/vwo-exp-assets/Sping-14/guaranteed_background.svg");
+    padding: 0px 16px 12px 0px;
+    line-height: 56px;
+  }
+  
+  html body.fe-homepage .support-network-container .title span {
+    background-image: url("https://res.cloudinary.com/springboard-images/image/upload/v1651061589/vwo-exp-assets/Sping-14/invested_in_your_success_background.svg");
+    background-size: cover;
+    padding: 6px 6px 10px 23px;
+    letter-spacing: -.5px;
+    display: inline-block;
+  }
+  
+  html body.fe-homepage .industry-mentor-container .title {
+    line-height: 52px;
+  }
+  
+  html body.fe-homepage .industry-mentor-container .title span {
+    background-image: url("https://res.cloudinary.com/springboard-images/image/upload/v1651061588/vwo-exp-assets/Sping-14/industry_insider_background.svg");
+    padding: 10px 20px 13px 11px;
+    background-size: contain;
+    display: inline-block;
+  }
+  
+  html body.fe-homepage #career-content .section .title span {
+    background-image: url("https://res.cloudinary.com/springboard-images/image/upload/v1651061589/vwo-exp-assets/Sping-14/job_success_background.svg");
+    padding: 10px 18px 18px 13px;
+    font-style: inherit;
+    display: inline-block;
+    background-size: contain;
+  }
+  
+  html body.fe-homepage .build-network-container .title span {
+    background-image: url("https://res.cloudinary.com/springboard-images/image/upload/v1651061590/vwo-exp-assets/Sping-14/professional_network_background.svg");
+    padding: 10px 35px 21px 13px;
+    font-style: inherit;
+    display: inline-block;
+  }
+  
+  html body.fe-tuition-page .phpnv span,
+  html body.fe-payment-page .phpnv span,
+  html body.fe-mentoring-page .phpnv span,
+  html body.fe-overview-page .fmPofG .phpnv span,
+  html body.fe-course-page.fe-mentors-page .fmPofG .phpnv span,
+  html body.fe-course-page.fe-outcomes-page .fmPofG .phpnv span,
+  html body.fe-homepage .etaukF .bwUJr span {
+    background-image: url("https://res.cloudinary.com/springboard-images/image/upload/v1651061585/vwo-exp-assets/Sping-14/advance_your_career_background.svg");
+    padding: 2px 5px 5px 18px;
+    margin-left: -7px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  html body.fe-scholarships-page .pHRgt .iLyWYI {
+    flex-direction: column !important;
+    height: auto !important;
+    padding: 60px 0px !important;
+  }
+  
+  html body.fe-payment-page .fmPofG,
+  html body.fe-tuition-page .fmPofG,
+  html body.fe-mentoring-page .fmPofG,
+  html body.fe-scholarships-page .oRCXC .iLyWYI,
+  html body.fe-overview-page .fmPofG,
+  html body.fe-homepage .etaukF,
+  html body.fe-mentors-page .cMbqit .fmPofG,
+  html body.fe-course-page.fe-outcomes-page .pHRgt .fmPofG {
+    flex-direction: column !important;
+    height: auto !important;
+    padding: 60px 0px !important;
+    background-image: url('https://res.cloudinary.com/springboard-images/image/upload/v1651061586/vwo-exp-assets/Sping-14/background-image.svg') !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  html body.fe-homepage .industry-mentor-container .testimonial-section img,
+  html body.fe-homepage .owl-wrapper-outer .owl-item .alumni-pic {
+    border-radius: 1000px;
+    width: 288px;
+    height: 288px;
+  }
+  
+  html body.fe-homepage .support-network-container .section {
+    background: #fff !important;
+  }
+  
+  html body.fe-homepage .card-component .title {
+    font-family: 'Athelas';
+    font-size: 20px !important;
+  }
+  
+  html body.fe-course-page .bAQXFL h5 {
+    font-family: Athelas !important;
+    font-style: normal;
+    font-size: 28px !important;
+    line-height: 31px !important;
+    text-align: center !important;
+    color: #000000 !important;
+  }
+  
+  html body.fe-homepage .jobs-received h4.title {
+    font-family: Athelas !important;
+    font-style: normal;
+    font-weight: bold !important;
+    font-size: 28px !important;
+    line-height: 31px !important;
+    text-align: center !important;
+    color: #000000 !important;
+  }
+  
+  /* ------------------Course Pages------------- */
+  
+  
+  /* home banner */
+  html body.fe-course-page.fe-social-media-marketing-page #hero,
+  html body.fe-mentors-page .jipVzl .tvAXQ,
+  html body.fe-course-page.fe-outcomes-page .jipVzl,
+  html body.fe-course-page.fe-dec-page .eJXRSq+div,
+  html body.fe-course-page.fe-dec-page #hero,
+  html body.fe-tech-sales-page #hero,
+  html body.fe-digital-marketing-page #hero,
+  html body.fe-course-page [class^="styles__HeroWrapper"],
+  html body.fe-csc-page #hero,
+  html body.fe-uiux-page .LcDzA {
+    background-image: url('https://res.cloudinary.com/springboard-images/image/upload/v1651061586/vwo-exp-assets/Sping-14/banner-background.svg') !important;
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+  
+  html body.fe-csc-page #hero .partnershipRatingWrapper,
+  html body.fe-course-page.fe-dec-page .hoQyHk .partnershipRatingWrapper {
+    display: none !important;
+  }
+  
+  html body.fe-csc-page #hero>div,
+  html body.fe-course-page:not(.fe-dec-page) .hoQyHk {
+    background: url("https://res.cloudinary.com/springboard-images/image/upload/v1651061586/vwo-exp-assets/Sping-14/banner-background.svg");
+    background-size: cover;
+    background-position: right;
+  }
+  
+  html body.fe-course-page .hoQyHk .content {
+    margin: 0 !important;
+    color: #000;
+    box-sizing: content-box !important;
+    max-width: 790px;
+  }
+  
+  html body.fe-course-page #features>div>div:first-child {
+    font-family: Athelas !important;
+    font-style: normal;
+    /* font-weight: normal; */
+    font-size: 36px;
+    line-height: 36px;
+    color: #000000;
+  }
+  
+  .fe-software-engineering-career-track-prep-page .eqXAKi h2,
+  .fe-course-page #FAQ h2,
+  .fe-course-page #generalCheckmarksSecondNav h2,
+  html body.fe-course-page #Outcomes .header,
+  html body.fe-course-page .bPMJJS h5,
+  html body.fe-course-page .gJhPLJ,
+  html body.fe-course-page.fe-outcomes-page .lcuHdg,
+  html body.fe-course-page.fe-outcomes-page .inHZSP,
+  html body.fe-mentoring-page .bAQXFL h5 {
+    font-family: Athelas !important;
+    font-style: normal;
+    /* font-weight: normal; */
+    font-size: 36px !important;
+    line-height: 36px;
+    color: #000000;
+  }
+  
+  html body.fe-mentors-page .jipVzl .tvAXQ .header,
+  html body.fe-course-page .lbjXII,
+  html body.fe-scholarships-page .cnYIVW,
+  html body.fe-course-page.fe-outcomes-page h1,
+  html body.fe-tech-sales-page .content .header,
+  html body.fe-tech-sales-page #hero .content .header,
+  html body.fe-course-page .content .header,
+  html body.fe-digital-marketing-page .content .header,
+  html body.fe-course-page [class^="styles__HeroWrapper"] .header,
+  html body.fe-csc-page #hero .content h1 span,
+  html body.fe-csc-page #hero .content h1,
+  html body.fe-course-page .hoQyHk .content h1 span,
+  html body.fe-course-page .hoQyHk .content h1,
+  html body.fe-course-page .LcDzA .header {
+    font-size: 50px;
+    font-family: Athelas !important;
+    white-space: normal !important;
+  }
+  
+  html body.fe-course-page .kGVlQQ,
+  html body.fe-course-page .lbjXII,
+  html body.fe-scholarships-page .cnYIVW {
+    width: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  html body.fe-course-page.fe-outcomes-page h3.kLebTv {
+    font-size: 18px;
+  }
+  
+  html body.fe-course-page .cydGCY p {
+    font-size: 18px;
+    max-width: 550px;
+    width: 100%;
+  
+  }
+  
+  html body.fe-csc-page #hero .content h1 span,
+  html body.fe-course-page.fe-dec-page .hoQyHk .content h1 span {
+    background: url('https://res.cloudinary.com/springboard-images/image/upload/v1651061589/vwo-exp-assets/Sping-14/Highlight-Beige.webp');
+    padding: 4px 17px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px 6px;
+  }
+  
+  html body.fe-digital-marketing-page .LcDzA .content p,
+  html body.fe-csc-page #hero .content p,
+  html body.fe-csc-page #hero .content h1,
+  html body.fe-csc-page #hero .content .buttonWrapper,
+  html body.fe-course-page .hoQyHk .content p,
+  html body.fe-course-page .hoQyHk .content h1,
+  html body.fe-course-page .hoQyHk .content .buttonWrapper {
+    text-align: left;
+  }
+  
+  html body.fe-course-page .partnershipRatingWrapper .ratingContainer.right,
+  html body.fe-course-page .partnershipRatingWrapper .ratingContainer.bottom,
+  html body.fe-course-page .partnershipRatingWrapper .ratingContainer.right .rating {
+    color: #fff;
+  }
+  
+  html body.fe-course-page .partnershipRatingWrapper .ratingContainer.bottom,
+  html body.fe-course-page .partnershipRatingWrapper .ratingContainer.right {
+    right: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  /* request Syllebus */
+  html body.fe-course-page .hLGZWg .stickyWrapper .linksWrapper a,
+  html body.fe-course-page #secondaryNav .stickyWrapper .linksWrapper a {
+    text-decoration: underline;
+    color: #000 !important;
+  }
+  
+  html body.fe-course-page .hLGZWg .stickyWrapper .linksWrapper a:hover,
+  html body.fe-course-page #secondaryNav .stickyWrapper .linksWrapper a:hover {
+    text-decoration: none;
+  }
+  
+  html body.fe-course-page .stickyWrapper .ctaWrapper span button,
+  html body.fe-course-page #secondaryNav .stickyWrapper .iCHJyN {
+    border: 2px solid #000;
+    color: #000;
+  }
+  
+  html body.fe-course-page .stickyWrapper .ctaWrapper span button:hover,
+  html body.fe-course-page #secondaryNav .stickyWrapper .iCHJyN:hover {
+    color: #fff;
+    background-color: #000;
+  }
+  
+  html body.fe-course-page .styles__SectionWrapper-h2r7zm-0 .gJhPLJ {
+    font-family: Athelas !important;
+  
+  }
+  
+  /* Bootcamp */
+  
+  html body.fe-course-page #pricing+#syllabus {
+    background: #f6fdfb !important;
+  }
+  
+  html body.fe-course-page.fe-sec-page #syllabus .request-syllabus-contact-form {
+    padding-top: 0px !important;
+  }
+  
+  .fe-course-page.fe-foundations-software #investors .investerWrapper .container,
+  .fe-course-page.fe-foundations-data #investors .investerWrapper .container,
+  .fe-ui-ux-design-career-track-uk .investerWrapper .container,
+  html body.fe-course-page.fe-sec-page #syllabus .request-syllabus-contact-form,
+  html body.fe-course-page.fe-sec-page .fe-apply-container,
+  html body.fe-course-page.fe-sec-page #syllabus .ctaWrapper {
+    background-color: transparent !important;
+  }
+  
+  html body.fe-course-page #Curriculum,
+  html body.fe-course-page #curriculum,
+  html body.fe-course-page #syllabus,
+  html body.fe-course-page.fe-sec-page #syllabus .styles__TabsWrapper-vim170-0 {
+    background-color: #A9DEFF !important;
+    background: url("https://res.cloudinary.com/springboard-images/image/upload/v1651061589/vwo-exp-assets/Sping-14/learn-background.svg") !important;
+    background-size: cover !important;
+    background-position-x: right !important;
+    background-position-y: center !important;
+  
+  }
+  
+  html body.fe-course-page #syllabus .bPMJJS {
+    font-family: Athelas !important;
+  }
+  
+  html body.fe-course-page #outcomes .contentWrapper .imageContainer img {
+    width: 400px;
+    border-radius: 1000%;
+    height: 400px;
+  }
+  
+  html body.fe-course-page .jcYJzo .applicationDeadlineWrapper .time,
+  html body.fe-course-page #startDate .applicationDeadlineWrapper .time {
+    color: #fff !important;
+  }
+  
+  /* The Springboard learning experience */
+  html body.fe-course-page .htunIC,
+  html body.fe-course-page .fiTfrP,
+  html body.fe-course-page #projects .htunIC,
+  html body.fe-course-page #generalIcons .cOsUvr,
+  html body.fe-course-page .bVQGOM .heading,
+  html body.fe-overview-page h5,
+  html body.fe-mentoring-page h5,
+  html body.fe-tuition-page h5,
+  html body.fe-payment-page h5,
+  html body.fe-overview-page #Curriculum .jllkfK,
+  html body.fe-tuition-page .jipVzl .bAQXFL h5,
+  html body.fe-i2d-page-new .dplZxH h4,
+  html body #Women h2,
+  html body.fe-course-page #syllabus h2 {
+    font-family: Athelas !important;
+    font-size: 36px;
+    color: #000 !important;
+  }
+  
+  html body #Women h2 {
+    font-size: 36px;
+    line-height: 1;
+  }
+  
+  html body.fe-course-page #generalIcons .cOsUvr {
+    max-width: 580px;
+  }
+  
+  /* Develop portfolio-worthy capstone projects */
+  html body.fe-course-page #projects {
+    background-color: #fff !important;
+  }
+  
+  /* Work 1:1 with a mentor */
+  html body.fe-course-page.fe-backend-development-java #Curriculum h2.header,
+  html body.fe-course-page .fkOmYG,
+  html body.fe-course-page #outcomes h2,
+  html body.fe-course-page #generalCheckmarks h5 {
+    font-family: Athelas !important;
+    font-size: 36px !important;
+    color: #000 !important;
+  }
+  
+  html body.fe-course-page #mentors {
+    background-image: none !important;
+    background-color: #F4F2F2 !important;
+  }
+  
+  /* Student OUtcome */
+  html body.fe-course-page #outcomes .outcomesContainer .outcome:nth-child(2) {
+    background-color: #FF7155 !important;
+  }
+  
+  html body.fe-course-page #testimonial .ctaWrapper,
+  html body.fe-course-page #outcomes .ctaWrapper .iCHJyN {
+    color: #000 !important;
+    border: 2px solid #000 !important;
+  }
+  
+  html body.fe-course-page #testimonial .ctaWrapper:hover,
+  html body.fe-course-page #outcomes .ctaWrapper .iCHJyN:hover {
+    background-color: #000;
+    color: #fff !important;
+  }
+  
+  /* Is this program right for me? */
+  html body.fe-course-page.fe-dsc-page #prereq {
+    background-image: none !important;
+  }
+  
+  html body.fe-course-page #prereq h4 {
+    font-family: Athelas !important;
+    font-size: 36px !important;
+  }
+  
+  html body.fe-course-page #prereq p.header {
+    font-weight: 600 !important;
+    margin-top: 20px;
+  }
+  
+  html body.fe-course-page .ctasWrapper .bwIbHz {
+    color: #000 !important;
+    border: 2px solid #000 !important;
+  }
+  
+  html body.fe-course-page .ctasWrapper .bwIbHz:hover {
+    background-color: #000;
+    color: #fff !important;
+  }
+  
+  /* The admissions process */
+  html body.fe-course-page #pricing h5,
+  html body.fe-course-page #steps h4.header,
+  html body.fe-course-page .bhcSyH .header,
+  html body.fe-course-page .flOBDp h5.header,
+  html body.fe-course-page .jDwoSa,
+  html body.fe-course-page .jcYJzo .heading,
+  html body.fe-course-page .bEQvJL .header,
+  html body.fe-course-page .style-module--header--2U5pU {
+    font-family: Athelas !important;
+    font-size: 36px !important;
+  }
+  
+  /* course start dates */
+  html body.fe-course-page #startDate {
+    background-color: #F4F2F2 !important;
+  }
+  
+  /* Tuition/pricing */
+  html body.fe-course-page:not(.fe-dec-page) #pricing,
+  html body.fe-course-page:not(.fe-digital-marketing-page) #pricing {
+    background-color: #A9DEFF !important;
+    background: url('https://res.cloudinary.com/springboard-images/image/upload/v1651061587/vwo-exp-assets/Sping-14/pricing-background.svg') !important;
+    background-size: cover !important;
+    background-position-x: left !important;
+    background-position-y: center !important;
+  }
+  
+  /* Meet a few of our alums */
+  html body.fe-homepage #logos h2,
+  html body.fe-course-page #logos h2,
+  html body.fe-course-page #testimonialCards h5 {
+    font-family: Athelas !important;
+    font-size: 36px !important;
+    font-weight: 500 !important;
+  }
+  
+  html body.fe-course-page:not(.fe-digital-marketing-page) #testimonialCards {
+    background-color: #E5E5E5 !important;
+  }
+  
+  /* Apply for the Data Science Career Track */
+  html body.fe-course-page #CTA .EUOip,
+  html body.fe-course-page #CTA,
+  html body.fe-course-page .bXNOQk {
+    background-color: #A9DEFF !important;
+    background-image: none !important;
+  }
+  
+  html body.fe-course-page #CTA .EUOip,
+  #CTA,
+  html body.fe-course-page .EUOip .bulletPoint {
+    color: #000 !important;
+  }
+  
+  html body.fe-course-page #CTA .EUOip .bulletPoint,
+  html body.fe-course-page #CTA .EUOip p {
+    font-weight: 400 !important;
+  }
+  
+  html body.fe-course-page .dplZxH {
+    margin-top: -2px;
+  }
+  
+  html body.fe-homepage p.subtitle,
+  html body.fe-course-page .dplZxH h4,
+  html body.fe-course-page #generalCheckmarks h5,
+  html body.fe-course-page #CTA h2,
+  html body.fe-course-page #generalText .jDwoSa,
+  html body.fe-course-page #mentorship .fkOmYG,
+  html body.fe-course-page #outcomes .header,
+  html body.fe-course-page #testimonial h5,
+  html body.fe-course-page #comparisionTable h5,
+  html body.fe-course-page #IDP h5,
+  html body.fe-course-page .buEpwR,
+  html body.fe-course-page #curriculum h5,
+  html body.fe-course-page .htunIC,
+  html body.fe-course-page #generalCheckmarkAndLogos h5,
+  html body.fe-course-page .dJFQED,
+  html body.fe-course-page #courseStart h3,
+  html body.fe-course-page .fiTfrP,
+  html body.fe-course-page #Schedule h3,
+  html body.fe-course-page #Tuition h5,
+  html body.fe-course-page #oneLinerBanner h5,
+  html body.fe-course-page #logos h5,
+  html body.fe-course-page #comparisonTable h5,
+  html body.fe-course-page .jDwoSa,
+  html body.fe-course-page #Mentorship .fkOmYG,
+  html body.fe-course-page .flOBDp h5,
+  html body.fe-course-page .bAQXFL h5,
+  html body.fe-course-page #Outcomes .header,
+  html body.fe-course-page .style-module--header--2U5pU,
+  html body.fe-course-page #application h2,
+  html body.fe-dsc-page .dplZxH .eqXAKi h5 {
+    font-family: Athelas !important;
+    color: #000000 !important;
+  }
+  
+  html body.fe-course-page #secondaryNav {
+    margin-top: -2px;
+  }
+  
+  html body.fe-course-page #syllabus h5,
+  html body.fe-course-page #startDate .heading,
+  html body.fe-course-page #features .buEpwR {
+    font-family: Athelas !important;
+    font-style: normal;
+    /* font-weight: normal; */
+    font-size: 24px;
+    line-height: 45px;
+    text-align: center;
+    color: #000000;
+  }
+  
+  html body.fe-course-page #startDate .heading,
+  html body.fe-course-page #syllabus h5,
+  html body.fe-course-page .jDwoSa,
+  html body.fe-course-page .bhcSyH .header,
+  html body.fe-course-page .bEQvJL .header,
+  html body.fe-course-page .kvSMmS h5,
+  html body.fe-course-page .style-module--header--2U5pU,
+  .fe-course-page.fe-foundations-data #CTA+div h2.header,
+  html body.fe-course-page .jDwoSa,
+  html body.fe-course-page .bxjLxL h5 {
+    font-size: 36px !important;
+    line-height: 28px !important;
+  }
+  
+  html body.fe-course-page .tabList .hOuXYv {
+    color: #000000;
+  }
+  
+  html body.fe-course-page .tabList .hOuXYv .activeArrow {
+    filter: brightness(0) contrast(1);
+  }
+  
+  html body.fe-course-page #curriculum .ctaWrapper button,
+  html body.fe-course-page #syllabus .ctaWrapper button {
+    background: #000000;
+    border-radius: 3px;
+    border-color: #000;
+  }
+  
+  html body.fe-course-page #curriculum .ctaWrapper button:hover,
+  html body.fe-course-page #syllabus .ctaWrapper button:hover {
+    background: #fff;
+    color: #000;
+  }
+  
+  html body.fe-course-page #features .iuOEoE {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 27px;
+    text-align: center;
+    color: #000000;
+  }
+  
+  @media only screen and (max-width: 1024px) {
+  
+    html body.fe-course-page .fiTfrP,
+    html body.fe-mentors-page .jipVzl .tvAXQ .header {
+      line-height: 1.1;
+    }
+  
+    html body.fe-mentors-page .kjgjeN {
+      height: auto;
+    }
+  
+    .fe-mentors-page .hNtULo .gZhLmk {
+      line-height: 1.2;
+      margin-bottom: 8px;
+      text-align: center;
+    }
+  
+    .fe-mentors-page .hNtULo .kwFixZ {
+      text-align: center;
+    }
+  
+    html body.fe-mentors-page .kjgjeN img {
+      width: auto;
+      margin-top: 10px;
+    }
+  
+    html body.fe-digital-marketing-page .LcDzA .emailFormWrapper .cta-button,
+    html body.fe-tech-sales-page .LcDzA .emailFormWrapper .cta-button {
+      width: auto !important;
+    }
+  
+    html body.fe-csc-page #hero>div,
+    html body.fe-course-page .hoQyHk,
+    html body.fe-course-page .fe-job-section .fe-job-container {
+      flex-direction: column !important;
+    }
+  
+    html body.fe-mentors-page .jipVzl .tvAXQ .header,
+    html body.fe-course-page .lbjXII,
+    html body.fe-scholarships-page .cnYIVW,
+    html body.fe-csc-page #hero .content h1,
+    html body.fe-course-page .hoQyHk .content h1,
+    html body.fe-course-page .LcDzA .header,
+    html body.fe-tech-sales-page .content .header,
+    html body.fe-course-page .content .header,
+    html body.fe-tech-sales-page #hero .content .header,
+    html body.fe-digital-marketing-page .content .header {
+      font-size: 32px !important;
+    }
+  
+    html body.fe-csc-page #hero .partnershipRatingWrapper,
+    html body.fe-course-page .hoQyHk .partnershipRatingWrapper {
+      display: flex;
+      margin-top: 40px;
+      -webkit-box-pack: center;
+      justify-content: center;
+    }
+  
+    html body.fe-csc-page #hero .partnershipRatingWrapper .partnershipWrapper,
+    html body.fe-course-page .hoQyHk .partnershipRatingWrapper .partnershipWrapper {
+      margin-top: 0px;
+      border-right: 1px solid rgb(255, 255, 255);
+      padding-right: 20px;
+      opacity: 1 !important;
+      text-align: center;
+    }
+  
+    html body.fe-csc-page #hero .partnershipRatingWrapper .partnershipWrapper .prefixText,
+    html body.fe-course-page .hoQyHk .partnershipRatingWrapper .partnershipWrapper .prefixText {
+      display: block;
+      margin: 0px auto 10px;
+      text-align: center;
+      font-size: 14px;
+      line-height: 16px;
+    }
+  
+    html body.fe-csc-page #hero .partnershipRatingWrapper .partnershipWrapper .partnerLogo,
+    html body.fe-course-page .hoQyHk .partnershipRatingWrapper .partnershipWrapper .partnerLogo {
+      height: 16px;
+    }
+  
+    /* html body.fe-course-page .hoQyHk .partnershipRatingWrapper .ratingContainer.right {
+      position: relative;
+      border-radius: 0px;
+      height: unset;
+      top: unset;
+      right: unset;
+      width: unset;
+      padding: 0px;
+      margin-left: 20px;
+      background: transparent;
+    } */
+    html body.fe-csc-page #hero .partnershipRatingWrapper .ratingContainer.right .imageWrapper,
+    html body.fe-course-page .hoQyHk .partnershipRatingWrapper .ratingContainer.right .imageWrapper {
+      display: none;
+    }
+  
+    html body.fe-csc-page #hero .partnershipRatingWrapper .ratingContainer.right .ratingWrapper,
+    html body.fe-course-page .hoQyHk .partnershipRatingWrapper .ratingContainer.right .ratingWrapper {
+      display: flex;
+      margin-top: 0px;
+      flex-direction: column-reverse;
+    }
+  
+    html body.fe-csc-page #hero .partnershipRatingWrapper .ratingContainer.right .ratingWrapper,
+    html body.fe-course-page .hoQyHk .partnershipRatingWrapper .ratingContainer.right .ratingWrapper .rating {
+      flex-direction: column-reverse;
+      font-size: 16px;
+      line-height: 19px;
+    }
+  
+    html body.fe-csc-page #hero .partnershipRatingWrapper .ratingContainer.right .ratingWrapper .ratingText,
+    html body.fe-course-page .hoQyHk .partnershipRatingWrapper .ratingContainer.right .ratingWrapper .ratingText {
+      margin: 0px 0px 10px 0px;
+      font-size: 14px;
+      line-height: 16px;
+    }
+  
+    /* html body.fe-course-page .hoQyHk .partnershipRatingWrapper .ratingContainer.right .ratingWrapper .rating span {
+      margin-top: 0px;
+    } */
+    html body.fe-digital-marketing-page .LcDzA .ratingContainer .ratingText a {
+      color: #ffffff !important;
+    }
+  }
+  
+  html body.fe-course-page .hLGZWg .stickyWrapper .linksWrapper a,
+  html body.fe-homepage .hero-banner-container h3.h-b-a-form-title,
+  html body.fe-homepage .industry-mentor-container .mentors-card-list .see-more-mentors .text-cta,
+  html body.fe-homepage .industry-mentor-container .see-more-mentors a.text-cta svg,
+  html body.fe-course-page.fe-dec-page-new #application .bulletPointWrapper .bulletPoint span {
+    color: #000000 !important;
+  }
+  
+  html body.fe-homepage .industry-mentor-container .mentors-card-list .see-more-mentors .text-cta {
+    font-style: normal;
+    font-weight: 500;
+  }
+  
+  html body.fe-course-page #application .bulletPointWrapper .bulletPoint span {
+    color: #ffffff;
+  }
+  
+  /* Workflow pages */
+  html body.fe-Lea .content-container>h2.heading:first-of-type+section.responsive-flex-container--tm,
+  html body.fe-Ove div.section-wrapper .second-section {
+    background: #F4F2F2;
+    padding: 60px 0px;
+    margin-top: 40px;
+  }
+  
+  html body.fe-Lea .content-container>h2.heading:nth-of-type(2) {
+    padding-bottom: 0px;
+    margin-bottom: -50px;
+  }
+  
+  html body.fe-Lea .content-container>h2.heading:nth-of-type(2)+section.responsive-flex-container--tm {
+    padding-bottom: 100px;
+  }
+  
+  html body.fe-Lea .content-container>h2.heading:nth-of-type(2)+section.responsive-flex-container--tm,
+  html body.fe-Ove section.third-section {
+    background-color: #a9deff !important;
+    background: url('https://res.cloudinary.com/springboard-images/image/upload/v1651061589/vwo-exp-assets/Sping-14/learn-background.svg') !important;
+    background-position: right center !important;
+    padding-bottom: 60px;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+  }
+  
+  html body.fe-Ove section.first-section+.section-wrapper {
+    padding-bottom: 0px !important;
+  }
+  
+  html body.fe-Ove section.third-section a.secondary-button {
+    background: #000;
+    border-radius: 3px;
+    border-color: #000;
+    color: #fff;
+  }
+  
+  html body.fe-Ove section.third-section a.secondary-button:hover,
+  html body.fe-Ove .next-step-container .primary-button.clickable:hover {
+    background: #fff;
+    border-color: #000;
+    color: #000;
+  }
+  
+  html body.fe-Tui .next-step-container,
+  html body.fe-How .next-step-container,
+  html body.fe-Lea .next-step-container,
+  html body.fe-Ove .next-step-container {
+    flex-direction: column !important;
+    height: auto !important;
+    padding: 60px 0 !important;
+    background-image: url('https://res.cloudinary.com/springboard-images/image/upload/v1651061586/vwo-exp-assets/Sping-14/background-image.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 0px !important;
+  }
+  
+  html body.fe-Tui .next-step-container .primary-button.clickable,
+  html body.fe-How .next-step-container .primary-button.clickable,
+  html body.fe-Lea .next-step-container .primary-button.clickable,
+  html body.fe-Ove .next-step-container .primary-button.clickable {
+    background-color: #000;
+    border: 1px solid #000;
+    text-transform: uppercase !important;
+    font-size: 14px;
+  }
+  
+  html body.fe-Tui how-it-works-navigation+.content-container,
+  html body.fe-How how-it-works-navigation+.content-container,
+  html body.fe-Lea how-it-works-navigation+.content-container,
+  html body.fe-Ove how-it-works-navigation+.content-container {
+    padding-bottom: 0px;
+  }
+  
+  html body.fe-Tui .next-step-container .heading,
+  html body.fe-How .next-step-container .heading,
+  html body.fe-Lea .next-step-container .heading,
+  html body.fe-Ove .next-step-container .heading {
+    font-family: Athelas !important;
+    color: #000 !important;
+    font-size: 40px !important;
+    line-height: 40px;
+  }
+  
+  html body.fe-Tui .next-step-container .heading span,
+  html body.fe-How .next-step-container .heading span,
+  html body.fe-Lea .next-step-container .heading span,
+  html body.fe-Ove .next-step-container .heading span {
+    font-size: 40px !important;
+    font-family: Athelas !important;
+    color: #000 !important;
+    font-weight: 400;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://res.cloudinary.com/springboard-images/image/upload/v1651061585/vwo-exp-assets/Sping-14/advance_your_career_background.svg");
+    padding: 2px 5px 5px 18px;
+    margin-left: -7px;
+  }
+  
+  html body.fe-homepage #Financing .jDwoSa span,
+  html body.fe-homepage #Financing .jDwoSa {
+    color: #000 !important;
+    font-size: 36px !important;
+    line-height: 35px !important;
+  }
+  
+  html body.fe-homepage #Financing .jDwoSa span {
+    background-image: url('https://res.cloudinary.com/springboard-images/image/upload/v1651061589/vwo-exp-assets/Sping-14/invested_in_your_success_background.svg');
+    background-size: cover;
+    padding: 6px 6px 10px 23px;
+    letter-spacing: -.5px;
+    display: inline-block;
+  }
+  
+  html body h2.heading.text-center,
+  html body .content-container .heading,
+  html body .section-title,
+  html body section h2.heading html body .content-container .heading,
+  html body .section-wrapper h2.heading,
+  html body .next-step-container .heading,
+  html body.fe-homepage #Financing .jDwoSa span {
+    font-family: Athelas !important;
+  }
+  
+  html body.fe-course-page .jrmxBo .contentWrapper .outcomesContainer .outcome .detail .name {
+    font-size: 20px;
+  }
+  
+  html body.fe-course-page .kknsVJ .subtext,
+  html body.fe-course-page .jrmxBo .contentWrapper .outcomesContainer .outcome .detail .outcomeDescription {
+    font-size: 18px;
+  }
+  
+  html body.fe-course-page .buEpwR,
+  html body.fe-course-page.fe-uiux-page .hnYaw {
+    font-size: 24px;
+  }
+  
+  
+  @media screen and (max-width: 1024px) {
+  
+    html body.fe-homepage .hero-banner-container .hero-banner-title span,
+    html body.fe-csc-page #hero .content h1,
+    html body.fe-course-page .LcDzA .header,
+    html body.fe-course-page .hoQyHk .content h1 {
+      font-size: 32px !important;
+    }
+  
+    html body.fe-mentors-page .jipVzl .tvAXQ .header,
+    html body.fe-digital-marketing-page .content .header,
+    html body.fe-tech-sales-page #hero .content .header,
+    html body.fe-course-page .content .header,
+    html body.fe-csc-page #hero .content h1 span,
+    html body.fe-csc-page #hero .content h1,
+    html body.fe-course-page .LcDzA .header,
+    html body.fe-course-page .hoQyHk .content h1 span,
+    html body.fe-course-page .hoQyHk .content h1 {
+      font-size: 40px;
+    }
+  
+    html body.fe-course-page.fe-dec-page .fe-banner-img {
+      width: 300px !important;
+    }
+  
+    /* html body.fe-course-page.fe-dec-page .fe-banner-img img {	
+      width: 100%;	
+    }	
+    html body.fe-course-page .hoQyHk .content {	
+      max-width: 400px;	
+    } */
+    html body.fe-course-page.fe-dec-page .fe-banner-img {
+      display: none;
+    }
+  
+    html body.fe-digital-marketing-page #hero .content,
+    html body.fe-csc-page #hero .content,
+    html body.fe-course-page:not(.fe-dec-page) .hoQyHk .content {
+      max-width: fit-content;
+      text-align: center;
+      max-width: 551px !important;
+      width: 100% !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+  
+    html body.fe-digital-marketing-page .LcDzA .content p,
+    html body.fe-csc-page #hero .content p,
+    html body.fe-csc-page #hero .content h1,
+    html body.fe-csc-page #hero .content .buttonWrapper,
+    html body.fe-course-page .hoQyHk .content p,
+    html body.fe-course-page .hoQyHk .content h1,
+    html body.fe-tech-sales-page #hero .content .header,
+    html body.fe-course-page .content .header,
+    html body.fe-digital-marketing-page .content .header,
+    html body.fe-course-page .hoQyHk .content .buttonWrapper {
+      text-align: center !important;
+    }
+  
+    html body.fe-course-page .partnershipRatingWrapper .ratingContainer.bottom,
+    html body.fe-course-page .partnershipRatingWrapper .ratingContainer.right {
+      position: static !important;
+      transform: none !important;
+      margin-top: 0 !important;
+    }
+  
+    html body.fe-course-page .aYRrt .contentWrapper .outcomesContainer .outcome:not(:nth-child(2)) .detail .outcomeDescription,
+    html body.fe-csc-page #hero .ratingContainer.right .ratingWrapper .ratingText,
+    html body.fe-csc-page #hero .ratingContainer .ratingText a,
+    html body.fe-csc-page #hero .partnershipRatingWrapper .ratingContainer.right .ratingWrapper .rating span,
+    html body.fe-course-page .hoQyHk .ratingContainer.right .ratingWrapper .ratingText,
+    html body.fe-course-page .hoQyHk .ratingContainer .ratingText a,
+    html body.fe-course-page.fe-dscp-page .goMsFf,
+    html body.fe-course-page .hoQyHk .partnershipRatingWrapper .ratingContainer.right .ratingWrapper .rating span {
+      color: #000000 !important;
+    }
+  
+    html body .bPMJJS .tabsWrapper .tabContentWrapper {
+      width: 100% !important;
+    }
+  }
+  
+  @media screen and (max-width:767px) {
+  
+    html body.fe-homepage .hero-banner-container section .option-container {
+      margin: 0px 0px 30px;
+    }
+  
+    html body.fe-course-page .style-module--row--12FAG .style-module--cell--1sVIR:first-child {
+      padding-top: 0px;
+    }
+   
+  
+    html body.fe-course-page .lbxxIB .container .contactWrapper .ctasWrapper {
+      text-align: center !important;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    
+    html body.fe-course-page .lbxxIB .contactWrapper .contactDetails .cta:first-child{
+      margin: 0;
+    }
+  
+    html body.fe-homepage .hero-banner-container .hero-banner-title,
+    html body.fe-homepage .hero-banner-container .hero-banner-visited-title,
+    html body.fe-homepage .hero-banner-container .hero-banner-visited-title span {
+      font-size: 38px !important;
+      line-height: 38px !important;
+    }
+  
+    html body.fe-homepage .job-guarantee-container .title span,
+    html body.fe-homepage .support-network-container .title span,
+    html body.fe-homepage .industry-mentor-container .title span,
+    html body.fe-homepage .career-container .title span,
+    html body.fe-homepage .build-network-container .title span,
+    html body.fe-homepage .advance-career-container .title span,
+    html body.fe-homepage .advance-career-container h3.title,
+    html body.fe-homepage .build-network-container h3.title,
+    html body.fe-homepage .career-container h3.title,
+    html body.fe-homepage .industry-mentor-container h3.title,
+    html body.fe-homepage .support-network-container h3.title,
+    html body.fe-homepage .job-guarantee-container h3.title,
+    html body.fe-homepage .hero-banner-container .hero-banner-title span,
+    html body.fe-tech-sales-page #hero .content .header,
+    html body.fe-course-page .content .header,
+    html body.fe-digital-marketing-page .content .header,
+    html body.fe-mentors-page .jipVzl .tvAXQ .header,
+    html body.fe-csc-page #hero .content h1 span,
+    html body.fe-csc-page #hero .content h1,
+    html body.fe-course-page .LcDzA .header,
+    html body.fe-course-page .hoQyHk .content h1 span,
+    html body.fe-course-page .hoQyHk .content h1,
+    html body.fe-scholarships-page .cnYIVW,
+    html body.fe-homepage div #logos h2,
+    html body.fe-course-page .lbjXII {
+      font-size: 29px !important;
+      line-height: 1.2 !important;
+    }
+  
+    html body.fe-course-page #syllabus h2,
+    .fe-course-page.fe-social-media-marketing-page #Mentorship h5,
+    html body.fe-course-page .bPMJJS h5,
+    html body.fe-course-page .gJhPLJ,
+    html body.fe-course-page.fe-outcomes-page .inHZSP,
+    html body.fe-course-page #pricing h5,
+    html body.fe-course-page #steps h4.header,
+    html body.fe-course-page .bhcSyH .header,
+    html body.fe-course-page .flOBDp h5.header,
+    html body.fe-course-page .jDwoSa,
+    html body.fe-course-page .jcYJzo .heading,
+    html body.fe-course-page .bEQvJL .header,
+    html body.fe-course-page .style-module--header--2U5pU {
+      font-size: 32px !important;
+      line-height: 1.2 !important;
+    }
+  
+    html body .advance-career-container[_ngcontent-c20] .title[_ngcontent-c20] {
+      max-width: 297px;
+    }
+  
+    html body.fe-csc-page #hero .summary,
+    html body.fe-course-page .hoQyHk .summary {
+      margin-bottom: 27px;
+    }
+  
+    html body.fe-course-page .partnershipRatingWrapper .ratingContainer.bottom,
+    html body.fe-course-page .partnershipRatingWrapper .ratingContainer.right {
+      margin-left: 20px;
+      margin-top: 15px;
+    }
+  
+    html body.fe-csc-page #hero .ratingContainer.right .ratingWrapper,
+    .hoQyHk .partnershipRatingWrapper .ratingContainer.right .ratingWrapper {
+      flex-direction: row-reverse;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    html body.fe-course-page .lbxxIB .container .prereqAndCard .prereq .prereqHeader {
+      line-height: 1.5 !important;
+      margin-bottom: 20px;
+    }
+  
+    html body.fe-course-page #startDate .heading,
+    html body.fe-course-page #syllabus h5,
+    html body.fe-course-page .jDwoSa,
+    html body.fe-course-page .bhcSyH .header,
+    html body.fe-course-page .bEQvJL .header,
+    html body.fe-course-page .kvSMmS h5,
+    html body.fe-course-page .style-module--header--2U5pU,
+    html body.fe-course-page .jDwoSa,
+    html body.fe-course-page .bxjLxL h5 {
+      line-height: 35px;
+    }
+  
+  }
+  
+  @media screen and (max-width:540px) {
+  
+    html body.fe-digital-marketing-page #Support .title,
+    html body.fe-digital-marketing-page #Mentorship h5 {
+      line-height: 1.1;
+    }
+  
+    /*html body.fe-course-page:not(.fe-dec-page) .hoQyHk .partnershipRatingWrapper .ratingContainer.right .ratingWrapper {	
+      justify-content: flex-end;	
+    }	*/
+    html body.jobs-received[_ngcontent-c18] .swipe-to-see-companies[_ngcontent-c18] {
+      text-align: center;
+    }
+  
+    html body.fe-course-page .ccuxqi .swipeMessage {
+      margin-right: auto;
+    }
+  
+    html body.fe-course-page .kknsVJ .actualPrice,
+    html body.fe-course-page .jyrxez .actualPrice {
+      font-size: 22px !important;
+    }
+  
+  }
+  
+  @media screen and (max-width:390px) {
+    html body.fe-digital-marketing-page .bVQGOM .enrollmentCard {
+      width: calc(100% - 20px);
+      padding: 20px 12px;
+      display: inline-block;
+      margin: 0px auto 10px;
+    }
+  
+    html body.fe-digital-marketing-page .bVQGOM .enrollmentCard:first-child {
+      margin-right: 0px;
+    }
+  }
+  
+  @media screen and (max-width:360px) {
+  
+    html body.fe-mentors-page .jipVzl .tvAXQ .header,
+    html body.fe-digital-marketing-page .content .header,
+    html body.fe-tech-sales-page #hero .content .header,
+    html body.fe-course-page .content .header,
+    html body.fe-csc-page #hero .content h1 span,
+    html body.fe-csc-page #hero .content h1,
+    html body.fe-course-page .hoQyHk .content h1 span,
+    html body.fe-course-page .hoQyHk .content h1 {
+      font-size: 32px !important;
+    }
+  
+    html body.fe-course-page .kknsVJ .actualPrice,
+    html body.fe-course-page .jyrxez .actualPrice {
+      font-size: 18px !important;
+    }
+  
+    html body.fe-course-page .gJwchZ .pricePreview .name {
+      font-size: 17px !important;
+    }
+  }
+  
+  @media screen and (min-width:768px) and (max-width:1300px) {
+  
+    html body.fe-homepage .hero-banner-container .hero-banner-visited-title span,
+    html body.fe-homepage .hero-banner-container .hero-banner-visited-title {
+      font-size: 48px !important;
+    }
+  
+    html body.fe-homepage .hero-banner-container .content-container {
+      width: 551px !important;
+      max-width: 551px !important;
+    }
+  
+    html body.fe-csc-page #hero .emailFormWrapper .cta-button,
+    html body.fe-course-page .hoQyHk .emailFormWrapper .cta-button {
+      width: 80%;
+    }
+  }
+  
+  html body .start-application-button {
+    color: white;
+    background-color: black;
+  }
+  
+  @media screen and (min-width:768px) {
+    html body.fe-homepage .option-container {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    html body.fe-course-page.fe-uiux-page .style-module--rowWrapper--2T6Qn:nth-child(2) .style-module--cell--1sVIR:first-child,
+    html body.fe-course-page .style-module--rowWrapper--2T6Qn:first-child .style-module--cell--1sVIR:first-child {
+      color: #ffffff !important;
+    }
+  
+    html body.fe-course-page.fe-social-media-marketing-page .dCXxWU .BOtmR {
+      max-width: 540px;
+    }
+  
+    html body.fe-homepage .hero-banner-container .option-content {
+      cursor: pointer;
+      max-width: 115px;
+      min-width: 115px;
+    }
+  
+    html body.fe-homepage .hero-banner-container .option-content:hover {
+      color: #ffffff !important;
+      background-color: #000000 !important;
+      border-color: #000000 !important;
+    }
+  
+    html body.fe-homepage .hero-banner-container .option-container input {
+      cursor: pointer;
+    }
+  
+    html body.fe-homepage .hero-banner-container .explore-tag>a {
+      color: #ffffff;
+    }
+  
+    html body.fe-homepage .industry-mentor-container .see-more-mentors .text-cta,
+    html body.fe-homepage .industry-mentor-container .subtitle,
+    html body.fe-homepage .support-network-container .subtitle,
+    html body.fe-homepage #career-content .subtitle {
+      font-family: 'Roboto', sans-serif !important;
+    }
+  
+  }
+  
+  html body.fe-course-page.fe-backend-development-java #CTA,
+  html body.fe-course-page.fe-backend-development-java #generalCheckmarks>div,
+  html body.fe-course-page.fe-dec-page-new .jqxRMJ .lbxxIB,
+  html body.fe-course-page #features,
+  html body.fe-course-page.fe-dec-page.fe-dsc-page #generalCheckmarks,
+  html body.fe-course-page.fe-dec-page.fe-dsc-page #generalCheckmarks .bAQXFL,
+  html body.fe-homepage #career-content+div,
+  html body.fe-course-page.fe-sec-page #mentorship,
+  html body.fe-course-page.fe-sec-page #outcomes,
+  html body.fe-i2d-page #Pricing .bvNfKp,
+  html body.fe-course-page #Pricing,
+  html body.fe-tech-blacks-sec-page #projects,
+  html body.fe-tech-blacks-sec-page #prereq,
+  html body.fe-tech-blacks-ixc-page #courseStart,
+  html body.fe-course-page.fe-data-analytics-career-track-page #mentors,
+  html body.fe-course-page.fe-i2d-page .dplZxH .lbxxIB,
+  html body.fe-course-page.fe-uiux-page #generalText,
+  html body.fe-course-page.fe-uiux-page #prereq,
+  html body.fe-course-page.fe-uxc-page #mentors,
+  html body.fe-course-page.fe-csc-page #generalText,
+  html body.fe-course-page.fe-csc-page #mentorship,
+  html body.fe-course-page.fe-csc-page .KDsMm .style-module--wrapper--3Pwso,
+  html body.fe-course-page.fe-dec-page-new #Tuition,
+  html body.fe-course-page.fe-dscp-page #mentors,
+  html body.fe-course-page.fe-tech-sales-page #generalText,
+  html body.fe-course-page.fe-tech-sales-page #testimonialCards,
+  html body.fe-course-page.fe-payment-page .jipVzl .dJFQED,
+  html body.fe-payment-page .jipVzl .gtKnCu,
+  html body.fe-payment-page #FAQ,
+  html body.fe-course-page.fe-sec-page .dJFQED,
+  html body.fe-course-page.fe-software-engineering-career-track-prep-page #mentors,
+  html body.fe-course-page.fe-outcomes-page .dplZxH .dggyRu,
+  html body.fe-course-page.fe-i2d-page-new #mentors,
+  html body.fe-course-page.fe-dec-page-new .bTpePj .style-module--wrapper--3Pwso,
+  html body.fe-course-page.fe-data-analytics-career-track-page #steps,
+  html body.fe-course-page.fe-sec-page #prereq,
+  html body.fe-course-page.fe-sec-page #testimonialCards,
+  html body.fe-course-page.fe-dsc-page #startDate,
+  html body.fe-scholarships-page .flOBDp,
+  html body.fe-course-page.fe-digital-marketing-page #curriculum,
+  html body.fe-course-page.fe-csc-page #prereq,
+  html body.fe-course-page.fe-csc-page #generalCheckmarks>div,
+  html body.fe-course-page.fe-uxc-page div#comparisonTable,
+  html body.fe-course-page.fe-tech-sales-page #prereq,
+  html body.fe-course-page.fe-dec-page #pricing,
+  html body.fe-course-page.fe-dec-page-new #Tuition+div+div,
+  html body.fe-course-page.fe-social-media-marketing-page #Mentorship,
+  html body.fe-course-page.fe-digital-marketing-page #Mentorship,
+  html body.fe-course-page.fe-digital-marketing-career-track #CTA,
+  html body.fe-course-page.fe-ui-ux-design-career-track-uk #generalText,
+  html body.fe-course-page.fe-ui-ux-design-career-track-uk #Curriculum+div,
+  html body.fe-course-page.fe-ui-ux-design-career-track-uk #mentorship,
+  html body.fe-course-page.fe-ui-ux-design-career-track-uk #Women,
+  html body.fe-course-page.fe-ui-ux-design-career-track-uk #CTA,
+  html body.fe-course-page.fe-foundations-data #comparisonTable,
+  html body.fe-course-page.fe-foundations-data #mentors,
+  html body.fe-course-page.fe-foundations-software #mentorship,
+  html body.fe-course-page.fe-foundations-software #comparisonTable,
+  html body.fe-course-page.fe-foundations-software #CTA,
+  .fe-course-page.fe-backend-development-java #generalCheckmarks,
+  html body.fe-course-page.fe-foundations-data #testimonialCards,
+  html body.fe-course-page.fe-digital-marketing-career-track #generalCheckmarks,
+  html body.fe-course-page.fe-digital-marketing-career-track #generalCheckmarks>div,
+  html body.fe-course-page.fe-digital-marketing-career-track #courseDate,
+  html body.fe-course-page.fe-dec-page #mentors {
+    background: #ffffff !important;
+  }
+  
+  html body.fe-course-page.fe-tech-sales-page #pricing,
+  html body.fe-course-page.fe-tech-sales-page #Workshops,
+  html body.fe-course-page.fe-tech-sales-page #Outcomes,
+  html body.fe-course-page.fe-sec-page #courseDate,
+  html body.fe-course-page.fe-sec-page #projects,
+  html body.fe-course-page.fe-uxc-page #projects,
+  html body.fe-course-page.fe-data-analytics-career-track-page #generalText,
+  html body.fe-course-page.fe-csc-page #Schedule,
+  html body.fe-course-page.fe-dsc-page #mentors,
+  html body.fe-course-page.fe-dsc-page #Outcomes,
+  html body.fe-course-page.fe-csc-page #generalCheckmarks>div {
+    background: #A9DEFF !important;
+  }
+  
+  html body.fe-course-page.fe-digital-marketing-career-track #Mentorship,
+  html body.fe-course-page.fe-digital-marketing-career-track div#comparisonTable,
+  html body.fe-course-page.fe-foundations-software #FAQ,
+  .fe-course-page.fe-foundations-software #courseDate,
+  .fe-course-page.fe-foundations-software #investors,
+  .fe-course-page.fe-foundations-data #investors,
+  html body.fe-course-page.fe-ui-ux-design-career-track-uk #generalCheckmarkAndLogos,
+  html body.fe-course-page.fe-backend-development-java div#deferred\ tuition,
+  html body.fe-course-page.fe-dec-page #projects,
+  html body.fe-course-page.fe-tech-sales-page #courseStart,
+  html body.fe-course-page.fe-tech-sales-page #CTA,
+  html body.fe-course-page.fe-tech-sales-page #Coaching,
+  html body.fe-course-page.fe-dsc-page #projects,
+  html body.fe-course-page.fe-uxc-page #testimonialCards,
+  html body.fe-course-page.fe-uxc-page #startDate,
+  html body.fe-course-page.fe-dec-page-new #Tuition+div,
+  html body.fe-course-page.fe-sec-page #comparisonTable .style-module--wrapper--3Pwso,
+  html body.fe-course-page.fe-sec-page .fZYDgJ .bhcSyH,
+  html body.fe-course-page.fe-dsc-page #prereq,
+  html body.fe-course-page.fe-i2d-page-new .eqXAKi,
+  html body.fe-course-page.fe-i2d-page-new .dgNtnf,
+  html body.fe-course-page.fe-outcomes-page #logos,
+  html body.fe-course-page.fe-software-engineering-career-track-prep-page #Pricing,
+  html body.fe-course-page.fe-software-engineering-career-track-prep-page .kGZIOA,
+  html body.fe-course-page.fe-sec-page #features .dgNtnf,
+  html body.fe-payment-page #projects,
+  html body.fe-payment-page .bTpePj .dJFQED,
+  html body.fe-course-page.fe-payment-page #Upfront,
+  html body.fe-course-page.fe-dscp-page #Pricing,
+  html body.fe-course-page.fe-dscp-page .kGZIOA,
+  html body.fe-course-page.fe-dec-page-new .bTpePj .bhcSyH,
+  html body.fe-course-page.fe-sec-page #pricing,
+  html body.fe-course-page #Tuition,
+  html body.fe-i2d-page div#Pricing,
+  html body.fe-course-page.fe-dec-page-new .jqxRMJ .dgNtnf,
+  html body.fe-course-page.fe-dec-page-new .jqxRMJ .iDUSSo,
+  html body.fe-course-page.fe-dec-page-new .jqxRMJ .flOBDp,
+  html body.fe-course-page.fe-dec-page-new #Career,
+  html body.fe-course-page #mentorship,
+  html body.fe-course-page #testimonial,
+  html body.fe-course-page #Schedule,
+  html body.fe-course-page .KDsMm,
+  html body.fe-course-page #comparisonTable .jCoDoC,
+  html body.fe-course-page #generalCheckmarks,
+  html body.fe-dsc-page .jqxRMJ .kGZIOA,
+  html body.fe-course-page div#comparisonTable,
+  html body.fe-course-page #generalCheckmarks .bAQXFL,
+  html body.fe-course-page.fe-sec-page #generalText,
+  html body.fe-overview-page #Curriculum,
+  html body.fe-mentoring-page .jqxRMJ,
+  html body.fe-uxc-page #generalCheckmarksSecondNav,
+  html body.fe-i2d-page-new .dplZxH .lbxxIB,
+  html body.fe-tech-blacks-sec-page #features,
+  html body.fe-tech-blacks-sec-page .jipVzl,
+  html body.fe-sec-page #pricing .bEQvJL,
+  html body.fe-course-page.fe-dsc-page #features .dgNtnf,
+  html body.fe-course-page.fe-dsc-page #outcomes,
+  html body.fe-course-page.fe-data-analytics-career-track-page .jqxRMJ .dgNtnf,
+  html body.fe-course-page.fe-i2d-page .dplZxH .dgNtnf,
+  html body.fe-course-page.fe-uiux-page #valueProps.jqxRMJ,
+  html body.fe-course-page.fe-uiux-page .dplZxH .iDUSSo,
+  html body.fe-course-page.fe-uiux-page #courseStart,
+  html body.fe-course-page.fe-uxc-page #features,
+  html body.fe-course-page.fe-uxc-page #steps,
+  html body.fe-course-page.fe-csc-page #features,
+  html body.fe-course-page.fe-csc-page .dplZxH .dCXxWU,
+  html body.fe-course-page.fe-sec-page #investors,
+  html body.fe-course-page.fe-sec-page #investors .container,
+  html body.fe-course-page.fe-payment-page #Scholarships,
+  html body.fe-course-page.fe-uiux-page #comparisonTable,
+  html body.fe-course-page.fe-dscp-page #Pricing,
+  .fe-course-page.fe-data-analytics-career-track-page div#prereq,
+  html body.fe-course-page.fe-sec-page #testimonialCards,
+  html body.fe-course-page.fe-digital-marketing-career-track #FAQ,
+  .fe-course-page.fe-ui-ux-design-career-track-uk #FAQ,
+  html body.fe-course-page.fe-foundations-data #CTA+div,
+  html body.fe-course-page #logos+div {
+    Background: #F4F2F2 !important;
+  }
+  
+  html body.fe-course-page.fe-dscp-page .kGZIOA {
+    padding-top: 40px;
+  }
+  
+  html body.fe-course-page.fe-uiux-page .style-module--rowWrapper--2T6Qn:nth-child(2) .style-module--cell--1sVIR {
+    background-color: #FF7155 !important;
+    border-bottom: 1px solid #FF7155 !important;
+  }
+  
+  html body.fe-course-page.fe-uiux-page .wedib .dJFQED {
+    background-color: #FF7155 !important;
+  }
+  
+  html body.fe-course-page #Outcomes .outcome:nth-child(2) .name,
+  html body.fe-course-page.fe-uiux-page .wedib .dJFQED .fiTfrP,
+  html body.fe-csc-page #hero .ratingContainer .ratingText a,
+  html body.fe-course-page .hoQyHk .ratingContainer .ratingText a,
+  html body.fe-course-page.fe-uiux-page .hoQyHk .ratingContainer .ratingText a {
+    color: #ffffff !important;
+  }
+  
+  
+  html body.fe-course-page .hoQyHk .partnershipWrapper .partnerLogo,
+  html body.fe-course-page.fe-csc-page #hero .partnershipWrapper .partnerLogo {
+    filter: brightness(0) contrast(1) !important;
+  }
+  
+  .fe-course-page.fe-foundations-software .applicationDeadlineWrapper,
+  html body.fe-course-page .humPPE input[type="checkbox"]:checked~.switch,
+  html body.fe-course-page .humPPE .switchText::before,
+  html body.fe-course-page .gdeLEm .applicationDeadlineWrapper,
+  html body.fe-course-page #Schedule .jcYJzo .applicationDeadlineWrapper,
+  html body.fe-course-page #startDate .jcYJzo .applicationDeadlineWrapper,
+  html body.fe-course-page .bVQGOM .applicationDeadlineWrapper,
+  html body.fe-sec-page .applicationDeadlineWrapper,
+  html body.fe-tech-blacks-sec-page .jcYJzo .applicationDeadlineWrapper,
+  html body.fe-course-page.fe-uxc-page #startDate .applicationDeadlineWrapper {
+    background: #000000 !important;
+  }
+  
+  html body.fe-course-page #Tuition .humPPE {
+    border: 1px solid #000000;
+  }
+  
+  html body.fe-course-page.fe-dec-page-new .bTpePj .style-module--columnHeader--25aPh:nth-child(2),
+  html body.fe-course-page.fe-dec-page-new .bTpePj .style-module--rowWrapper--2T6Qn .style-module--row--12FAG .style-module--cell--1sVIR:nth-child(2) {
+    background-color: #00c09d !important;
+  }
+  
+  
+  html body.fe-tech-blacks-ixc-page #CTA .EUOip {
+    background: #ff7155 !important;
+  }
+  
+  html body.fe-tech-blacks-sec-page .iLyWYI,
+  html body.fe-tech-blacks-ixc-page .iLyWYI {
+    flex-direction: column;
+  }
+  
+  html body.fe-tech-blacks-sec-page .iLyWYI h5,
+  html body.fe-tech-blacks-ixc-page .iLyWYI h5 {
+    margin-bottom: 40px;
+  }
+  
+  html body.fe-tech-blacks-ixc-page #Admissions h5 {
+    padding: 0px 15px;
+    line-height: 1.2;
+  }
+  
+  html body.fe-homepage .hero-banner-container .explore-tag,
+  html body.fe-homepage .fe-image-heading {
+    color: #000000;
+  }
+  
+  html body.fe-course-page.fe-outcomes-page .fmPofG .phpnv span {
+    margin-left: -4px !important;
+    background-size: contain !important;
+  }
+  
+  html body.fe-course-page.fe-outcomes-page .jABLlP .salary-info {
+    font-size: 16px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  html body.fe-scholarships-page #Commitment {
+    background: #f6fdfb;
+  }
+  
+  html body.fe-homepage .bTpePj,
+  html body.fe-homepage #Financing {
+    background: #f4f2f2;
+  }
+  
+  html body .goMsFf {
+    color: black !important;
+  }
+  
+  @media screen and (max-width: 1023px) {
+  div#deferred\ tuition>div {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  
+    html body.fe-digital-marketing-page .ratingWrapper {
+      color: black !important;
+    }
+  
+    html body.fe-digital-marketing-page .LcDzA .ratingContainer .ratingText a {
+      color: black !important;
+    }
+  
+  }
+  
+  html body.fe-digital-marketing-pag .bVQGOM .heading {
+    line-height: 36px !important;
+  }
+  
+  html body.fe-digital-marketing-page.fe-course-page .bVQGOM .heading {
+    line-height: 1.1;
+  }
+  
+  html body.fe-course-page .fiTfrP,
+  html body.fe-mentors-page .jipVzl .tvAXQ .header {
+    line-height: 1.1;
+  }
+  
+  @media screen and (max-width:715px) {
+    html body.fe-mentors-page .giLgyA {
+      max-width: 334px;
+    }
+  
+    html body.fe-mentors-page .hNrkLH h5 {
+      line-height: 1.1;
+    }
+  }
+  
+  @media screen and (max-width:400px) {
+    .fe-mentors-page .hZYRbQ .BOtmR {
+      max-width: 321px;
+    }
+  }
+  
+  @media screen and (max-width: 353px) {
+    html body.fe-course-page.fe-mentors-page .jipVzl .tvAXQ .header {
+      font-size: 26px !important;
+    }
+  
+    html body.fe-course-page.fe-mentors-page .giLgyA,
+    html body.fe-course-page.fe-mentors-page .dBauZg {
+      max-width: 240px;
+      width: 100%;
+    }
+    
+    html body.fe-course-page .lbxxIB .container .contactWrapper{
+      padding-bottom: 90px;
+    }
+  
+  }
+  
+  @media screen and (max-width:368px) {
+    html body.fe-course-page.fe-mentors-page .BOtmR {
+      font-size: 22px;
+    }
+  
+    html body.fe-course-page.fe-mentors-page .BOtmR {
+      font-size: 24px;
+    }
+  }
+  
+  html body.fe-course-page.fe-mentors-page .dBauZg {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  html body.fe-course-page.fe-mentors-page .fmPofG .phpnv span {
+    margin-left: 2px;
+    padding-left: 12px;
+    background-position: left;
+  }
+  
+  html body.fe-course-page.fe-csc-page .jcYJzo .description {
+    display: block;
+  }
+  
+  html body.fe-course-page.fe-dec-page-new #Career .bAQXFL h5,
+  html body.fe-course-page #generalCheckmarks h5 {
+    font-weight: 500;
+  }
+  
+  html body.fe-dec-page-new #Schedule .description p {
+    max-width: 810px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  html body .userMenuWrapper .userMenu>span,
+  html body .socialButtonContainer span {
+    color: #ffffff !important;
+  }
+  
+  html body .formErrorWrapper span {
+    color: rgb(221, 13, 23) !important
+  }
+  
+  @media screen and (max-width:768px) {
+    html body.fe-csc-page #hero>div {
+      display: block !important;
+    }
+  }
+  
+  /* html body.fe-course-page.fe-social-media-marketing-page .LcDzA .content {
+    max-width: 730px;
+    margin-left: 115px;
+  } */
+  
+  
+  html body.fe-course-page.fe-social-media-marketing-page #hero>div {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  
+  html body.fe-course-page.fe-social-media-marketing-page .jywtja .dCXxWU {
+    background: #ffffff !important;
+  }
+  
+  .fe-course-page.fe-digital-marketing-career-track div#courseDate .applicationDeadlineWrapper {
+    background: #000;
+  }
+  
+  html body.fe-course-page.fe-social-media-marketing-page .dCXxWU .BOtmR {
+    line-height: 36px;
+  }
+  
+  /* html body.fe-course-page.fe-social-media-marketing-page div:not(#curriculum) + #logos.ejbrbf .logos-container picture:nth-child(1) img,
+  html body.fe-course-page.fe-social-media-marketing-page #secondaryNav + #logos .logos-container picture:nth-child(1) img,
+  html body.fe-course-page.fe-social-media-marketing-page #secondaryNav + #logos .logos-container picture:nth-child(2) img {
+    max-height: 30px;
+  }
+  
+  html body.fe-course-page.fe-social-media-marketing-page #secondaryNav + #logos .logos-container picture:nth-child(3) img {
+    max-height: 36px;
+  }
+  
+  
+  html body.fe-course-page.fe-social-media-marketing-page div:not(#curriculum) + #logos.ejbrbf .logos-container picture:nth-child(4) img,
+  html body.fe-course-page.fe-social-media-marketing-page #secondaryNav + #logos .logos-container picture:nth-child(4) img {
+    max-height: 21px;
+  }
+  
+  html body.fe-course-page.fe-social-media-marketing-page #secondaryNav + #logos .logos-container picture:nth-child(5) img {
+    max-height: 33px;
+  }
+  
+  html body.fe-course-page.fe-social-media-marketing-page #logos .logos-container picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  html body.fe-course-page.fe-social-media-marketing-page div:not(#curriculum) + #logos.ejbrbf .logos-container picture:nth-child(2) img {
+      max-height: 26px;
+  }
+  
+  html body.fe-course-page.fe-social-media-marketing-page div:not(#curriculum) + #logos.ejbrbf .logos-container picture:nth-child(3) img {
+      max-height: 20px;
+  }
+  
+  html body.fe-course-page.fe-social-media-marketing-page div:not(#curriculum) + #logos.ejbrbf .logos-container picture:nth-child(5) img {
+      max-height: 33px;
+  } */
+  
+  
+  body.fe-course-page.fe-digital-marketing-page #logos.ejbrbf .flOBDp .logos-container picture:nth-child(3) img {
+    max-height: 29px;
+  }
+  
+  body.fe-course-page.fe-digital-marketing-page #logos.ejbrbf .flOBDp .logos-container picture:nth-child(4) img,
+  body.fe-course-page.fe-digital-marketing-page #logos.ejbrbf .flOBDp .logos-container picture:nth-child(5) img {
+    max-height: 39px;
+  }
+  
+  @media screen and (min-width: 1400px) {
+  
+    html body.fe-course-page #logos>div[class^="style__LogosWrappe"],
+    html body.fe-homepage #logos>div[class^="style__LogosWrappe"],
+    html body.fe-scholarships-page div#secondaryNav+div>div,
+    html body.fe-course-page #logos .flOBDp,
+    html body.fe-homepage #logos .flOBDp {
+      flex-direction: column !important;
+      justify-content: center !important;
+      align-items: center !important;
+    }
+  }
+  
+  html body .navLinksWrapper .courseLink>div {
+    color: #ffffff !important;
+  }
+  
+  html body.fe-course-page.fe-sec-page #projects>.iDUSSo {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+  }
+  
+  .fe-course-page .fe-review,
+  .fe-course-page .fe-review+.fe-how-it-work,
+  .fe-course-page .fe-people {
+    display: none;
+  }
+  
+  html body.fe-homepage #Financing h2+div,
+  html body.fe-course-page h2+div {
+    margin-top: 0px !important;
+  }
+  
+  html body.fe-course-page #projects h2,
+  html body.fe-course-page #Schedule .heading,
+  .fe-course-page #startDate h2,
+  .fe-course-page .bAQXFL h2,
+  .fe-course-page #Pricing h2,
+  .fe-course-page #projects h2>div:nth-child(1) {
+    line-height: 1.2;
+  }
+  
+  html body.fe-course-page .content .summary {
+    margin-bottom: 20px !important;
+  }
+  
+  .fe-course-page #investors .header {
+    padding-bottom: 0px !important;
+  }
+  
+  html body.fe-homepage .hero-banner-container .alumni-container.desktop .swiper-slide picture img {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  @media screen and (max-width:327px) {
+    html body.fe-homepage .job-guarantee-container .title span {
+      display: inline-block;
+    }
+  }
+  
+  .fe-course-page.fe-foundations-data #secondaryNav+#logos>div {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .fe-course-page.fe-foundations-data #secondaryNav+#logos>div .logos-container-flex {
+    margin: 10px auto;
+    max-width: 1000px;
+  }
+  
+  .fe-course-page.fe-foundations-data .logos-container-flex img {
+    margin-bottom: 0px !important;
+    width: 98%;
+  }
+  
+  .fe-course-page.fe-foundations-software #logos>div {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .fe-course-page.fe-foundations-software #logos>div {
+    margin: 10px auto;
+  }
+  
+  .fe-course-page.fe-foundations-software .logos-container-flex img {
+    margin-bottom: 0px !important;
+    width: 98%;
+  }
+  
+  .fe-course-page.fe-foundations-data .tabHeaderWrapper {
+    width: 429px !important;
+  }
+  
+  html body.fe-course-page.fe-ui-ux-design-career-track-uk #generalText [class^="styles__Description"],
+  .fe-course-page [class^="style-module--description"],
+  .fe-course-page.fe-foundations-data #syllabus .description,
+  .fe-course-page.fe-foundations-data #comparisonTable [class^="style-module--description"],
+  .fe-course-page.fe-foundations-data #features div[class^="styles__SubHeader"] {
+    max-width: 1150px !important;
+  }
+  
+  html body #generalCheckmarks+div h2,
+  html body #Women h2 {
+    font-size: 36px;
+    line-height: 28px;
+  }
+  
+  html body.fe-course-page.fe-ui-ux-design-career-track-uk #generalCheckmarkAndLogos .description {
+    max-width: 900px !important;
+  }
+  
+  html body.fe-course-page #features div[class^="styles__SubHeader"] {
+    max-width: 950px;
+  }
+  
+  body.fe-course-page.fe-ui-ux-design-career-track-uk #Curriculum [class^="styles__PanelWrapper"]:nth-child(7) .headerText:before {
+    content: 'Topic 7: ';
+  }
+  
+  body.fe-foundations-software .stickyWrapper .linksWrapper a {
+    text-decoration: underline;
+  }
+  
+  body.fe-foundations-software .stickyWrapper .linksWrapper a:hover {
+    text-decoration: none;
+    color: #000000;
+  }
+  
+  .fe-course-page.fe-ui-ux-design-career-track-uk #valueProps [class^="styles__CardContainer"] {
+    max-width: 370px;
+  }
+  
+  html body.fe-course-page #syllabus .tabsWrapper .tabList>div:last-child {
+    font-weight: 400;
+  }
+  
+  
+  html body.fe-course-page.fe-digital-marketing-career-track .applicationFormWrapper h2.header {
+    max-width: 455px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  
+  html body.fe-course-page.fe-foundations-data .applicationFormWrapper h2.header {
+    max-width: 455px;
+  }
+  
+  html body.fe-course-page.fe-ui-ux-design-career-track-uk .applicationFormWrapper h2.header {
+    max-width: 396px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  
+  .fe-course-page.fe-ui-ux-design-career-track-uk .applicationFormWrapper p.description,
+  .fe-course-page.fe-digital-marketing-career-track .applicationFormWrapper p.description,
+  html body.fe-course-page.fe-backend-development-java .applicationFormWrapper p.description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: #000;
+    font-size: 16px;
+  }
+  
+  .fe-course-page.fe-ui-ux-design-career-track-uk .applicationFormWrapper .description img,
+  .fe-course-page.fe-digital-marketing-career-track .applicationFormWrapper .description img,
+  html body.fe-course-page.fe-backend-development-java .applicationFormWrapper .description img {
+    max-width: 150px;
+  }
+  
+  .fe-course-page.fe-ui-ux-design-career-track-uk .applicationFormWrapper p.fe-footerText,
+  .fe-course-page.fe-digital-marketing-career-track .applicationFormWrapper p.fe-footerText,
+  html body.fe-course-page.fe-backend-development-java .applicationFormWrapper p.fe-footerText {
+    text-align: center;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #000;
+    margin-top: 30px !important;
+    line-height: 27px;
+  }
+  
+  .fe-course-page.fe-ui-ux-design-career-track-uk .applicationFormWrapper p.fe-footerText,
+  .fe-course-page.fe-digital-marketing-career-track .fe-application-text,
+  html body.fe-course-page.fe-backend-development-java .fe-application-text {
+    color: #000;
+    max-width: 355px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 600;
+    margin-top: 5px;
+    font-size: 16px;
+    line-height: 27px;
+  }
+  
+  .fe-course-page.fe-ui-ux-design-career-track-uk .applicationFormWrapper p.fe-footerText,
+  .fe-course-page.fe-digital-marketing-career-track #CTA .applicationFormWrapper .footerText,
+  html body.fe-course-page.fe-backend-development-java #CTA .applicationFormWrapper .footerText {
+    margin-top: 0px;
+  }

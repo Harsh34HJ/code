@@ -263,6 +263,10 @@ html body.box-271 .slideshow--arrows .prev::before {
   html body.box-271 .hero--half-n-half .hero--image video {
     max-width: 630px
   }
+  html body.box-271 .hero--messaging h1{
+    max-width: 78%;
+    margin: 0 auto;
+  }
 }
 @media only screen and (max-width:48em) {
   html body.box-271 .hero--image.anim-wrapper {
@@ -329,8 +333,20 @@ html body.box-271 .slideshow--arrows .prev::before {
     max-height: 19.25rem
   }
 }
-@media only screen and (max-width:1400px) and (min-width:1250px){
+@media only screen and (max-width:1400px) and (min-width:1150px){
 	html body.box-271 .hero--half-n-half .container {
     	width: calc(48.57143% + 7.85714%);
 	}
+	html body.box-271 .hero--half-n-half .hero--media {
+	    width: calc(54.57143% + 1.125rem);
+	}
+}
+html body.box-271{	
+	visibility: hidden;	
+	opacity: 0;	
+	transition: 0.3s all ease-in-out;	
+}	
+html body.box-271.load{	
+	visibility: visible;	
+	opacity: 1;	
 }

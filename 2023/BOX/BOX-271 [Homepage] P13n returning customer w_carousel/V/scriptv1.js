@@ -231,6 +231,7 @@
                         }
                     }, 200);
                 });
+                document.body.classList.add('load');
             });
         }
 

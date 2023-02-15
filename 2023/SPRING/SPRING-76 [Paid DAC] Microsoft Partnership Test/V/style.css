@@ -1,0 +1,921 @@
+html body [class^=styles__HeroWrapper] .content .header sup {
+    font-size: 20px;
+    position: relative;
+    right: -3px;
+}
+
+html body [class^=styles__HeroWrapper] .content .summary .fe-Job sup {
+    position: relative;
+    right: -1px;
+    top: 1px;
+}
+@media screen and (min-width:941px) {
+  html body [class^="styles__HeroWrapper"] {
+    padding-top: 85px;
+    padding-bottom: 85px;
+  }
+
+  html body [class^="styles__HeroWrapper"] .content {
+    max-width: 515px;
+    width: 60%;
+    margin-left: 0px;
+    padding: 30px 0px 0px 0px;
+  }
+
+  html body #fe-step3 {
+    width: 40%;
+  }
+
+  html body [class^="styles__HeroWrapper"] .content .summary,
+  html body [class^="styles__HeroWrapper"] .content .header,
+  html body [class^="styles__HeroWrapper"] .content .description {
+    text-align: left !important;
+  }
+
+  html body [class^="styles__HeroWrapper"] .content .header {
+    margin-left: 0px !important;
+  }
+
+  html body [class^="styles__HeroWrapper"] .partnershipRatingWrapper .partnershipWrapper .prefixText {
+    margin-left: 0px !important;
+    margin-right: 10px !important;
+    display: inline-block !important;
+    margin-bottom: 0px !important;
+  }
+}
+
+
+/* Hero Banner */
+html body .authWrapper button {
+  display: none !important;
+}
+
+html body [class^="styles__HeroWrapper"] {
+  display: flex;
+  max-width: 1235px;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+
+html body .fe-msf_step-inr h3 {
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+  color: #1d4792;
+  margin-top: 0px;
+  line-height: 1.3;
+}
+
+.fe-msf_step-inr {
+  text-align: center;
+  max-width: 345px;
+  margin: 0 auto;
+}
+
+.fe-msf_step-inr .fe-form-subhead {
+  color: #32599c;
+  font-size: 19px;
+  font-weight: 500;
+}
+
+.fe-msf_step-inr .fe_msf-form {
+  margin-top: 50px;
+}
+
+.fe-msf_step-inr input.fe_form-input {
+  height: 50px;
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid rgb(197, 197, 197);
+  font-size: 16px;
+  display: inline-block;
+  margin-right: 5px;
+  padding: 15px;
+  color: rgb(72, 72, 94);
+  box-sizing: border-box;
+}
+
+.fe-msf_step-inr button.fe_msf-submit.primary-button {
+  width: 100%;
+  display: inline-block;
+  box-sizing: border-box;
+  margin: 0px;
+  height: 50px;
+  line-height: 46px;
+  padding: 0px 40px;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  background-color: rgb(0, 192, 157);
+  border: 2px solid rgb(0, 192, 157);
+  border-radius: 3px;
+  transition: background-color 0.2s ease-out 0s;
+}
+
+.fe-msf_step-inr button.fe_msf-submit.primary-button:hover {
+  filter: brightness(0.95);
+}
+
+.fe-msf_step-inr .fe_form-error {
+  display: none;
+}
+
+.fe_form-error .fa-exclamation-circle {
+  font-style: normal;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgb(221, 13, 23);
+  position: absolute;
+  right: 16px;
+  font-size: 12px;
+  display: block;
+  font-weight: 500;
+  height: 16px;
+  width: 16px;
+  padding-top: 1px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fe_form-error .fa-exclamation-circle:before {
+  display: none;
+}
+
+.fe_msf-form .fe_form-row:first-child {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+span.fe_form-error label {
+  position: absolute;
+  right: -3px;
+  bottom: 44px;
+  background-color: rgb(221, 13, 23);
+  color: rgb(255, 255, 255);
+  float: right;
+  border-radius: 4px;
+  margin-bottom: 9px;
+  font-weight: 300;
+  font-size: 12px;
+  padding: 10px;
+}
+
+span.fe_form-error label:after {
+  content: "";
+  position: absolute;
+  right: 20px;
+  top: 100%;
+  width: 0px;
+  height: 0px;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid rgb(221, 13, 23);
+  clear: both;
+}
+
+input.fe_form-input::placeholder {
+  color: #c5c5c5;
+}
+
+[class^="styles__HeroWrapper"] .content {
+  width: 100%;
+}
+
+html body [class^="styles__HeroWrapper"] .content .summary span {
+  font-size: 12px;
+  padding: 4px 10px;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+html body [class^="styles__HeroWrapper"] .content .summary .fe-bootcamp {
+  margin-left: 20px;
+  background: #efeff7;
+  color: #1d4792;
+}
+
+html body [class^="styles__HeroWrapper"] .content .summary .fe-Job {
+  background: #00c09d;
+}
+
+html body [class^="styles__HeroWrapper"] .content .summary,
+html body [class^="styles__HeroWrapper"] .content .header,
+html body [class^="styles__HeroWrapper"] .content .description {
+  white-space: normal;
+}
+
+html body [class^="styles__HeroWrapper"] .content .emailFormWrapper,
+html body [class^="styles__HeroWrapper"] .content .buttonWrapper,
+html body [class^="styles__HeroWrapper"] .content .ratingContainer .imageWrapper {
+  display: none;
+}
+
+html body [class^="styles__HeroWrapper"] .content .ratingContainer.right {
+  position: static;
+  width: auto;
+  height: auto;
+  background: transparent;
+  border-radius: 0px;
+  padding: 0px;
+  padding-left: 40px;
+  margin-left: 40px;
+  border-left: 2px solid #fff;
+}
+
+html body [class^="styles__HeroWrapper"] .content .header {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+html body [class^="styles__HeroWrapper"] .content .partnershipRatingWrapper {
+  display: flex;
+  align-items: center;
+}
+
+html body [class^="styles__HeroWrapper"] .content .summary {
+  margin-bottom: 35px;
+}
+
+html body [class^="styles__HeroWrapper"] .content .partnershipWrapper {
+  margin-top: 0px;
+  opacity: 1;
+  display: flex !important;
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  align-items: center;
+  border-right: 0px;
+}
+
+/* html body [class^="styles__HeroWrapper"] .content .partnershipWrapper .prefixText {
+  margin: 0px 0px 15px 0px;
+} */
+html body [class^="styles__HeroWrapper"] .content .ratingWrapper {
+  flex-direction: column-reverse;
+  display: flex;
+}
+
+html body [class^="styles__HeroWrapper"] .content .ratingContainer.right .ratingWrapper .rating {
+  flex-direction: row;
+  align-items: center;
+  min-height: 40px;
+  justify-content: center;
+}
+
+html body [class^="styles__HeroWrapper"] .content .ratingContainer.right .ratingWrapper .rating picture {
+  margin-left: 10px;
+}
+
+html body [class^="styles__HeroWrapper"] .content .ratingContainer .ratingText {
+  margin-top: 0px;
+  margin-bottom: 2px;
+}
+
+html body [class^="styles__HeroWrapper"] .content .ratingContainer.right .ratingWrapper .rating span {
+  margin: 0px;
+}
+
+html body #fe-step3 {
+  background: #efeff7;
+  padding: 40px 30px;
+  width: 100%;
+  max-width: 403px;
+  line-height: 1.4;
+}
+
+html body [class^="styles__HeroWrapper"] .partnershipWrapper .partnerLogo {
+  max-width: 125px;
+  height: auto !important;
+
+}
+
+/* Logo Section */
+.fe-logo-section12 h2.fe-logo-heading,
+.fe-job-section h2.fe-job-heading,
+.fe-bootcamp h2.fe-bootcamp-heading {
+  font-family: Roboto, sans-serif !important;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.36;
+  color: #48485e;
+  text-align: center;
+}
+
+.fe-logo-section12 .fe-logo-details,
+.fe-job-section .fe-job-container,
+.fe-bootcamp .fe-bootcamp-inr {
+  max-width: 1100px;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.fe-logo-section12 .fe-logo-box {
+  width: 170px;
+  height: 73px;
+  display: inline-block;
+  background-size: cover;
+}
+
+.fe-logo-section12 .fe-logo1 {
+  background-position-x: 0px;
+  background-image: url("https://res.cloudinary.com/drbkfeq1n/image/upload/v1/homepage-assets/new-homepage/students-logos-sprite.png");
+}
+
+.fe-logo-section12 .fe-logo2 {
+  background-position-x: 1870px;
+  background-image: url("https://res.cloudinary.com/drbkfeq1n/image/upload/v1/homepage-assets/new-homepage/students-logos-sprite.png");
+}
+
+.fe-logo-section12 .fe-logo3 {
+  background-position-x: 1700px;
+  background-image: url("https://res.cloudinary.com/drbkfeq1n/image/upload/v1/homepage-assets/new-homepage/students-logos-sprite.png");
+}
+
+.fe-logo-section12 .fe-logo4 {
+  background-position-x: 1530px;
+  background-image: url("https://res.cloudinary.com/drbkfeq1n/image/upload/v1/homepage-assets/new-homepage/students-logos-sprite.png");
+}
+
+.fe-logo-section12 .fe-logo5 {
+  background-position-x: 1360px;
+  background-image: url("https://res.cloudinary.com/drbkfeq1n/image/upload/v1/homepage-assets/new-homepage/students-logos-sprite.png");
+}
+
+.fe-logo-section12 .fe-logo6 {
+  background-position-x: 1190px;
+  background-image: url("https://res.cloudinary.com/drbkfeq1n/image/upload/v1/homepage-assets/new-homepage/students-logos-sprite.png");
+}
+
+
+/* Job Section */
+.fe-job-section {
+  padding: 60px 30px;
+  background: #efeff6;
+}
+
+.fe-job-image {
+  width: 335px;
+  min-width: 310px;
+  margin-left: 125px;
+}
+
+.fe-job-container {
+  margin: 60px 0px 0px;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+p.fe-content-para {
+  line-height: 1.5;
+  max-width: 450px;
+  margin: 0px 0px 0px;
+  text-align: left;
+  color: #48485E;
+}
+
+h5.fe-content-heading {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0px 0px 4px;
+  text-align: left;
+  color: #48485E;
+}
+
+.fe-job-content {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  background: #fff;
+  padding: 30px 20px;
+  border-radius: 6px;
+  padding-left: 5px;
+}
+
+.fe-img-outer {
+  width: 335px;
+  height: 288px;
+  background: url("https://res.cloudinary.com/springboard-images/image/upload/c_limit,dpr_1.0,f_auto,fl_lossy,q_auto/v1/homepage-assets/alumni/1485888994_MOBILElynell_fullsizeoutput_2be.jpg");
+  background-position: 340px 100%;
+  background-size: cover;
+}
+
+.fe-img-para,
+.fe-author-name,
+.fe-author-designation {
+  text-align: left;
+  margin: 5px 0px;
+  color: #48485E;
+}
+
+
+p.fe-img-para {
+  line-height: 1.69;
+  margin: 20px 0px 20px;
+  font-size: 17px;
+  font-family: Roboto, sans-serif !important;
+}
+
+.fe-logo-section-inr {
+  padding: 60px 20px;
+}
+
+.fe-job-content-img {
+  max-width: 60px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.fe-job-content-img img {
+  width: 100%;
+  /* filter: brightness(0); */
+}
+
+.fe-job-container {
+  padding-top: 50px;
+}
+
+/* Bootcamp */
+.fe-bootcamp {
+  padding: 60px 30px;
+  background: #a9ddff;
+}
+
+p.fe-bootcamp-subheading {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: rgb(79 79 86);
+  margin-top: 30px;
+  max-width: 614px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+
+ul.fe-bootcamp-list {
+  padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 660px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+}
+
+ul.fe-bootcamp-list li {
+  list-style: none;
+  width: 50%;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  margin-bottom: 25px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: left;
+  color: rgb(72, 72, 94);
+}
+
+ul.fe-bootcamp-list li img {
+  margin-right: 10px;
+  height: 25px;
+  align-self: flex-start;
+}
+
+ul.fe-bootcamp-list li:nth-child(even) {
+  padding-left: 80px
+}
+
+.fe-bootcamplink a {
+  color: #02ba99;
+  font-size: 18px;
+  display: inline-block;
+  margin-top: 30px;
+}
+
+#testimonial .ctaWrapper:hover,
+.fe-bootcamplink a:hover {
+  text-decoration: none;
+}
+
+#testimonial .ctaWrapper {
+  margin-top: 50px;
+  border: none;
+  padding: 0px;
+  background: transparent;
+  text-decoration: underline;
+}
+
+/* Extra Section Hide */
+html body #generalText,
+html body #syllabus,
+html body #IDP,
+html body .dgNtnf,
+html body #mentors,
+html body #generalCheckmarks,
+html body #outcomes,
+html body #prereq,
+html body #steps,
+html body #startDate,
+html body #pricing,
+html body #curriculum,
+html body #generalCheckmarkAndLogos,
+html body #mentorship,
+html body .linksWrapper .navLinksWrapper,
+html body .stickyWrapper,
+html body #FAQ,
+html body .bulletPointWrapper .bulletPoint:nth-child(1),
+html body .bulletPointWrapper .bulletPoint:nth-child(2),
+html body .bulletPointWrapper .bulletPoint:nth-child(3),
+html body .bulletPointWrapper .bulletPoint:nth-child(4),
+.styles__SectionWrapper-h2r7zm-0.eTHEri+.styles__SectionWrapper-h2r7zm-0.dplZxH,
+.fBJMWH {
+  display: none !important;
+}
+
+
+@media screen and (max-width:1023px) {
+  html body .wrapper .linksWrapper {
+    display: none;
+  }
+}
+
+@media screen and (max-width:1024px) {
+  .fe-job-container .fe-job-image {
+    margin-left: auto;
+    margin-right: auto;
+    min-width: auto;
+    /* padding: 0px 10px; */
+    max-width: 357px;
+    width: 100%;
+  }
+
+  .fe-job-container .fe-job-image {
+    padding-left: 20px;
+  }
+
+  .fe-job-container .fe-job-details {
+    padding-right: 20px;
+  }
+
+  html body #testimonial,
+  html body #testimonial .kvSMmS {
+    display: block !important;
+  }
+
+  html body [class^="styles__HeroWrapper"] .partnershipRatingWrapper .ratingContainer.right .ratingWrapper .rating img {
+    margin-bottom: 0px;
+  }
+
+  html body [class^="styles__HeroWrapper"] .partnershipRatingWrapper .partnershipWrapper .prefixText {
+    display: block;
+    margin: 0px 25px 0px 0px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 18px;
+  }
+}
+
+@media screen and (max-width:940px) {
+  html body [class^="styles__HeroWrapper"] .partnershipRatingWrapper .partnershipWrapper .prefixText {
+    margin-left: 0px !important;
+    margin-right: 10px !important;
+    display: inline-block !important;
+    margin-bottom: 0px !important;
+  }
+
+  html body [class^="styles__HeroWrapper"] .content .partnershipWrapper {
+    align-items: center;
+    justify-content: center;
+    padding-right: 0px !important;
+  }
+
+  html body [class^="styles__HeroWrapper"],
+  html body .fe-job-section .fe-job-container {
+    flex-direction: column;
+  }
+
+  html body [class^="styles__HeroWrapper"] .description {
+    display: none
+  }
+
+  html body .fe-msf_step-inr h3 {
+    display: none;
+  }
+
+  html body .fe-msf_step-inr .fe_msf-form {
+    margin-top: 30px;
+  }
+
+  html body #fe-step3 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    margin-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .fe-bootcamp ul.fe-bootcamp-list {
+    max-width: 250px;
+  }
+
+  .fe-bootcamp ul.fe-bootcamp-list li {
+    width: 100%;
+  }
+
+  .fe-bootcamp ul.fe-bootcamp-list li:nth-child(even) {
+    padding-left: 0px;
+  }
+
+  html body .fe-job-container .fe-job-details,
+  html body .fe-job-container .fe-job-image {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  html body .fe-job-section {
+    padding: 60px 20px;
+  }
+
+  .fe-logo-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .fe-job-details .fe-logo-box {
+    width: 50% !important;
+  }
+
+  .fe-job-details .fe-job-content {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .fe-job-details h5.fe-content-heading {
+    text-align: center;
+  }
+
+  .fe-job-details p.fe-content-para {
+    text-align: center;
+  }
+
+  .fe-job-details .fe-job-content-img {
+    margin: 0px 0px 20px 0px;
+  }
+
+  html body .fe-job-container .fe-img-outer {
+    width: auto !important;
+    background-position: 320px 100% !important;
+  }
+
+  .fe-bootcamp h2.fe-bootcamp-heading {
+    margin-top: 0px;
+  }
+}
+
+@media screen and (max-width:767px) {
+  html body .fe-logo-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  html body .fe-logo-section12 .fe-logo-box {
+    width: 50% !important;
+  }
+
+  html body .fe-job-container .fe-job-details,
+  html body .fe-job-details .fe-job-content {
+    margin-bottom: 20px;
+  }
+
+  html body p.fe-img-para {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width:450px) {
+  html body .applicationFormWrapper .header br {
+    display: none;
+  }
+
+  html body [class^="styles__HeroWrapper"] .ratingContainer .ratingText a {
+    display: block;
+  }
+
+  html body [class^="styles__HeroWrapper"] {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  html body [class^="styles__HeroWrapper"] .content .ratingContainer.right {
+    padding-left: 20px;
+    margin-left: 20px;
+  }
+
+  html body [class^="styles__HeroWrapper"] .content .partnershipWrapper {
+    padding-right: 0px;
+  }
+
+  html body [class^="styles__HeroWrapper"] .partnershipRatingWrapper .ratingContainer.right .ratingWrapper .rating img {
+    max-width: 65px;
+  }
+
+  html body [class^="styles__HeroWrapper"] .content .ratingContainer.right .ratingWrapper .rating span {
+    font-size: 14px;
+    margin-right: 5px;
+  }
+}
+
+@media screen and (max-width:362px) {
+
+
+  html body [class^="styles__HeroWrapper"] .partnershipRatingWrapper .partnershipWrapper .prefixText {
+    display: block;
+    margin: 0px 15px 0px 0px !important;
+    text-align: center;
+    font-size: 15px !important;
+    line-height: 18px;
+  }
+
+  html body [class^="styles__HeroWrapper"] .content .ratingContainer.right {
+    padding-left: 10px;
+    margin-left: 10px;
+  }
+
+  html body [class^="styles__HeroWrapper"] .partnershipRatingWrapper .ratingContainer.right .ratingWrapper .rating img {
+    max-width: 62px;
+  }
+
+  html body .fe-logo-section12 .fe-logo-box {
+    height: 60px;
+    width: 140px !important;
+  }
+
+  .fe-logo-section12 .fe-logo1 {
+    background-position-x: 0px;
+    background-image: url("https://res.cloudinary.com/drbkfeq1n/image/upload/v1/homepage-assets/new-homepage/students-logos-sprite.png");
+  }
+
+  .fe-logo-section12 .fe-logo2 {
+    background-position-x: 1525px;
+    background-image: url("https://res.cloudinary.com/drbkfeq1n/image/upload/v1/homepage-assets/new-homepage/students-logos-sprite.png");
+  }
+
+  .fe-logo-section12 .fe-logo3 {
+    background-position-x: 1388px;
+    background-image: url("https://res.cloudinary.com/drbkfeq1n/image/upload/v1/homepage-assets/new-homepage/students-logos-sprite.png");
+  }
+
+  .fe-logo-section12 .fe-logo4 {
+    background-position-x: 1248px;
+    background-image: url("https://res.cloudinary.com/drbkfeq1n/image/upload/v1/homepage-assets/new-homepage/students-logos-sprite.png");
+  }
+
+  .fe-logo-section12 .fe-logo5 {
+    background-position-x: 1110px;
+    background-image: url("https://res.cloudinary.com/drbkfeq1n/image/upload/v1/homepage-assets/new-homepage/students-logos-sprite.png");
+  }
+
+  .fe-logo-section12 .fe-logo6 {
+    background-position-x: 976px;
+    background-image: url("https://res.cloudinary.com/drbkfeq1n/image/upload/v1/homepage-assets/new-homepage/students-logos-sprite.png");
+  }
+
+
+}
+
+@media screen and (max-width:767px) {
+  html body .bm-avatar {
+    display: none;
+  }
+
+  html body .applicationFormWrapper .footerText {
+    display: block;
+  }
+}
+
+
+
+/* avatar */
+.applicationFormWrapper .footerText {
+  display: none;
+}
+
+html body .bm-avatar {
+  margin-top: 35px;
+}
+
+html body .bm-avatar .avatar-quote {
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 27px;
+  width: 100%;
+}
+
+
+html body .bm-avatar .avatar-image-details-wrapper {
+  display: flex;
+  margin-top: 10px;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+html body .bm-avatar .avatar-details {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 12px;
+}
+
+html body .bm-avatar .name {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+html body .bm-avatar .title {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+html body .bm-avatar .avatar-details>div {
+  width: 100%;
+}
+
+#logos {
+  display: none !important;
+}
+
+html body div#investors .investerWrapper .container,
+html body div#investors {
+  background: #efeff6;
+}
+.fe-logo-section12 + div,
+div#Outcomes {
+  display: none !important;
+}
+
+div#testimonial {
+  background: #fff;
+}
+
+div#comparisionTable {
+  background: #efeff6 !important;
+}
+
+html body [class^="styles__HeroWrapper"] .hero-image{
+	display: none;
+}
+html body [class^="styles__HeroWrapper"] .content .partnershipWrapper{
+	display: none !important;
+}
+html body [class^="styles__HeroWrapper"] .partnershipRatingWrapper .hero-image{
+	display: block;
+    max-width: 230px;
+    width: 100%;
+}
+html body [class^="styles__HeroWrapper"] .hero-image img,
+html body [class^="styles__HeroWrapper"] .partnershipRatingWrapper .hero-image img{
+    width: 100%;
+    height: 100%;
+}
+html body #fe-step3{
+	height: 100%;
+}
+/*Remove it*/
+/*html body #fe-step3:nth-child(2){
+  display: none;
+}*/
+html body.qa [class^="styles__HeroWrapper"] .content .partnershipWrapper {
+  display: none !important;
+}
+@media only screen and (max-width: 940px){
+	html body [class^="styles__HeroWrapper"] .hero-image{
+		display: block;
+	    max-width: 200px;
+		width: 100%;
+	    margin: 0 auto;
+	}
+	html body [class^="styles__HeroWrapper"] .partnershipRatingWrapper .hero-image {
+		display: none;
+	}
+	html body #fe-step3{
+		margin-top: 0 !important;
+		margin-bottom: 40px;
+	}
+}
