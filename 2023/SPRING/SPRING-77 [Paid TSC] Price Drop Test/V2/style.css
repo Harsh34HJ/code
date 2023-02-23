@@ -1,0 +1,642 @@
+html body [class^="style__HeroWrapper"] .imageWrapper,
+html body [class^="style__HeroWrapper"] .textWrapper > a,
+html body [class^="styles__HeaderWrapper"] .linksWrapper {
+  display: none;
+}
+#logos [class^="style__LogosWrapper"] .header{
+  width: 100%;
+  text-align: center;
+}
+#logos [class^="style__LogosWrapper"] .logos-container-flex{
+  justify-content: flex-start;    
+}
+html body .fe-hero {
+  background: url("https://res.cloudinary.com/springboard-images/image/upload/q_auto,dpr_auto,fl_lossy/v1643090575/Tech_Sales_Header_Image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media screen and (min-width:981px) {
+  html body [class^="style__HeroWrapper"] .textWrapper > a button {
+      margin-left: 0px !important;
+  }
+  html body [class^="style__HeroWrapper"] {
+    padding-top: 85px;
+    padding-bottom: 85px;
+  }
+
+  html body [class^="style__HeroWrapper"] .textWrapper {
+    max-width: 515px;
+    width: 60%;
+    margin-left: 0px;
+    padding: 30px 0px 0px 0px;
+    margin-right: auto;
+  }
+
+  html body #fe-step3 {
+    width: 40%;
+  }
+
+  html body [class^="style__HeroWrapper"] .textWrapper .summary,
+  html body [class^="style__HeroWrapper"] .textWrapper .header,
+  html body [class^="style__HeroWrapper"] .textWrapper .description {
+    text-align: left !important;
+    color: #000000 ;
+    margin-left: 0px;
+  }
+
+  html body [class^="style__HeroWrapper"] .textWrapper .header {
+    margin-left: 0px !important;
+  }
+
+
+}
+
+
+/* Hero Banner */
+html body .authWrapper button {
+  display: none !important;
+}
+
+html body [class^="style__HeroWrapper"] {
+  display: flex;
+  max-width: 1235px;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+
+html body .fe-msf_step-inr h3 {
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+  color: #1d4792;
+  margin-top: 0px;
+  line-height: 1.3;
+}
+
+.fe-msf_step-inr {
+  text-align: center;
+  max-width: 345px;
+  margin: 0 auto;
+}
+
+.fe-msf_step-inr .fe-form-subhead {
+  color: #32599c;
+  font-size: 19px;
+  font-weight: 500;
+}
+
+.fe-msf_step-inr .fe_msf-form {
+  margin-top: 50px;
+}
+
+.fe-msf_step-inr input.fe_form-input {
+  height: 50px;
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid rgb(197, 197, 197);
+  font-size: 16px;
+  display: inline-block;
+  margin-right: 5px;
+  padding: 15px;
+  color: rgb(72, 72, 94);
+  box-sizing: border-box;
+}
+
+.fe-msf_step-inr button.fe_msf-submit.primary-button {
+  width: 100%;
+  display: inline-block;
+  box-sizing: border-box;
+  margin: 0px;
+  height: 50px;
+  line-height: 46px;
+  padding: 0px 40px;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  background-color: rgb(0, 192, 157);
+  border: 2px solid rgb(0, 192, 157);
+  border-radius: 3px;
+  transition: background-color 0.2s ease-out 0s;
+}
+
+.fe-msf_step-inr button.fe_msf-submit.primary-button:hover {
+  filter: brightness(0.95);
+}
+
+.fe-msf_step-inr .fe_form-error {
+  display: none;
+}
+
+.fe_form-error .fa-exclamation-circle {
+  font-style: normal;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgb(221, 13, 23);
+  position: absolute;
+  right: 16px;
+  font-size: 12px;
+  display: block;
+  font-weight: 500;
+  height: 16px;
+  width: 16px;
+  padding-top: 1px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fe_form-error .fa-exclamation-circle:before {
+  display: none;
+}
+
+.fe_msf-form .fe_form-row:first-child {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+span.fe_form-error label {
+  position: absolute;
+  right: -3px;
+  bottom: 44px;
+  background-color: rgb(221, 13, 23);
+  color: rgb(255, 255, 255);
+  float: right;
+  border-radius: 4px;
+  margin-bottom: 9px;
+  font-weight: 300;
+  font-size: 12px;
+  padding: 10px;
+}
+
+span.fe_form-error label:after {
+  content: "";
+  position: absolute;
+  right: 20px;
+  top: 100%;
+  width: 0px;
+  height: 0px;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid rgb(221, 13, 23);
+  clear: both;
+}
+
+input.fe_form-input::placeholder {
+  color: #c5c5c5;
+}
+
+[class^="style__HeroWrapper"] .textWrapper {
+  width: 100%;
+}
+
+html body [class^="style__HeroWrapper"] .textWrapper .summary span {
+  font-size: 12px;
+  padding: 4px 10px;
+  font-weight: 600;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+html body [class^="style__HeroWrapper"] .textWrapper .summary .fe-bootcamp {
+  margin-left: 20px;
+  border: 1px solid #fff;
+  margin-left: 20px;
+  background: #efeff7;
+  color: #1d4792;
+}
+
+html body [class^="style__HeroWrapper"] .textWrapper .summary .fe-Job {
+  background: #00c09d;
+}
+
+html body [class^="style__HeroWrapper"] .textWrapper .summary,
+html body [class^="style__HeroWrapper"] .textWrapper .header,
+html body [class^="style__HeroWrapper"] .textWrapper .description {
+  white-space: normal;
+}
+
+html body [class^="style__HeroWrapper"] .textWrapper .emailFormWrapper,
+html body [class^="style__HeroWrapper"] .textWrapper .buttonWrapper{
+  display: none;
+}
+
+html body [class^="style__HeroWrapper"] .textWrapper .ratingContainer.right {
+  position: static;
+  width: auto;
+  height: auto;
+  background: transparent;
+  border-radius: 0px;
+  padding: 0px;
+  padding-left: 40px;
+  margin-left: 40px;
+  border-left: 2px solid #fff;
+}
+
+html body [class^="style__HeroWrapper"] .textWrapper .header {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #000000;
+}
+
+
+html body [class^="style__HeroWrapper"] .textWrapper .summary {
+  margin-bottom: 35px;
+  margin-top: 0px;
+}
+
+html body [class^="style__HeroWrapper"] .textWrapper .partnershipWrapper {
+  margin-top: 0px;
+  opacity: 1;
+  display: flex !important;
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  align-items: center;
+  border-right: 0px;
+}
+
+/* html body [class^="style__HeroWrapper"] .textWrapper .partnershipWrapper .prefixText {
+  margin: 0px 0px 15px 0px;
+} */
+html body [class^="style__HeroWrapper"] .textWrapper .ratingWrapper {
+  flex-direction: column;
+  display: flex;
+}
+
+html body [class^="style__HeroWrapper"] .textWrapper .ratingContainer.right .ratingWrapper .rating {
+  flex-direction: row;
+    align-items: center;
+    min-height: 40px;
+    justify-content: flex-start;
+    display: flex;
+}
+
+html body [class^="style__HeroWrapper"] .textWrapper .ratingContainer.right .ratingWrapper .rating picture {
+  margin-left: 10px;
+}
+
+html body [class^="style__HeroWrapper"] .textWrapper .ratingContainer .ratingText {
+  margin-top: 0px;
+  margin-bottom: 2px;
+}
+
+html body [class^="style__HeroWrapper"] .textWrapper .ratingContainer.right .ratingWrapper .rating span {
+  margin: 0px;
+}
+
+html body #fe-step3 {
+  background: #efeff7;
+  padding: 40px 30px;
+  width: 100%;
+  max-width: 403px;
+  line-height: 1.4;
+}
+
+html body [class^="style__HeroWrapper"] .partnershipWrapper .partnerLogo {
+  max-width: 125px;
+  height: auto !important;
+
+}
+
+
+@media screen and (max-width:1023px) {
+  html body .wrapper .linksWrapper {
+    display: none;
+  }
+}
+
+@media screen and (max-width:1024px) {
+  
+
+}
+
+@media screen and (max-width:980px) {
+  html body div [class^="style__HeroWrapper"] .textWrapper .partnershipRatingWrapper{
+    justify-content: center !important;
+    order: 5;	
+    margin-top: 20px;	
+  }	
+  html body [class^="style__HeroWrapper"] .textWrapper {	
+    display: flex;	
+    flex-direction: column;	
+  }	
+  html body [class^="style__HeroWrapper"] .textWrapper .description {	
+    display: none !important;	
+  }
+  html body [class^="style__HeroWrapper"] .textWrapper .summary{
+      text-align: center;
+  }
+  html body div [class^="style__HeroWrapper"] .textWrapper .ratingWrapper,
+  html body [class^="style__HeroWrapper"],
+  html body .fe-job-section .fe-job-container {
+    flex-direction: column;
+  }
+
+  [class^="style__HeroWrapper"] .textWrapper > a,
+  html body .fe-msf_step-inr h3 {
+    display: none;
+  }
+
+  html body .fe-msf_step-inr .fe_msf-form {
+    margin-top: 30px;
+  }
+
+  html body #fe-step3 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    margin-top: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+
+}
+
+@media screen and (max-width:767px) {
+  html body [class^="styles__DetailsWrapper"] [class^="styles__BulletPoints"] [class^="styles__PointsWrapper"] > div:nth-child(even){
+      padding-left: 0px;
+  }
+  html body [class^="styles__DetailsWrapper"] [class^="styles__BulletPoints"] [class^="styles__PointsWrapper"] > div{
+      width: 100%;
+  }
+  html body [class^="styles__DetailsWrapper"] [class^="styles__BulletPoints"] [class^="styles__PointsWrapper"]{
+      max-width: 307px;
+  }
+}
+
+@media screen and (max-width:450px) {
+  html body .applicationFormWrapper .header br {
+    display: none;
+  }
+
+  html body [class^="style__HeroWrapper"] .ratingContainer .ratingText a {
+    display: block;
+  }
+
+  html body [class^="style__HeroWrapper"] {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  html body [class^="style__HeroWrapper"] .textWrapper .ratingContainer.right {
+    padding-left: 20px;
+    margin-left: 20px;
+  }
+
+  html body [class^="style__HeroWrapper"] .textWrapper .partnershipWrapper {
+    padding-right: 0px;
+  }
+
+  html body [class^="style__HeroWrapper"] .partnershipRatingWrapper .ratingContainer.right .ratingWrapper .rating img {
+    max-width: 65px;
+  }
+
+  html body [class^="style__HeroWrapper"] .textWrapper .ratingContainer.right .ratingWrapper .rating span {
+    font-size: 14px;
+    margin-right: 5px;
+  }
+}
+
+@media screen and (max-width:362px) {
+
+  html body div [class^="style__HeroWrapper"] .textWrapper .ratingContainer .ratingText{
+    font-size: 14px !important;
+  }
+  html body div [class^="style__HeroWrapper"] .textWrapper .ratingContainer.right .imageWrapper img {
+    height: 56px;
+    max-width: 92px;
+}
+html body div [class^="style__HeroWrapper"] .textWrapper .ratingContainer.right .ratingWrapper .rating{
+  height: auto;
+}
+  html body [class^="style__HeroWrapper"] .partnershipRatingWrapper .partnershipWrapper .prefixText {
+    display: block;
+    margin: 0px 15px 0px 0px !important;
+    text-align: center;
+    font-size: 15px !important;
+    line-height: 18px;
+  }
+
+  html body [class^="style__HeroWrapper"] .textWrapper .ratingContainer.right {
+    padding-left: 10px;
+    margin-left: 10px;
+  }
+
+  html body [class^="style__HeroWrapper"] .partnershipRatingWrapper .ratingContainer.right .ratingWrapper .rating img {
+    max-width: 62px;
+  }
+
+}
+
+[class^="styles__DetailsWrapper"] {
+  flex-direction: column-reverse;
+}
+
+[class^="styles__DetailsWrapper"] [class^="styles__BulletPoints"] [class^="styles__PointsWrapper"] {
+  width: 100% !important;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  /* max-width: 660px; */
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+}
+
+[class^="styles__DetailsWrapper"] [class^="styles__BulletPoints"] [class^="styles__PointsWrapper"] > div {
+  list-style: none;
+  width: 50%;
+  -webkit-box-align: center;
+  margin-bottom: 25px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: left;
+  color: #48485e;
+}
+
+[class^="styles__DetailsWrapper"] [class^="styles__BulletPoints"] {
+  max-width: 700px;
+}
+
+[class^="styles__DetailsWrapper"] [class^="styles__BulletPoints"] [class^="styles__PointsWrapper"] > div:nth-child(even) {
+  padding-left: 50px;
+}
+[class^="styles__DetailsWrapper"] [class^="styles__CardWrapper"] > div {
+  box-shadow: none;
+  height: auto;
+  padding-bottom: 0px;
+}
+
+[class^="styles__DetailsWrapper"] [class^="styles__CardWrapper"] > div > h3, [class^="styles__DetailsWrapper"] [class^="styles__CardWrapper"] > div > p {
+  display: none;
+}
+[class^="styles__DetailsWrapper"] [class^="styles__CardWrapper"] button[type="PrepPricing"] {
+  color: #02ba99;
+  font-size: 18px;
+  display: inline-block;
+  background: none;
+  border: none;
+  height: auto;
+  padding: 0;
+  text-decoration: underline;
+}
+[class^="styles__DetailsWrapper"] [class^="styles__CardWrapper"] button[type="PrepPricing"]:hover {
+  text-decoration: none;
+}
+
+@media screen and (max-width:850px) {
+  html body [class^="styles__DetailsWrapper"] [class^="styles__BulletPoints"] [class^="styles__PointsWrapper"] > div:nth-child(even){
+      padding-left: 0px;
+  }
+  html body [class^="styles__DetailsWrapper"] [class^="styles__BulletPoints"] [class^="styles__PointsWrapper"] > div{
+      width: 100%;
+  }
+  html body [class^="styles__DetailsWrapper"] [class^="styles__BulletPoints"] [class^="styles__PointsWrapper"]{
+      max-width: 300px;
+  }
+ 
+}
+
+html body [class^="style__HeroWrapper"] .textWrapper .ratingContainer.right .imageWrapper img {
+  height: 80px;
+  max-width: 100px;
+}
+
+html body [class^="style__HeroWrapper"] .textWrapper .partnershipRatingWrapper .ratingContainer.right .imageWrapper {
+  display: inline-block!important;
+  vertical-align: middle;
+  margin-left: 0px;
+  width: auto;
+}
+html body [class^="style__HeroWrapper"] .textWrapper .ratingContainer.right {
+  margin-left: 0!important;
+  border-left: none!important;
+  padding: 0!important;
+  display: flex;
+}
+html body [class^="style__HeroWrapper"] .textWrapper .partnershipRatingWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start!important;
+}
+
+html body [class^="style__HeroWrapper"] .textWrapper .partnershipRatingWrapper>div {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+html body [class^="style__HeroWrapper"] .textWrapper .ratingContainer .rating {
+  font-weight: 500;
+  font-size: 20px;
+}
+html body [class^="style__HeroWrapper"] .textWrapper .ratingContainer.right .ratingWrapper .rating picture {
+  margin-left: 10px;
+}
+html body [class^="style__HeroWrapper"] .textWrapper .ratingContainer .ratingText {
+  margin-top: 0;
+  margin-bottom: 2px;
+  width: max-content;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 27px;
+}
+
+html body [class^="style__HeroWrapper"] .textWrapper .ratingContainer .ratingText {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 27px;
+  margin-top: 5px;
+}
+
+html body [class^="style__HeroWrapper"] .textWrapper .ratingContainer .ratingText a {
+  display: inline-block;
+  margin-left: 4px;
+}
+
+
+html body{
+    margin-bottom: 50px;
+}
+html body .textWrapper .pill-text{
+    background: #FFFFFF;
+    border-radius: 50px;
+    padding: 8px 15px;
+    margin-bottom: 20px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+    color: #434343;
+    max-width: 320px;
+    width: 100%;
+}
+html body .new-banner{
+	text-align: center;
+	padding: 23px 35px;
+	background: linear-gradient(0deg, #FF7055, #FF7055), #48485E;
+/*}*/
+/*html body .fe-logo-section12 .new-banner.sticky{*/
+    position: fixed;
+    /*top: 0px;*/
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 100;
+}
+html body .new-banner .text{
+	margin: 0;
+	font-style: normal;
+	font-weight: 800;
+	font-size: 20px;
+	line-height: 23px;
+	color: #FFFFFF !important;
+}
+@media only screen and (max-width: 980px){
+	html body .textWrapper .pill-text{
+		margin: 0 auto 20px;
+	}
+	html body .new-banner {
+	    text-align: left;
+	    padding: 23px 85px 23px 35px;
+	}
+	html body .new-banner .text{
+		max-width: 92%;
+	}
+}
+@media only screen and (max-width: 614px){
+	html body{
+	    margin-bottom: 92px;
+	}
+	html body .new-banner .text{
+		max-width: 100%;
+	}
+}
+@media only screen and (max-width: 767.98px){
+	html body .textWrapper .pill-text {
+		display: none;
+	}
+}
+@media only screen and (max-width: 525px){
+	html body .new-banner {
+	    padding: 23px 80px 23px 15px;
+	}
+	html body .new-banner .text{
+		font-size: 14px;
+	}
+	html body{
+	    margin-bottom: 90px;
+	}
+}
+@media only screen and (max-width: 375px){
+	html body .new-banner {
+	    padding: 23px 70px 23px 16px;
+	}
+}

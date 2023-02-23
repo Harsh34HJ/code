@@ -332,7 +332,7 @@ var i = parseInt(window.pageYOffset);
         slides[i].closest('picture').insertAdjacentHTML('afterend', '<p class="fe-image-heading">'+sliderHealings[i]+'</p>');
       }
     }
-   vwo_$("body").vwoCss({"visibility":"visible !important"});
+   //vwo_$("body").vwoCss({"visibility":"visible !important"});
   }
   function updateInnerCopy() {
     //Removing inline style of homepage banner
@@ -368,11 +368,11 @@ var i = parseInt(window.pageYOffset);
   }
   function spring77(){
   	if(!document.querySelector('.content .pill-text')){
-  		document.querySelector('.content .header').insertAdjacentHTML('afterend', '<div class="pill-text">Apply today and save $2,900</div>')
+  		document.querySelector('.content .header').insertAdjacentHTML('afterend', '<div class="pill-text">Apply today and save up to $2,900</div>')
   	}
   	if(!document.querySelector('[class^="styles__SecondaryNavWrapper-sc"] .new-banner')){
-  		document.querySelector('[class^="styles__SecondaryNavWrapper-sc"] .stickyWrapper').insertAdjacentHTML('afterend', '<div class="new-banner"><h4 class="text">Tech Sales tuition NOW discounted $2,900 — Save up to 37%</h4></div>');
-        var header = document.querySelector(".new-banner");
+  		document.querySelector('[class^="styles__SecondaryNavWrapper-sc"] .stickyWrapper').insertAdjacentHTML('afterend', '<div class="new-banner"><h4 class="text">Tech Sales tuition NOW discounted $2,900 — Save up to 37% when you pay upfront</h4></div>');
+  		var header = document.querySelector(".new-banner");
 	    var sticky = header.offsetTop;
   	    window.onscroll = function() {
 		  if (window.pageYOffset > sticky) {
@@ -382,8 +382,10 @@ var i = parseInt(window.pageYOffset);
 		  }
   	    }; 
   	}
-  	updateInnerHtml(document.querySelectorAll('.hyOIzs .pricePreview .badge')[0], 'Save $3k');
-  	updateInnerHtml(document.querySelectorAll('.hyOIzs .pricePreview .badge')[1], 'Save $2k');
+  	updateInnerHtml(document.querySelectorAll('.hyOIzs .pricePreview .badge')[0], 'Save 37%');
+  	updateInnerHtml(document.querySelectorAll('.hyOIzs .pricePreview .badge')[1], 'Save 24%');
+  	updateInnerHtml(document.querySelectorAll('.hyOIzs .pricePreview .badge')[2], '0% interest');
+  	updateInnerHtml(document.querySelectorAll('.cgPSay .pricePreview .badge')[0], 'low monthly payments');
   	updateInnerHtml(document.querySelectorAll('.hyOIzs .pricePreview .name')[1], 'Month to Month');
   	updateInnerHtml(document.querySelectorAll('.hyOIzs .pricePreview .name')[2], 'Deferred tuiton plan');
   	updateInnerHtml(document.querySelectorAll('.cgPSay .pricePreview .name')[0], 'Climb Credit Loan');
