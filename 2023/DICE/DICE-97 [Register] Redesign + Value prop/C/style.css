@@ -1,0 +1,723 @@
+/* FORM FUNCTIONS */
+.registration-section {
+  border: 4px solid #cb2026;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 800px;
+   display: none; 
+  background: none;
+  padding: 20px 50px;
+}
+html body .fe-multistep.fe-show{
+display: block;
+}
+html body .fe_registration-form.fe-show-option1 .registration-section,
+ html body .fe_registration-form.fe-show-option3 .fe-learn-more-option .fe-learn-more{
+display: block;
+}
+
+
+
+/* LEARN MORE SECTION */
+
+html body .fe-learn-more {
+  width: 100%;
+  max-width: 550px;
+  border: 4px solid #cb2026;
+  border-radius: 5px;
+  padding: 15px 50px;
+  /* margin: 30px; */
+  width: 100%;
+  display: none;
+}
+html body .fe-learn-more-option h4 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+html body .fe-learn-more-option .fe-learn a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 22px;
+  background-color: #cb2026;
+  font-size: 22px;
+  width: 250px;
+  line-height: 2;
+  text-align: center;
+  border: 2px solid #cb2026;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+html body .fe-back {
+  font-size: 22px;
+  color: #069;
+  text-decoration: underline;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+/* MULTISTEP FORM SECTION */
+
+html body .fe-multistep {
+  display: none;
+}
+html body .fe-step {
+  border: 4px solid #cb2026;
+  border-radius: 5px;
+  padding: 20px 50px;
+  width: 100%;
+  max-width: 700px;
+  align-items: center;
+}
+html body .fe-step h4 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+html body .fe-step-option {
+  border: 1px solid rgba(0, 102, 153, 0.384);
+  border-radius: 4px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.fe-step-option p {
+  color: #069;
+  font-size: 22px;
+  font-weight: 400;
+  padding: 0 5px;
+  margin-bottom: 0px;
+}
+.fe-step-option input {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  margin: 0px;
+  margin-right: 10px;
+  position: absolute;
+  left: 14px;
+  top: 16px;
+}
+.fe-step-option label {
+  margin-bottom: 0px;
+  width: 100%;
+  cursor: pointer;
+  padding: 10px 10px 10px 40px;
+}
+.fe-next {
+  background-color: #cb2026;
+  color: #fff;
+  font-size: 22px;
+  width: 200px;
+  line-height: 2;
+  text-align: center;
+  border: 2px solid #cb2026;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+html body .adscore-container .lookinghire,
+html body .adscore-container .getsection,
+html body .adscore-container .testimonials,
+html body .adscore-container .mobileApp,
+html body .emailAppLink {
+  display: none;
+}
+
+html body .adscore-container .adscore-banner {
+  background: none;
+  background-color: #fff;
+  color: #333;
+}
+
+html body .adscore-container .adscore-banner .employer-link {
+  display: none;
+}
+
+html body .adscore-container .adscore-banner .registrationHeader > img {
+  width: 100%;
+}
+
+html body .adscore-container .adscore-banner .registrationHeader > div {
+  position: relative;
+}
+
+.fe_hero {
+  margin: 0 -15px;
+}
+
+.fe_hero .fe_hero-image img {
+  max-width: 100%;
+  width: 100%;
+}
+
+.fe_hero .fe_logo {
+  left: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 30px;
+}
+
+.fe_hero .fe_logo a {
+  background-image: url("https://assets.dice.com/techpro/img/dice-techpro-sprite.png");
+  background-position: 0px -453px;
+  background-repeat: no-repeat;
+  background-size: 125px;
+  display: inline-block;
+  height: 40px;
+  width: 70px;
+}
+
+.fe_hero .fe_overlay {
+  background-image: linear-gradient(0deg, #fff, transparent 25%);
+  bottom: 0;
+  left: 0;
+  opacity: 0.75;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.fe_hero .fe_hero-content {
+  background-color: rgba(204, 0, 0, 0.5);
+  bottom: 90px;
+  color: #fff;
+  font-size: 30px;
+  left: 0;
+  line-height: normal;
+  padding: 20px;
+  position: absolute;
+  width: 75%;
+}
+
+
+html body .registration-section h1.form-title {
+  color: #333;
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 10px !important;
+  margin-top: 0;
+  font-weight: bold;
+}
+
+html body .registration-section p.fe_form-subtitle {
+  text-align: left;
+  font-size: 22px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+html body .registration-section .fe_form-subtitle span {
+  display: block;
+  font-weight: 100;
+  margin-top: 8px;
+  color: #393939;
+  font-size: 22px;
+}
+html body .registration-section .diceCommunications {
+  background: none;
+  padding: 0;
+  min-height: 0;
+  display: flex;
+  align-items: center;
+}
+
+html body .registration-section .diceCommunications .left-text {
+  color: #a0a0a0;
+  font-size: 12px;
+  margin-left: 6px;
+}
+
+html body .registration-section .fname {
+  /* margin-bottom: 15px; */
+  padding-right: 15px;
+  width: 100%;
+}
+
+html body .registration-section .lname {
+  padding-left: 15px;
+  width: 100%;
+}
+
+html body .registration-section p.fe_form-subtitle a {
+  text-decoration: underline;
+}
+
+html body .registration-section .privacyTermsDiv,
+html body .registration-section .privacyTermsDiv a {
+  color: #a0a0a0;
+  margin: 0;
+}
+
+html body .registration-section .register-button-start,
+html body .registration-section .register-button-start:hover {
+  background-color: #cb2026 !important;
+  border-color: #cb2026 !important;
+}
+
+.fe_sign-in {
+  margin: auto;
+  max-width: 425px;
+  overflow: hidden;
+  text-align: center;
+  font-size: 14px;
+}
+
+.fe_sign-in hr {
+  border: medium none;
+  height: 15px;
+  margin: 0 -15px 15px;
+  overflow: hidden;
+}
+
+.fe_sign-in hr:after {
+  content: ".......................................................................";
+  font-weight: bold;
+  letter-spacing: 8px;
+}
+
+.fe_sign-in p {
+  color: #a0a0a0;
+  font-size: 18px;
+  margin: 0;
+  padding: 10px 0 0;
+}
+
+.fe_sign-in p a {
+  text-decoration: underline;
+}
+
+html body .adscore-container .adscore-banner .fe_row-content {
+  font-size: 18px;
+  padding: 20px 0 0;
+  text-align: center;
+}
+
+html body .adscore-container .adscore-banner .fe_row-content a {
+  color: #333;
+  display: inline-block;
+  font-size: 14px;
+  padding: 5px 10px;
+  text-decoration: underline;
+}
+
+html body .registration-section #googleCaptchaSection {
+  min-height: 100px;
+}
+
+
+html body .registration-section .form-horizontal .form-group:first-child {
+  max-width: none;
+}
+
+html body .adscore-container .adscore-banner .fe_row-content .fe_sign-in {
+  padding-bottom: 0;
+}
+html body .registration-section .form-horizontal .form-group{
+  margin-top: 7px !important;
+  margin-bottom: 7px !important;
+}
+html body .registration-section input#passwordConfirmation {
+  margin-top: 5px;
+}
+@media (max-width: 1199px) {
+  .fe_hero .fe_hero-content {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 1050px) {
+  html body .FeBanner h2.fe-headline br{
+    display: none;
+  }
+}
+@media screen and (max-width: 991px) {
+  .fe-step-option input {
+    width: 15px;
+    height: 15px;
+  }
+  .fe-step-option p {
+    font-size: 20px;
+
+    padding: 0 4px;
+  }
+  html body .FeBanner {
+    padding: 40px !important;
+    background-position: left;
+  }
+  html body .FeBanner h2.fe-headline {
+    font-size: 36px !important;
+  }
+  html body .fe_registration-form .registration-section,
+  html body .fe_registration-form .fe-learn-more-option .fe-learn-more,
+  html body .fe_registration-form .fe-step {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    border: none;
+    max-width: 500px;
+  }
+  html body .fe_registration-form .fe-step{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  html body .fe_registration-form .fe-learn-more-option .fe-learn-more,
+  html body .fe_registration-form .registration-section{
+    max-width: 500px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  html body .adscore-banner .container > .row {
+    display: flex;
+    flex-direction: column-reverse;
+}
+  .fe_hero .fe_hero-content {
+    font-size: 22px;
+    max-width: 315px;
+    width: 95%;
+  }
+
+  .fe_sign-in {
+    padding-bottom: 25px;
+  }
+  .registrationHeader {
+    margin-bottom: 45px !important;
+    margin: 0 auto;
+    max-width: 500px;
+  }
+
+  .registrationHeader ul li br {
+    display: none;
+  }
+  .registrationHeader ul li {
+    margin-bottom: 30px;
+  }
+  
+  html body .registrationHeader ul li:nth-child(1):before {
+    height: 35px;
+    width: 35px;
+  }
+  html body .registrationHeader ul li:nth-child(2):before {
+    height: 41px;
+    width: 35px;
+  }
+  html body .registrationHeader ul li:nth-child(3):before {
+    height: 26px;
+    width: 35px;
+  }
+  html body .registrationHeader ul li:nth-child(4):before {
+    height: 43px;
+    width: 35px;
+  }
+  html body .registrationHeader ul li:before {
+    left: -53px;
+  }
+}
+
+@media (max-width: 767px) {
+  .registrationHeader {
+    padding-left: 25px;
+  }
+  html body .FeBanner h2.fe-headline {
+    max-width: inherit !important;
+}
+  html body .registration-section h1.form-title {
+    font-size: 24px;
+  }
+
+  html body .registration-section p.fe_form-subtitle,
+  .fe_sign-in p {
+    font-size: 20px;
+  }
+
+  html body .adscore-container .adscore-banner .fe_row-content {
+    padding: 30px 0 0;
+  }
+  html body .registration-section .diceCommunications .left-text {
+    font-size: 14px;
+    margin-left: 7px;
+  }
+}
+
+/* new style */
+.registration-section .form-title {
+  display: none;
+}
+
+.registrationHeader ul li {
+  font-size: 22px;
+  list-style: none;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.employerlogin a {
+  border-bottom: 1px solid #226799;
+  text-decoration: none;
+}
+.FeBanner .container,
+.adscore-banner .container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.Fe-contact {
+  border: 2px solid #cb2026;
+  color: #cb2026;
+  display: inline-block;
+  font-size: 19px;
+  margin: 15px 0 0;
+  padding: 6px 26px 6px;
+  border-radius: 2px;
+}
+.Fe-contact:hover {
+  color: #cb2026;
+}
+.employerlogin {
+  margin-top: 35px;
+  color: #a0a0a0;
+}
+.Fe-or {
+  margin-top: 26px;
+  color: #a0a0a0;
+  font-size: 18px;
+}
+.Fepostajob {
+  font-size: 20px;
+  color: #333333;
+  margin-top: 12px;
+  display: inline-block;
+  text-decoration: underline;
+}
+.registrationHeader ul li:before {
+  content: " ";
+  display: inline-block;
+  position: absolute;
+  left: -60px;
+  top: 50%;
+  background-size: cover;
+  transform: translateY(-54%);
+}
+html body .registrationHeader ul li:nth-child(1):before {
+  background-image: url('https://bm-test-dev.s3.us-east-2.amazonaws.com/FE/DICE/55/Search-Icon.png');
+  height: 42px;
+  width: 42px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.registrationHeader ul li:nth-child(2):before {
+  background-image: url('https://fe-test-dev.s3.amazonaws.com/Dice/Dice-34/Matching=job.png');
+  height: 48px;
+  width: 42px;
+}
+.registrationHeader ul li:nth-child(3):before {
+  background-image: url('https://fe-test-dev.s3.amazonaws.com/Dice/Dice-34/Job-profile.png');
+  height: 33px;
+  width: 42px;
+}
+.registrationHeader ul li:nth-child(4):before {
+  background-image: url('https://fe-test-dev.s3.amazonaws.com/Dice/Dice-34/personalized+.png');
+  height: 50px;
+  width: 42px;
+}
+
+html body .FeBanner {
+  border-bottom: 4px solid #cc0000;
+  background: url('https://s24.q4cdn.com/133441296/files/design/banner/about-hero.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  padding: 60px 50px;
+}
+html body .FeBanner .FeBanner-overlay{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%; 
+  background: #fff;
+  opacity: .3;
+}
+
+html body .FeBanner h2.fe-headline {
+  font-size: 52px;
+  padding-top: 7px;
+  color: #333333;
+  font-style: inherit;
+  font-weight: 600;
+  position: relative;
+  z-index: 1;
+  max-width: 88%;
+  margin: 0 auto;
+}
+
+html body .FeBanner p.fe-subheadline {
+  margin-bottom: 0px;
+  color: #333333;
+  font-style: inherit;
+  margin-top: 0px;
+  font-weight: 600;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+
+html body #diceCommunications {
+  left: 0px;
+}
+html body .adscore-container .adscore-banner > .container > .row{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+@media (min-width: 992px) {
+  html body .FeBanner {
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+  }
+  html body .registrationHeader {    
+    padding-left: 37px;
+    margin-top: 53px;
+  }
+  html body .registration-section form .form-group .row {
+    display: flex;
+  }
+  .registration-section form .form-group:nth-child(3) {
+    width: 101%;
+    float: left;
+  }
+  
+  .registration-section form .form-group:nth-child(3) > div {
+    padding-right: 5px;
+  }
+  
+  .registration-section form .form-group:nth-child(4) {
+    width: 101%;
+    float: right;
+    margin-top: 15px;
+  }
+  .registration-section form .form-group:nth-child(3) .form-control-feedback {
+    right: 5px;
+  }
+  .registration-section form .form-group:nth-child(4) > div {
+    padding-left: 5px;
+  }
+  .registration-section form .form-group:nth-last-child(4),
+  .registration-section form .form-group:nth-child(5) {
+    clear: both;
+  }
+  .registration-section form .form-group:nth-last-child(2) {
+    width: 50%;
+  }
+  .registration-section .form-group:first-child > div:first-child {
+    padding-right: 0px;
+  }
+  html body .adscore-container .adscore-banner > .container > .row {
+    display: flex;
+  }
+  html body .adscore-container .adscore-banner > .container > .row > div {
+    width: 50%;
+  }
+  html body .registration-section .form-horizontal .form-group {
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 991px) {
+  .Fe-contact {
+    font-size: 16px;
+    padding: 6px 15px 6px;
+  }
+  .registrationHeader ul li {
+    font-size: 20px;
+  }
+
+  html body .FeBanner {
+    padding-top: 50px;
+    background-position: left;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  html body .Fe-contact {
+    width: 100%;
+    text-align: center;
+  }
+  html body .FeBanner {
+    padding: 30px 20px !important;
+  }
+
+  html body .FeBanner h2.fe-headline {
+    font-size: 30px !important;
+    line-height: 1.3;
+  }
+  html body .fe_registration-form .fe-step,
+  html body .adscore-container .adscore-banner > .container > .row {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  html body .fe-step-option label{
+    padding: 10px 10px 10px 30px;
+  }
+  .fe-step-option p {
+    font-size: 15px;
+  }
+  html body .fe-back,
+  html body .fe_registration-form .fe-learn-more-option h4 {
+    font-size: 20px !important;
+    line-height: 1.3;
+}
+
+}
+@media screen and (max-width: 370px) {
+  html body .Fe-contact {
+    font-size: 19px;
+    margin: 15px 0 0;
+    padding: 12px 25px 12px;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 335px;
+  }
+  html body .Fe-contact {
+    font-size: 17px;
+    padding: 12px 16px 12px;
+  }
+  html body .FeBanner h2.fe-headline {
+    font-size: 27px !important;
+    line-height: 1.3;
+  }
+  html body .FeBanner {
+    padding: 30px 20px !important;
+  }
+}
+@media screen and (max-width: 1304px) and (min-width: 992px) {
+  html body .registrationHeader {
+    padding-left: 37px;
+    margin-top: 80px !important;
+    width: 45% !important;
+  }
+}
+
+@media screen and (max-width: 400px){
+    html body .fe-step h4 {
+        max-width: 270px;
+        line-height: 1.3;
+    }
+}
+@media screen and (max-width: 767px){
+html body .adscore-container .adscore-banner {
+    padding-top: 0px;
+}
+}
+@media screen and (max-width: 440px){
+html body .fe-step-option input {
+    top: 13px;
+    left: 13px;
+}
+}
