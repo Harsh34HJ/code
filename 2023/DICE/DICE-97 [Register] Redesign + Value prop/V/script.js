@@ -136,7 +136,7 @@
 					<div class="splide__slide">\
 						<img src="https://fe-test-dev.s3.amazonaws.com/Dice/DICE-97/optum.png" alt="Optum" class="auth-img">\
 						<div class="auth-info-wrapper">\
-							<p class="auth-review">" By partnering with Dice, we are really closing the gap for our go-to-market strategy of brand awareness and candidate pipelining."</p>\
+							<p class="auth-review">"By partnering with Dice, we are really closing the gap for our go-to-market strategy of brand awareness and candidate pipelining."</p>\
 							<h4 class="auth-name">— Lindsey Davis, Optum</h4>\
 							<h6 class="auth-role">Health Services Innovation Company</h6>\
 						</div>\
@@ -249,6 +249,7 @@
                 if (document.querySelector('.step-wrapper-1').classList.contains('hide-elm')) {
                     document.querySelector('.step-wrapper-1').classList.remove('hide-elm');
                 }
+            	window.scrollTo(0, 0);
             });
         }
         //Back
@@ -258,6 +259,7 @@
                 if (document.querySelector('.step-wrapper-0').classList.contains('hide-elm')) {
                     document.querySelector('.step-wrapper-0').classList.remove('hide-elm');
                 }
+                window.scrollTo(0, 0);
             });
         }
         FEHelper.live('.step-wrapper-0 .option-wrapper .step-option[bm-option="1"] a', 'click', function() {
@@ -300,6 +302,6 @@
     var link2 = document.createElement("link");
     link2.rel = "stylesheet";
     link2.type = "text/css";
-    link2.href = "https://fe-test-dev.s3.amazonaws.com/Dice/DICE-97/code/style-v1.css";
+    link2.href = "https://fe-test-dev.s3.amazonaws.com/Dice/DICE-97/code/style-v2.css";
     document.getElementsByTagName("head")[0].appendChild(link2);
 })();
