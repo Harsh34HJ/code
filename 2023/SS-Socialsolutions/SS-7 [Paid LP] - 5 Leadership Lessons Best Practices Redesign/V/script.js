@@ -122,7 +122,7 @@
         var helper = _$();
         var feList = '<li>Think more creatively and make data-driven decisions.</li><li>Empower participants to stay connected and request services.</li><li>Stay on the same page and deliver comprehensive care to every client.</li>';
         var authURL = document.querySelectorAll('.wp-block-ws-split-half')[1].querySelector('figure img').getAttribute('src');
-        var feAuth = '<div class="fe-auth-wrapper"><img class="auth-img" src="' + authURL + '" alt="Janet Sharkis"><div class="content"><p>Janet Sharkis—MS, LPC, and community development executive—has led both a nonprofit and a state agency during stormy times. She compiled five leadership lessons to help you get through the challenges today and in the future.</p></div></div><a class="download-ebook-cta tab-mob-only" href="#form">Download your eBook</a>';
+        var feAuth = '<div class="fe-auth-wrapper"><img class="auth-img" src="' + authURL + '" alt="Janet Sharkis"><div class="content"><p>Janet Sharkis—MS, LPC, and community development executive—has led both a nonprofit and a state agency during stormy times. She compiled five leadership lessons to help you <span class="bold-text">get through the challenges</span> today and in the future.</p></div></div><a class="download-ebook-cta tab-mob-only" href="#form">Download your eBook</a>';
         
         /* Variation Init */
         function onLoadMktoForms2(trigger, delayInterval, delayTimeout) {
@@ -223,6 +223,7 @@
                         }
                         helper.waitForElement('#State option', function() {
                         	checkInputform();
+                            document.querySelector(".fe-thirdRow-mktfrm").insertAdjacentElement("afterend", document.querySelector(".card-body .wp-block-ws-form .mktoFormRow[input-name='parent-State']"));
                             document.querySelector("#State option").innerHTML = "State";
                             if (window.screen.width < 768) {
                                 document.querySelector("#State option").innerHTML = "State";
@@ -239,6 +240,7 @@
                         }
                         helper.waitForElement('#State option', function() {
                         	checkInputform();
+                            document.querySelector(".fe-thirdRow-mktfrm").insertAdjacentElement("afterend", document.querySelector(".card-body .wp-block-ws-form .mktoFormRow[input-name='parent-State']"));
                             document.querySelector("#Industry option").innerHTML = "What type of organization do you work for?";
                             if (window.screen.width < 768) {
                                 document.querySelector("#industryType option").innerHTML = "What type of organization do you...";

@@ -1,7 +1,7 @@
 ::-webkit-input-placeholder{opacity:1}
 ::-moz-placeholder{opacity:1}
-:-moz-placeholder{opacity:1}
 :-ms-input-placeholder{opacity:1}
+::-ms-input-placeholder{opacity:1}
 ::placeholder{opacity:1}
 html body{opacity:0;visibility:hidden}
 html body.ss-7{opacity:1;visibility:visible}
@@ -18,12 +18,12 @@ html body.ss-7 .wp-block-ws-section .block-background{top:-200px;height:816px}
 html body.ss-7 .wp-block-ws-section .block-background .block-background-media{background-image:url(https://www.socialsolutions.com/wp-content/uploads/2021/03/Dark_Transition-Small.png)!important;background-position:100% 0!important;background-repeat:no-repeat;-webkit-transform:scale(1,-1);-ms-transform:scale(1,-1);transform:scale(1,-1)}
 html body.ss-7 .site-header.header-scroll-top .desktop-nav .logo .cls-1,html body.ss-7 .site-header.header-scroll-top .logo .cls-1{fill:#ffffff!important}
 html body.ss-7 .wp-block-ws-page-title,html body.ss-7 h1.tab-mob-only.title{color:#fff;font-size:36px;font-weight:700;line-height:43px;padding-bottom:10px;border-bottom:1px solid #fff;margin:0 0 20px}
-html body.ss-7 .fe-subheading{color:#fff;font-size:16px;font-weight:400;line-height:18px;margin-bottom:23px;padding-right:10px}
+html body.ss-7 .fe-subheading{color:#fff;font-size:16px;font-weight:400;line-height:24px;margin-bottom:23px;padding-right:10px}
 html body.ss-7 .fe-subheading+.wp-block-separator{display:none}
 .wp-block-ws-section.has-background .wp-block-ws-split-half>p:not(.fe-subheading),html body.ss-7 .fe-request-demo-cta,html body.ss-7 .header-primary-secondary,html body.ss-7 .mobile-nav .hamburger,html body.ss-7 .site-footer .footer-main{display:none!important}
 html body.ss-7 .wp-block-ws-section.has-background .wp-block-ws-split-half>ul{margin:0}
 html body.ss-7 .wp-block-ws-section.has-background .wp-block-ws-split-half>ul li{color:#fff;font-size:16px;font-weight:400;line-height:19px;list-style:none;position:relative;padding-left:31px;margin-bottom:19px}
-html body.ss-7 .wp-block-ws-section.has-background .wp-block-ws-split-half>ul li:before{content:"•";font-size:57px;vertical-align:top;padding-right:7px;position:absolute;left:0;top:-4px}
+html body.ss-7 .wp-block-ws-section.has-background .wp-block-ws-split-half>ul li:before{content:" ";width:13px;height:13px;background:#fff;border-radius:50%;position:absolute;left:0;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}
 html body.ss-7 .card .card-body>:not(.row):not(.wp-block-ws-split):first-child{display:none}
 html body.ss-7 .fe-form-heading{font-size:24px;font-weight:700;text-align:center;color:#003d50;margin-bottom:20px}
 html body.ss-7 .fe-form-heading br{display:none}
@@ -52,7 +52,7 @@ html body.ss-7 .fe-auth-wrapper{display:-webkit-box;display:-ms-flexbox;display:
 html body.ss-7 .fe-auth-wrapper .auth-img{max-width:204px;width:100%;-webkit-transform:scale(-1,1);-ms-transform:scale(-1,1);transform:scale(-1,1)}
 html body.ss-7 .fe-auth-wrapper .content{max-width: 355px;width: 100%;background-image:url(https://www.socialsolutions.com/wp-content/themes/_ws/assets/split_card_bg.png);background-size:170%;padding:0 39.19px;min-height:204px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 html body.ss-7 .fe-auth-wrapper .content p{font-family:Graphik,helvetica,sans-serif;font-size:14px;line-height:18px!important;font-weight:500;color:#003d50;margin:0;text-align:center}
-html body.ss-7 .site-footer{margin-top:110px}
+html body.ss-7 .site-footer{margin-top:126px}
 @media(max-width:1079.98px){
 html body.ss-7 .tab-mob-only{display:block}
 html body.ss-7 .wp-block-ws-page-title{display:none}
@@ -73,6 +73,7 @@ html body.ss-7 .fe-auth-wrapper .auth-img{max-width:299px;border-radius:50%}
 html body.ss-7 .fe-auth-wrapper .content{padding:0 23px;min-height:150px;position:absolute;bottom:110px;max-width:calc(100% - 40px);width:100%;-webkit-box-shadow:0 1px 4px rgb(0 0 0 / 50%);box-shadow:0 1px 4px rgb(0 0 0 / 50%)}
 html body.ss-7 .download-ebook-cta{max-width:256px;width:100%;margin:0 auto;text-align:center;text-decoration:none;padding:0 19px;font-size:16px;line-height:24px!important;text-shadow:none;font-weight:500;background:#20907f;color:#fff;height:46px;border-radius:50px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 html body.ss-7 .download-ebook-ctan:hover{background-color:#20907f!important;-webkit-box-shadow:inset 0 0 0 2px #dc8a5e;box-shadow:inset 0 0 0 2px #dc8a5e}
+html body.ss-7 .wp-block-ws-section.has-background .wp-block-ws-split-half>ul li:before{background:#003d50}
 }
 html body.ss-7 .mktoForm .mktoFormRow[input-name=parent-optIn] .mktoFieldWrap{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}
 html body.ss-7 .mktoForm .mktoCheckboxList{width:auto!important}
@@ -82,7 +83,9 @@ html body.ss-7 .mktoForm .mktoFormRow #LbloptIn{width:100%!important;padding:0;c
 html body.ss-7 h1.tab-mob-only.title{font-size:33px;font-weight:700;line-height:38px;text-align:center;width:100%}
 html body.ss-7 .wp-block-ws-section .block-background{height:680px}
 html body.ss-7 .fe-auth-wrapper .content p{font-weight:300}
+html body.ss-7 .fe-auth-wrapper .content p .bold-text{font-weight:600}
 html body.ss-7 .mktoForm .mktoButtonWrap.mktoPurpleCandy .mktoButton{width:192px !important}
+html body.ss-7 .wp-block-ws-section.has-background .wp-block-ws-split-half>ul li:before{left: 3px;top:5px;-webkit-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0)}
 }
 @media(max-width:480px){
 html body.ss-7 .wp-block-ws-section .section-container{padding-right:13px;padding-left:13px}
