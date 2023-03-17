@@ -52,8 +52,9 @@ html body.ss-7 .fe-auth-wrapper{display:-webkit-box;display:-ms-flexbox;display:
 html body.ss-7 .fe-auth-wrapper .auth-img{max-width:204px;width:100%;-webkit-transform:scale(-1,1);-ms-transform:scale(-1,1);transform:scale(-1,1)}
 html body.ss-7 .fe-auth-wrapper .content{max-width: 355px;width: 100%;background-image:url(https://www.socialsolutions.com/wp-content/themes/_ws/assets/split_card_bg.png);background-size:170%;padding:0 39.19px;min-height:204px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 html body.ss-7 .fe-auth-wrapper .content p{font-family:Graphik,helvetica,sans-serif;font-size:14px;line-height:18px!important;font-weight:500;color:#003d50;margin:0;text-align:center}
-html body.ss-7 .site-footer{margin-top:126px}
+html body.ss-7 .site-footer{margin-top:200px}
 @media(max-width:1079.98px){
+html body.ss-7 .site-footer{margin-top:126px}    
 html body.ss-7 .tab-mob-only{display:block}
 html body.ss-7 .wp-block-ws-page-title{display:none}
 html body.ss-7 h1.tab-mob-only.title{border-bottom:none;width:80%}
@@ -105,6 +106,6 @@ html body.ss-7 .fe-auth-wrapper .auth-img {max-width: 240px}
 html body.ss-7 .fe-auth-wrapper .content {bottom: 80px}
 html body.ss-7 .fe-auth-wrapper .content p{font-size:12px}
 }
-@media(min-width:1080px) and (min-height:800px){
+@media(min-width:1080px) and (min-height:820px){
 html body.ss-7 .site-footer{position: absolute;max-width: 1920px;width:100%;bottom: 0}	
 }

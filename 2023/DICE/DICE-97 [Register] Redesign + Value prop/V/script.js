@@ -115,13 +115,17 @@
 		</div>\
 		<div class="slider-wrapper">\
 			<div class="splide">\
+			    <div class="splide__arrows">\
+					<button class="splide__arrow splide__arrow--prev"> < </button>\
+					<button class="splide__arrow splide__arrow--next"> > </button>\
+			    </div>\
 				<div class="splide__track">\
 				<ul class="splide__list">\
 					<div class="splide__slide">\
 						<img src="https://fe-test-dev.s3.amazonaws.com/Dice/DICE-97/jon.png" alt="Jon" class="auth-img">\
 						<div class="auth-info-wrapper">\
 							<p class="auth-review">"Exceptionally easy. Impressive algorithm for suggesting related jobs."</p>\
-							<h4 class="auth-name">— Jon A.</h4>\
+							<h4 class="auth-name tp">— Jon A.</h4>\
 							<h6 class="auth-role">Software Engineer</h6>\
 						</div>\
 					</div>\
@@ -129,7 +133,7 @@
 						<img src="https://fe-test-dev.s3.amazonaws.com/Dice/DICE-97/asgn_inc.png" alt="ASGN Inc" class="auth-img">\
 						<div class="auth-info-wrapper">\
 							<p class="auth-review">"One of the best databases out there to find IT candidates." </p>\
-							<h4 class="auth-name">— ASGN Inc.</h4>\
+							<h4 class="auth-name er">— ASGN Inc.</h4>\
 							<h6 class="auth-role">IT Consulting Company</h6>\
 						</div>\
 					</div>\
@@ -137,7 +141,7 @@
 						<img src="https://fe-test-dev.s3.amazonaws.com/Dice/DICE-97/optum.png" alt="Optum" class="auth-img">\
 						<div class="auth-info-wrapper">\
 							<p class="auth-review">"By partnering with Dice, we are really closing the gap for our go-to-market strategy of brand awareness and candidate pipelining."</p>\
-							<h4 class="auth-name">— Lindsey Davis, Optum</h4>\
+							<h4 class="auth-name er">— Lindsey Davis, Optum</h4>\
 							<h6 class="auth-role">Health Services Innovation Company</h6>\
 						</div>\
 					</div>\
@@ -191,6 +195,7 @@
 			            type: 'loop',
 			            perPage: 3,
 			            perMove: 1,
+			            autoplay: true,
 			            autoWidth: true,
 			            autoheight: true,
 			            interval: 5000,
@@ -302,6 +307,6 @@
     var link2 = document.createElement("link");
     link2.rel = "stylesheet";
     link2.type = "text/css";
-    link2.href = "https://fe-test-dev.s3.amazonaws.com/Dice/DICE-97/code/style-v2.css";
+    link2.href = "https://fe-test-dev.s3.amazonaws.com/Dice/DICE-97/code/style-v3.css";
     document.getElementsByTagName("head")[0].appendChild(link2);
 })();
