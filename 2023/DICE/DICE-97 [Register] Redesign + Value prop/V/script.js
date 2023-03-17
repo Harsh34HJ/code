@@ -108,16 +108,18 @@
 					<h4 class="title">Employers & Recruiters</h4>\
 					<div class="inner-wrapper"><img src="https://fe-test-dev.s3.amazonaws.com/Dice/DICE-97/employers_%26_recruiters.png" alt="Employers & Recruiters">\
 					<p class="detail">I\'m looking to hire tech talent.</p></div>\
-					<a href="https://www.dice.com/hiring/contact-us" class="primary-cta">Post a job</a>\
-					<a href="https://www.dice.com/hiring/contact-us" class="secondary-cta">Source talent</a>\
+					<div class="cta-wrapper">\
+						<a href="https://www.dice.com/hiring/contact-us" class="secondary-cta">Source Jobs</a>\
+						<a href="https://www.dice.com/hiring/contact-us" class="primary-cta">Post a job</a>\
+					</div>\
 				</div>\
 			</div>\
 		</div>\
 		<div class="slider-wrapper">\
 			<div class="splide">\
 			    <div class="splide__arrows">\
-					<button class="splide__arrow splide__arrow--prev"> < </button>\
-					<button class="splide__arrow splide__arrow--next"> > </button>\
+					<button class="splide__arrow splide__arrow--prev"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><rect width="24" height="24" fill="white" fill-opacity="0.01"/><path fill-rule="evenodd" clip-rule="evenodd" d="M14.9949 10.9951C15.1824 11.1826 15.2877 11.4369 15.2877 11.7021C15.2877 11.9672 15.1824 12.2215 14.9949 12.4091L10.4019 17.0021C10.2156 17.1846 9.96482 17.2863 9.70399 17.285C9.44317 17.2837 9.19339 17.1795 9.00896 16.995C8.82452 16.8106 8.72032 16.5608 8.71901 16.3C8.71769 16.0392 8.81936 15.7884 9.00192 15.6021L12.9019 11.7021L9.00192 7.80207C8.81936 7.61578 8.71769 7.36497 8.71901 7.10414C8.72032 6.84331 8.82452 6.59354 9.00896 6.4091C9.19339 6.22467 9.44317 6.12047 9.70399 6.11915C9.96482 6.11784 10.2156 6.21951 10.4019 6.40207L14.9949 10.9951Z" fill="#2B2927"/></svg></button>\
+					<button class="splide__arrow splide__arrow--next"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><rect width="24" height="24" fill="white" fill-opacity="0.01"/><path fill-rule="evenodd" clip-rule="evenodd" d="M14.9949 10.9951C15.1824 11.1826 15.2877 11.4369 15.2877 11.7021C15.2877 11.9672 15.1824 12.2215 14.9949 12.4091L10.4019 17.0021C10.2156 17.1846 9.96482 17.2863 9.70399 17.285C9.44317 17.2837 9.19339 17.1795 9.00896 16.995C8.82452 16.8106 8.72032 16.5608 8.71901 16.3C8.71769 16.0392 8.81936 15.7884 9.00192 15.6021L12.9019 11.7021L9.00192 7.80207C8.81936 7.61578 8.71769 7.36497 8.71901 7.10414C8.72032 6.84331 8.82452 6.59354 9.00896 6.4091C9.19339 6.22467 9.44317 6.12047 9.70399 6.11915C9.96482 6.11784 10.2156 6.21951 10.4019 6.40207L14.9949 10.9951Z" fill="#2B2927"/></svg></button>\
 			    </div>\
 				<div class="splide__track">\
 				<ul class="splide__list">\
@@ -307,6 +309,6 @@
     var link2 = document.createElement("link");
     link2.rel = "stylesheet";
     link2.type = "text/css";
-    link2.href = "https://fe-test-dev.s3.amazonaws.com/Dice/DICE-97/code/style-v3.css";
+    link2.href = "https://fe-test-dev.s3.amazonaws.com/Dice/DICE-97/code/style-v4.css";
     document.getElementsByTagName("head")[0].appendChild(link2);
 })();
