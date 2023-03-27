@@ -1,6 +1,6 @@
 (function(){
     let bodyClass = 'test-demo';
-    var pathsToCheckUrls = [
+    var pathsToCheck = [
         { path:"/products/" },
         { path:"/collections/all/products/" },
         { path:"/collections/product-name/products/" }
