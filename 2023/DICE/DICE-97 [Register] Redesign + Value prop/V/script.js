@@ -183,6 +183,8 @@
     var titleForm = '<div class="title-wrapper"><h4 class="title">Tech Professionals</h4><p class="sub-title">Be seen and get hired. </br>Create your free Dice profile today.</p><h4 class="content">Already have an account? <a class="sign-in" href="https://www.dice.com/dashboard/login">Sign in</a></h4></div>';
 
     var backButton = '<div class="back-wrapper"><a class="back" href="javascript:void(0)"><svg xmlns="http://www.w3.org/2000/svg" width="6" height="12" viewBox="0 0 6 12" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.78033 0.96967C6.07322 1.26256 6.07322 1.73744 5.78033 2.03033L1.81066 6L5.78033 9.96967C6.07322 10.2626 6.07322 10.7374 5.78033 11.0303C5.48744 11.3232 5.01256 11.3232 4.71967 11.0303L0.21967 6.53033C-0.0732233 6.23744 -0.0732233 5.76256 0.21967 5.46967L4.71967 0.96967C5.01256 0.676777 5.48744 0.676777 5.78033 0.96967Z" fill="#195581"/></svg>Back</a></div>';
+    
+    var contactSales = '<li class="contact-sales"><a href="https://techhub.dice.com/2018-SR-contact-us.html" target="_self" class="btn-link">Contact Sales</a></li>';
 
     function init() {
         //Add template
@@ -213,6 +215,15 @@
         }
         if (document.querySelector('.adscore-banner .container .row') && !document.querySelector('.adscore-banner .container .info-wrapper')) {
             FEHelper.prepend(document.querySelector('.adscore-banner .container'), mainContent);
+        }
+        if (document.querySelector('.navbar-header a[href="/home/home-feed"]')) {
+            document.querySelector('.navbar-header a[href="/home/home-feed"]').setAttribute('href','/');
+        }
+        if (document.querySelector('div#menu-toggle .navbar-right.hidden-xs')  && !document.querySelector('div#menu-toggle .navbar-right.hidden-xs .contact-sales')) {
+    		FEHelper.prepend(document.querySelector('div#menu-toggle .navbar-right.hidden-xs'), contactSales);
+        }
+        if (document.querySelector('div#menu-toggle .navbar-right.visible-xs')  && !document.querySelector('div#menu-toggle .navbar-right.visible-xs .contact-sales')) {
+    		FEHelper.prepend(document.querySelector('div#menu-toggle .navbar-right.visible-xs'), contactSales);
         }
         var formTarget = document.querySelector('.registration-section');
         if (formTarget) {
@@ -309,6 +320,6 @@
     var link2 = document.createElement("link");
     link2.rel = "stylesheet";
     link2.type = "text/css";
-    link2.href = "https://fe-test-dev.s3.amazonaws.com/Dice/DICE-97/code/style-v4.css";
+    link2.href = "https://fe-test-dev.s3.amazonaws.com/Dice/DICE-97/code/style-v5.css";
     document.getElementsByTagName("head")[0].appendChild(link2);
 })();

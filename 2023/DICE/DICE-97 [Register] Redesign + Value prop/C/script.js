@@ -159,7 +159,9 @@
     }
          
     function init() {
-      
+      if (document.querySelector('.navbar-header a[href="/home/home-feed"]')) {
+        document.querySelector('.navbar-header a[href="/home/home-feed"]').setAttribute('href','/');
+      }
       // Adjust layout
       document.querySelector('div.registrationHeader').setAttribute('class', 'registrationHeader');
       document.querySelector('div.registrationHeader').nextElementSibling.setAttribute('class', 'fe_registration-form');
