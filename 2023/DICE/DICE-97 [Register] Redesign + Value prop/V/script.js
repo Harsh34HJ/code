@@ -109,7 +109,7 @@
 					<div class="inner-wrapper"><img src="https://fe-test-dev.s3.amazonaws.com/Dice/DICE-97/employers_%26_recruiters.png" alt="Employers & Recruiters">\
 					<p class="detail">I\'m looking to hire tech talent.</p></div>\
 					<div class="cta-wrapper">\
-						<a href="https://www.dice.com/hiring/contact-us" class="secondary-cta">Source Jobs</a>\
+						<a href="https://www.dice.com/hiring/contact-us" class="secondary-cta">Source Talent</a>\
 						<a href="https://www.dice.com/hiring/contact-us" class="primary-cta">Post a job</a>\
 					</div>\
 				</div>\
