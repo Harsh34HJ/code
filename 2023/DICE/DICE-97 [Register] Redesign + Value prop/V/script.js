@@ -295,6 +295,9 @@
         FEHelper.live('.step-wrapper-1 .adscore-banner .back-wrapper .back', 'click', function() {
             FEHelper.trackGAEvent("funnelenvy","click","Back button");
         });
+        if (document.querySelector('.step-wrapper-1 .adscore-banner .employer-link')) {
+        	document.querySelector('.step-wrapper-1 .adscore-banner .employer-link').style.display = 'none';
+        }
         document.body.style.opacity = '1';
     }
     //if error occur while DOM manipulation
