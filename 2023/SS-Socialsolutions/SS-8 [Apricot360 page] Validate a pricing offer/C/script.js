@@ -133,10 +133,10 @@
         function init() {
             classAllocation();
             helper.live(".section-1 .wp-block-button__link[href='https://trial.socialsolutions.com/", "click", function() {
-                trackGAEvent('funnelenvy', 'Click', 'primary CTA');
+                trackGAEvent('funnelenvy', 'Click', 'primary CTA click');
             });
             helper.live(".section-1 .wp-block-button__link[href='https://www.socialsolutions.com/request-a-demo/']", "click", function() {
-                trackGAEvent('funnelenvy', 'Click', 'secondary CTA');
+                trackGAEvent('funnelenvy', 'Click', 'secondary CTA click');
             });
         }
         helper.waitForElement("body", init, 50, 15000);

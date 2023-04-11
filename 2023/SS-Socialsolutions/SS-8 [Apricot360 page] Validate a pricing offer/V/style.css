@@ -8,10 +8,10 @@ html body.ss-8{opacity:1;visibility:visible}
 html body.ss-8 .section-10,html body.ss-8 .section-2{display:none}
 html body.ss-8 .section-1{padding:80px 0}
 html body.ss-8 .section-1 h1{line-height:normal}
-html body.ss-8 .section-1 .hero-list{margin:0 0 30px 15px}
+html body.ss-8 .section-1 .hero-list{margin:0 0 30px 30px}
 @media (min-width:1300px){
 html body.ss-8 .section-1 .wp-block-ws-split{-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}
-html body.ss-8 .section-1 .wp-block-ws-split-half:nth-child(1){-ms-flex-preferred-size:55%!important;flex-basis:55%!important;max-width:55%!important}
+html body.ss-8 .section-1 .wp-block-ws-split-half:nth-child(1){-ms-flex-preferred-size:55.5%!important;flex-basis:55.5%!important;max-width:55.5%!important}
 html body.ss-8 .section-1 .wp-block-ws-split-half:nth-child(2){-ms-flex-preferred-size:36%;flex-basis:36%;max-width:36%}
 }
 html body.ss-8 .bottom-price-form{padding:50px 0 100px}
@@ -26,8 +26,8 @@ html body.ss-8 .bottom-price-form .form-wrapper .content .list li{position:relat
 html body.ss-8 .bottom-price-form .form-wrapper .content .list li:before{position:absolute;content:'';left:-40px;top:0;background-image:url('https://fe-test-dev.s3.amazonaws.com/ss/ss-8/checkmark.svg');width:30px;height:30px}
 html body.ss-8 .bottom-price-form .form-wrapper .content .logo-wrap{max-width:600px;width:100%}
 html body.ss-8 .bottom-price-form .wp-block-ws-card.card{max-width:570px;width:100%;-webkit-box-shadow:0 1px 4px rgba(0,0,0,.5);box-shadow:0 1px 4px rgba(0,0,0,.5)}
-html body.ss-8 .wp-block-ws-card.card .card-body{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-shadow:0 1px 4px rgb(0 0 0 / 50%);box-shadow:0 1px 4px rgb(0 0 0 / 50%)}
-html body.ss-8 .wp-block-ws-card.card .wp-block-ws-form{margin-bottom:0}
+html body.ss-8 .bottom-price-form .wp-block-ws-card.card .card-body{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-shadow:0 1px 4px rgb(0 0 0 / 50%);box-shadow:0 1px 4px rgb(0 0 0 / 50%)}
+html body.ss-8 .bottom-price-form .wp-block-ws-card.card .wp-block-ws-form{margin-bottom:0}
 html body.ss-8 .fe-firstRow-mktfrm,html body.ss-8 .fe-secondRow-mktfrm,html body.ss-8 .fe-thirdRow-mktfrm{display:-webkit-box;display:-ms-flexbox;display:flex}
 html body .card-body .mktoFormRow{width:100%}
 html body .card-body .mktoFormRow label{display:none}

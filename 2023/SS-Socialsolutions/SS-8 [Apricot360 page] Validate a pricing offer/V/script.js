@@ -249,11 +249,11 @@
                 trackGAEvent('funnelenvy', 'Click', 'Form engagement');
             });
             helper.live(".section-1 .wp-block-button__link[href='javascript:void(0)", "click", function() {
-                trackGAEvent('funnelenvy', 'Click', 'primary CTA');
+                trackGAEvent('funnelenvy', 'Click', 'primary CTA click');
                 document.querySelector('.bottom-price-form').scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
             });
             helper.live(".section-1 .wp-block-button__link[href='https://www.socialsolutions.com/request-a-demo/']", "click", function() {
-                trackGAEvent('funnelenvy', 'Click', 'secondary CTA');
+                trackGAEvent('funnelenvy', 'Click', 'secondary CTA click');
             });
             addClass(document.querySelector('body'), 'ss-8');
         }
