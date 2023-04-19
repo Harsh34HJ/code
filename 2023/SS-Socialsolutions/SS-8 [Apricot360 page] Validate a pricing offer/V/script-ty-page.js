@@ -140,11 +140,7 @@
             	document.querySelectorAll('.mj-outlook-group-fix .text-container[align="left"] > .mktoText p')[1].innerHTML = 'We appreciate you contacting Social Solutions. The work you do is life-changing and we want to help. One of our colleagues will get back in touch with you soon with <b>a customized proposal based on your needs.</b>';
             }
         }
-        var urlParams = new URLSearchParams(window.location.search);
-        var pricing = urlParams.get('pricing');
-        if(pricing){
-            helper.waitForElement("body", init, 50, 15000);
-        }
+        helper.waitForElement("body", init, 50, 15000);
     } catch (e) {
         if (debug) console.log(e, "error in Test" + variation_name);
     }

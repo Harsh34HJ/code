@@ -123,7 +123,7 @@
 
         var helper = _$();
         var video = '<figure class="wp-block-embed is-type-video is-provider-vimeo wp-block-embed-vimeo wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper"><iframe class="" name="iframe-1" loading="lazy" title="Apricot Product Overview Video" data-src="https://player.vimeo.com/video/604129823?h=68f5516ae9&amp;dnt=1&amp;app_id=122963" width="500" height="281" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" src="https://player.vimeo.com/video/604129823?h=68f5516ae9&amp;dnt=1&amp;app_id=122963"></iframe></div></figure>';
-        var formSection = '<section class="bottom-price-form"><div class="container-wrapper"><h2 class="title">Get personalized pricing for your needs</h2><h4 class="sub-title">We would be happy to prepare a customized proposal for you! We just need a few details to create the best plan for your nonprofit or public sector organizations. Please fill in the form below and we\'ll be in touch with you shortly.</h4><div class="form-wrapper"><div class="wp-block-ws-card card"><div class="card-body"><div class="wp-block-ws-form"><form id="mktoForm_3835" novalidate="novalidate" class="mktoForm mktoHasWidth mktoLayoutLeft" style="font-family: Helvetica, Arial, sans-serif; font-size: 13px; color: rgb(51, 51, 51); width: 2561px;"></form><script>MktoForms2.loadForm("//landing.socialsolutions.com", "868-XCN-629", 3835);</script></div></div></div><div class="content"><p class="list-title">All Apricot packages include:</p><ul class="list"><li>Best practice forms and reports</li><li>Secure data environment</li><li>Monitor and manage caseloads</li><li>Smart form creation</li><li>Mobile compatibility</li></ul><img class="logo-wrap" src="https://fe-test-dev.s3.amazonaws.com/ss/ss-8/Logos%402x.png" alt="Client-logos"></div></div></div></section>';
+        var formSection = '<section class="bottom-price-form"><div class="container-wrapper"><h2 class="title">Get personalized pricing for your needs</h2><h4 class="sub-title">We would be happy to prepare a customized proposal for you! We just need a few details to create the best plan for your nonprofit or public sector organizations. Please fill in the form below and we\'ll be in touch with you shortly.</h4><div class="form-wrapper"><div class="wp-block-ws-card card"><div class="card-body"><div class="wp-block-ws-form"><form id="mktoForm_3835" novalidate="novalidate" class="mktoForm mktoHasWidth mktoLayoutLeft" style="font-family: Helvetica, Arial, sans-serif; font-size: 13px; color: rgb(51, 51, 51); width: 2561px;"></form><script>MktoForms2.loadForm("//landing.socialsolutions.com", "868-XCN-629", 3835);</script></div></div></div><div class="content"><p class="list-title">All Apricot packages include:</p><ul class="list"><li>Best practice forms and reports</li><li>Secure data environment</li><li>Monitor and manage caseloads</li><li>Smart form creation</li><li>Mobile compatibility</li></ul><img class="logo-wrap" src="https://fe-test-dev.s3.amazonaws.com/ss/ss-8/new-logo%402x.png" alt="Client-logos"></div></div></div></section>';
         var list = '<ul class="hero-list"><li>Make data-driven decisions with built-in reports and powerful integrations.</li><li>Client-focused tools empower participants to stay connected and request services.</li><li>Stay on the same page and deliver comprehensive care to every participant.</li></ul>';
 
         /* Variation Init */
@@ -176,10 +176,9 @@
                 document.querySelector(".section-10").insertAdjacentHTML("afterend", formSection);
             }
             if (document.querySelector('.section-1 .wp-block-buttons .wp-block-button')) {
-                document.querySelector(".section-1 .wp-block-button__link[href='https://trial.socialsolutions.com/']").innerText = 'Request Pricing';
+                document.querySelector(".section-1 .wp-block-button__link[href='https://trial.socialsolutions.com/']").innerText = 'Free Demo';
                 document.querySelector(".section-1 .wp-block-button__link[href='https://trial.socialsolutions.com/']").setAttribute('target', '_self');
-                document.querySelector(".section-1 .wp-block-button__link[href='https://trial.socialsolutions.com/']").setAttribute('href', 'javascript:void(0)');
-                document.querySelector(".section-1 .wp-block-button__link[href='https://www.socialsolutions.com/request-a-demo/']").innerText = 'Free Demo';
+                document.querySelector(".section-1 .wp-block-button__link[href='https://trial.socialsolutions.com/']").setAttribute('href', 'https://www.socialsolutions.com/request-a-demo/');
             }
             if (document.querySelectorAll('.section-1 .wp-block-ws-split-half')[1]) {
                 document.querySelectorAll('.section-1 .wp-block-ws-split-half')[1].innerHTML = video;
@@ -241,8 +240,6 @@
 
                     form.onSuccess(function(values, followUpUrl) {
                         trackGAEvent('funnelenvy', 'Click', 'Request pricing');
-                        document.location.href = "https://landing.socialsolutions.com/demo-confirmation.html?pricing=true";
-                        return false;
                     });
                 });
             }, 50, 15000);
@@ -250,12 +247,10 @@
             helper.live("#FirstName, #LastName, #Email, #Company, #Phone, #Country, #State, #Industry, #industryType, #jobDepartment, #jobLevel", "click", function() {
                 trackGAEvent('funnelenvy', 'Click', 'Form engagement');
             });
-            helper.live(".section-1 .wp-block-button__link[href='javascript:void(0)", "click", function() {
+            helper.live(".section-1 .wp-block-button__link[href='https://www.socialsolutions.com/request-a-demo/'], .section-3 .wp-block-button__link[href='https://www.socialsolutions.com/request-a-demo/'], .section-4 .wp-block-button__link[href='https://www.socialsolutions.com/request-a-demo/'], .section-5 .wp-block-button__link[href='https://www.socialsolutions.com/request-a-demo/'] ", "click", function(e) {
+            	e.preventDefault();
                 trackGAEvent('funnelenvy', 'Click', 'primary CTA click');
                 document.querySelector('.bottom-price-form').scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
-            });
-            helper.live(".section-1 .wp-block-button__link[href='https://www.socialsolutions.com/request-a-demo/']", "click", function() {
-                trackGAEvent('funnelenvy', 'Click', 'secondary CTA click');
             });
             addClass(document.querySelector('body'), 'ss-8');
         }

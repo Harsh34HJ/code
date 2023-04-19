@@ -5,7 +5,7 @@
 ::placeholder{opacity:1}
 html body{opacity:0;visibility:hidden}
 html body.ss-8{opacity:1;visibility:visible}
-html body.ss-8 .section-10,html body.ss-8 .section-2{display:none}
+html body.ss-8 #main>.spacer-50,html body.ss-8 .section-1 .wp-block-buttons .wp-block-button:nth-child(2),html body.ss-8 .section-10,html body.ss-8 .section-2,html body.ss-8 .section-7,html body.ss-8 .section-8,html body.ss-8 .section-9{display:none}
 html body.ss-8 .section-1{padding:80px 0}
 html body.ss-8 .section-1 h1{line-height:normal}
 html body.ss-8 .section-1 .hero-list{margin:0 0 30px 30px}
@@ -14,18 +14,18 @@ html body.ss-8 .section-1 .wp-block-ws-split{-webkit-box-pack:justify;-ms-flex-p
 html body.ss-8 .section-1 .wp-block-ws-split-half:nth-child(1){-ms-flex-preferred-size:55.5%!important;flex-basis:55.5%!important;max-width:55.5%!important}
 html body.ss-8 .section-1 .wp-block-ws-split-half:nth-child(2){-ms-flex-preferred-size:36%;flex-basis:36%;max-width:36%}
 }
-html body.ss-8 .bottom-price-form{padding:50px 0 100px}
+html body.ss-8 .bottom-price-form{padding:50px 0 80px}
 html body.ss-8 .bottom-price-form .container-wrapper{max-width:1272px;width:100%;margin:0 auto;padding:0 16px}
 html body.ss-8 .bottom-price-form .title{font-size:45px;line-height:59px;text-align:center;margin:0 auto 40px}
 html body.ss-8 .bottom-price-form .sub-title{font-family:Graphik,helvetica,sans-serif;font-size:16px;font-weight:400;line-height:26px;text-align:center;margin:0 auto 52px;max-width:920px;width:100%}
 html body.ss-8 .bottom-price-form .form-wrapper{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}
-html body.ss-8 .bottom-price-form .form-wrapper .content{max-width:600px;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-left:3%}
+html body.ss-8 .bottom-price-form .form-wrapper .content{max-width:600px;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-left:3%;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
 html body.ss-8 .bottom-price-form .form-wrapper .content .list-title{color:#003d50;font-family:Graphik,helvetica,sans-serif;font-size:24px;font-weight:400;line-height:36px;margin:0 0 23px}
-html body.ss-8 .bottom-price-form .form-wrapper .content .list{padding-right:30px;list-style:none;margin:0 auto 137px}
+html body.ss-8 .bottom-price-form .form-wrapper .content .list{padding-right:30px;list-style:none;margin:0 auto 40px}
 html body.ss-8 .bottom-price-form .form-wrapper .content .list li{position:relative;font-family:Graphik,helvetica,sans-serif;font-size:16px;font-weight:400;line-height:26px;color:#5d5d5d;margin:0 0 10px}
 html body.ss-8 .bottom-price-form .form-wrapper .content .list li:before{position:absolute;content:'';left:-40px;top:0;background-image:url('https://fe-test-dev.s3.amazonaws.com/ss/ss-8/checkmark.svg');width:30px;height:30px}
-html body.ss-8 .bottom-price-form .form-wrapper .content .logo-wrap{max-width:600px;width:100%}
-html body.ss-8 .bottom-price-form .wp-block-ws-card.card{max-width:570px;width:100%;-webkit-box-shadow:0 1px 4px rgba(0,0,0,.5);box-shadow:0 1px 4px rgba(0,0,0,.5)}
+html body.ss-8 .bottom-price-form .form-wrapper .content .logo-wrap{max-width:440px;width:100%}
+html body.ss-8 .bottom-price-form .wp-block-ws-card.card{max-width:570px;width:100%;-webkit-box-shadow:0 1px 4px rgba(0,0,0,.5);box-shadow:0 1px 4px rgba(0,0,0,.5);margin-bottom:0}
 html body.ss-8 .bottom-price-form .wp-block-ws-card.card .card-body{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-shadow:0 1px 4px rgb(0 0 0 / 50%);box-shadow:0 1px 4px rgb(0 0 0 / 50%)}
 html body.ss-8 .bottom-price-form .wp-block-ws-card.card .wp-block-ws-form{margin-bottom:0}
 html body.ss-8 .fe-firstRow-mktfrm,html body.ss-8 .fe-secondRow-mktfrm,html body.ss-8 .fe-thirdRow-mktfrm{display:-webkit-box;display:-ms-flexbox;display:flex}
@@ -64,8 +64,9 @@ html body.ss-8 .mktoForm #NumberOfEmployees,html body.ss-8 .mktoForm #State,html
 html body.ss-8 .bottom-price-form .container-wrapper{max-width:750px}
 html body.ss-8 .bottom-price-form .form-wrapper{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 html body.ss-8 .bottom-price-form .form-wrapper .content{margin-left:0}
-html body.ss-8 .bottom-price-form .form-wrapper .content .list{margin:0 auto 70px}
+html body.ss-8 .bottom-price-form .form-wrapper .content .list{margin:0 auto 40px}
 html body.ss-8 .bottom-price-form .title{width:80%}
+html body.ss-8 .bottom-price-form .wp-block-ws-card.card{margin-bottom:50px}
 }
 @media(max-width:767.98px){
 html body.ss-8 .mktoForm .mktoButtonWrap.mktoPurpleCandy .mktoButton{width:192px!important}
@@ -81,7 +82,7 @@ html body.ss-8 .wp-block-ws-form .mktoButtonRow{margin:0!important}
 html body.ss-8 .mktoForm .mktoFormRow[input-name=parent-optIn] .mktoFieldWrap{margin-bottom:15px}
 }
 @media(max-width:400px){
-html body.ss-8 .bottom-price-form .form-wrapper .content .list{margin:0 auto 70px 0;padding:0 0 0 30px}
+html body.ss-8 .bottom-price-form .form-wrapper .content .list{margin:0 auto 30px 0;padding:0 0 0 30px}
 html body.ss-8 .bottom-price-form .form-wrapper .content .list li:before{left:-37px}
 }
 @media(max-width:374.98px){

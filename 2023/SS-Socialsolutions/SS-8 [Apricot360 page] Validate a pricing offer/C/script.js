@@ -132,11 +132,12 @@
 
         function init() {
             classAllocation();
-            helper.live(".section-1 .wp-block-button__link[href='https://trial.socialsolutions.com/", "click", function() {
+            if (document.querySelector('.section-1 .wp-block-buttons .wp-block-button')) {
+                document.querySelector(".section-1 .wp-block-button__link[href='https://trial.socialsolutions.com/']").innerText = 'Request a demo';
+                document.querySelector(".section-1 .wp-block-button__link[href='https://trial.socialsolutions.com/']").setAttribute('href', 'https://www.socialsolutions.com/request-a-demo/');
+            }
+            helper.live(".section-1 .wp-block-button__link[href='https://www.socialsolutions.com/request-a-demo/", "click", function() {
                 trackGAEvent('funnelenvy', 'Click', 'primary CTA click');
-            });
-            helper.live(".section-1 .wp-block-button__link[href='https://www.socialsolutions.com/request-a-demo/']", "click", function() {
-                trackGAEvent('funnelenvy', 'Click', 'secondary CTA click');
             });
         }
         helper.waitForElement("body", init, 50, 15000);
