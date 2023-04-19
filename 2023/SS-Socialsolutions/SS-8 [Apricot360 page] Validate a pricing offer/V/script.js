@@ -241,6 +241,8 @@
 
                     form.onSuccess(function(values, followUpUrl) {
                         trackGAEvent('funnelenvy', 'Click', 'Request pricing');
+                        document.location.href = "https://landing.socialsolutions.com/demo-confirmation.html?pricing=true";
+                        return false;
                     });
                 });
             }, 50, 15000);
