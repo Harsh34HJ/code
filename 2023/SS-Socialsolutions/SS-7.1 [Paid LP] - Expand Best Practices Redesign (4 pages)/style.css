@@ -55,32 +55,31 @@ html body.ss-7-1-l .mktoForm .mktoButtonWrap.mktoPurpleCandy .mktoButton:hover,h
 html body.ss-7-1-l .mktoForm .mktoButtonWrap.mktoPurpleCandy .mktoButton,html body.ss-7-1-r .mktoForm .mktoButtonWrap.mktoPurpleCandy .mktoButton{font-family:Graphik,helvetica,sans-serif;font-size:15px;line-height:19px!important;text-shadow:none;font-weight:600;width:174px!important;border-radius:4px!important}
 html body.ss-7-1-l .site-header .logo,html body.ss-7-1-r .site-header .logo{padding-right:0;padding-left:0}
 html body.ss-7-1-l .mktoForm select,html body.ss-7-1-r .mktoForm select{width:100%!important;height:39.33px;margin:0 0;border:1px solid #ddd;border-radius:0;color:#003d50;font-weight:400;background-color:#fff;line-height:1.5em;position:relative;cursor:pointer;-webkit-appearance:none;-moz-appearance:none;appearance:none;background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg fill='%23003D50' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M.1 6.9L1.9 5 12 15.3 22.1 5l1.8 1.8L12 19 .1 6.9z'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:95% 50%;background-position:calc(100% - 20px) 50%;background-size:16px 16px;padding:20px 41px 20px 20px;padding-right:46px!important}
-html body.ss-7-1-l .fe-auth-wrapper,html body.ss-7-1-r .fe-auth-wrapper{position:relative;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;max-width:539px;width:100%;margin-top:37px}
+html body.ss-7-1-l .fe-auth-wrapper,html body.ss-7-1-r .fe-auth-wrapper{position:relative;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;max-width:100%;width:100%;margin-top:37px}
 html body.ss-7-1-l.rmt-pg .fe-auth-wrapper,html body.ss-7-1-r.abp-pg .fe-auth-wrapper{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}
 html body.ss-7-1-l .fe-auth-wrapper .auth-img,html body.ss-7-1-r .fe-auth-wrapper .auth-img{max-width:204px;width:100%}
 html body.ss-7-1-l .fe-auth-wrapper .auth-img.invert-img{-webkit-transform:scale(-1,1);-ms-transform:scale(-1,1);transform:scale(-1,1)}
 html body.ss-7-1-l .fe-auth-wrapper .auth-img.square-img{-webkit-box-shadow:0 2px 4px rgb(0 0 0 / 50%);box-shadow:0 2px 4px rgb(0 0 0 / 50%)}
 html body.ss-7-1-l .fe-auth-wrapper .auth-img.round-img,html body.ss-7-1-r .fe-auth-wrapper .auth-img.round-img{position:absolute;left:0}
-html body.ss-7-1-l .fe-auth-wrapper .content,html body.ss-7-1-r .fe-auth-wrapper .content{max-width:367px;width:100%;background-image:url(https://www.socialsolutions.com/wp-content/themes/_ws/assets/split_card_bg.png);background-size:170%;padding:0 34.19px;min-height:204px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-shadow:0 1px 4px rgb(0 0 0 / 50%);box-shadow:0 1px 4px rgb(0 0 0 / 50%)}
+html body.ss-7-1-l .fe-auth-wrapper .content,html body.ss-7-1-r .fe-auth-wrapper .content{max-width:384px;width:100%;background-image:url(https://www.socialsolutions.com/wp-content/themes/_ws/assets/split_card_bg.png);background-size:170%;padding:0 34.19px;min-height:204px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-shadow:0 1px 4px rgb(0 0 0 / 50%);box-shadow:0 1px 4px rgb(0 0 0 / 50%)}
 html body.ss-7-1-r.abp-pg .fe-auth-wrapper .content{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
 html body.ss-7-1-l .fe-auth-wrapper .content p,html body.ss-7-1-r .fe-auth-wrapper .content p{font-family:Graphik,helvetica,sans-serif;font-size:16px;line-height:21px!important;font-weight:500;color:#003d50;margin:0;text-align:center}
-html body.ss-7-1-l .fe-auth-wrapper .auth-img.round-img+.content,html body.ss-7-1-r .fe-auth-wrapper .auth-img.round-img+.content{max-width:405px;padding:0 34.19px 0 78.38px}
+html body.ss-7-1-l .fe-auth-wrapper .auth-img.round-img+.content,html body.ss-7-1-r .fe-auth-wrapper .auth-img.round-img+.content{max-width:405px;padding:0 34.19px}
 html body.ss-7-1-r.abp-pg .fe-auth-wrapper .content ul{margin:20px 0 0;list-style:none;padding-right:20px}
 html body.ss-7-1-r.abp-pg .fe-auth-wrapper .content ul li{position:relative;color:#003d50;font-family:Graphik,helvetica,sans-serif;font-size:16px;font-weight:400;line-height:21px;margin:0 0 6px}
 html body.ss-7-1-r.abp-pg .fe-auth-wrapper .content ul li:before{position:absolute;left:-20px;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%);content:'';width:10px;height:9px;background:#003d50;border-radius:50%}
 html body.ss-7-1-r .wp-block-ws-section.blog-hero .container.section-container{margin-top:0!important}
 html body.ss-7-1-r .wp-block-ws-section.blog-hero .section-inner .row{-ms-flex-wrap:nowrap;flex-wrap:nowrap}
-html body.ss-7-1-r .wp-block-ws-section.blog-hero .section-inner .row>.col-lg-8.col-xl-7{-ms-flex-preferred-size:50%;flex-basis:50%;max-width:50%}
+html body.ss-7-1-l .wp-block-ws-split.variant-large-left.split-padding>.wp-block-ws-split-half:first-child,html body.ss-7-1-r .wp-block-ws-section.blog-hero .section-inner .row>.col-lg-8.col-xl-7{-ms-flex-preferred-size:49%;flex-basis:49%;max-width:49%}
 html body.ss-7-1-r .wp-block-ws-section.blog-hero .section-inner .row>.wp-block-ws-split-half{margin-left:8.33333%;-ms-flex-preferred-size:41.66667%;flex-basis:41.66667%;max-width:41.66667%}
 html body.ss-7-1-r .wp-block-ws-section.blog-hero .section-inner .row>.col-lg-8.col-xl-7>p{display:none!important}
 html body.ss-7-1-l .site-footer,html body.ss-7-1-r .site-footer{margin-top:200px}
-@media(min-width:1299.98px){
-html body.ss-7-1-l.hrm-pg .wp-block-ws-page-title,html body.ss-7-1-l.rmt-pg .wp-block-ws-page-title{max-width:80%;width:100%}
-html body.ss-7-1-r.abp-pg .wp-block-ws-page-title{max-width:95%;width:100%}
-}
 @media(max-width:1299.98px) and (min-width:1079.98px){
-html body.ss-7-1-l .fe-auth-wrapper .auth-img.round-img+.content,html body.ss-7-1-r .fe-auth-wrapper .auth-img.round-img+.content{max-width:355px}
+html body.ss-7-1-l .fe-auth-wrapper .auth-img.round-img+.content,html body.ss-7-1-r .fe-auth-wrapper .auth-img.round-img+.content{max-width:355px;padding: 0 34.19px 0 78.38px}
+html body.ss-7-1-l .wp-block-ws-split.variant-large-left.split-padding>.wp-block-ws-split-half:first-child,
+html body.ss-7-1-r .wp-block-ws-section.blog-hero .section-inner .row>.col-lg-8.col-xl-7,
 html body.ss-7-1-r .wp-block-ws-section.blog-hero .section-inner .row>.wp-block-ws-split-half{margin-left:0;-ms-flex-preferred-size:50%;flex-basis:50%;max-width:50%}
+html body.ss-7-1-l .wp-block-ws-page-title, html body.ss-7-1-l h1.tab-mob-only.title, html body.ss-7-1-r .wp-block-ws-page-title, html body.ss-7-1-r h1.tab-mob-only.title{padding-right:20px}
 }
 @media(max-width:1079.98px){
 html body.ss-7-1-l .site-footer,html body.ss-7-1-r .site-footer{margin-top:126px}
@@ -90,7 +89,7 @@ html body.ss-7-1-l h1.tab-mob-only.title,html body.ss-7-1-r h1.tab-mob-only.titl
 html body.ss-7-1-l .wp-block-ws-section.has-background .wp-block-ws-split-half>p:not(.fe-subheading):nth-child(2){display:block!important;font-size:18px;line-height:22px;color:#003d50;font-weight:500;margin-bottom:21px}
 html body.ss-7-1-l .wp-block-ws-section .section-inner>:first-child,html body.ss-7-1-r .wp-block-ws-section.blog-hero .section-inner .row{-webkit-box-orient:vertical;-webkit-box-direction:reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse}
 html body.ss-7-1-l .wp-block-ws-split-half .wp-block-ws-card.card,html body.ss-7-1-r .wp-block-ws-split-half .wp-block-ws-card.card{margin-bottom:38px}
-html body.ss-7-1-r.abp-pg .wp-block-ws-split-half .wp-block-ws-card.card{margin-bottom:80px}
+html body.ss-7-1-r.abp-pg .wp-block-ws-split-half .wp-block-ws-card.card{margin-bottom:50px}
 html body.ss-7-1-l .wp-block-ws-section.has-background .wp-block-ws-split-half .is-layout-flex.wp-block-buttons.mobile_only,html body.ss-7-1-r .wp-block-ws-section.has-background .wp-block-ws-split-half .is-layout-flex.wp-block-buttons.mobile_only{display:none!important}
 html body.ss-7-1-l .fe-subheading,html body.ss-7-1-r .fe-subheading{color:#003d50;font-size:18px;font-weight:400;line-height:22px}
 html body.ss-7-1-l .fe-firstRow-mktfrm,html body.ss-7-1-l .fe-secondRow-mktfrm,html body.ss-7-1-l .fe-thirdRow-mktfrm,html body.ss-7-1-r .fe-firstRow-mktfrm,html body.ss-7-1-r .fe-secondRow-mktfrm,html body.ss-7-1-r .fe-thirdRow-mktfrm{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
@@ -107,7 +106,7 @@ html body.ss-7-1-l.rmt-pg .fe-auth-wrapper,html body.ss-7-1-r.abp-pg .fe-auth-wr
 html body.ss-7-1-l .fe-auth-wrapper .auth-img.round-img,html body.ss-7-1-r .fe-auth-wrapper .auth-img.round-img{position:inherit;left:inherit}
 html body.ss-7-1-l .fe-auth-wrapper .auth-img.round-img+.content,html body.ss-7-1-r .fe-auth-wrapper .auth-img.round-img+.content{max-width:calc(100% - 40px);padding:0 23px}
 html body.ss-7-1-r.abp-pg .fe-auth-wrapper .auth-img.round-img+.content{min-height:210px}
-html body.ss-7-1-r .wp-block-ws-section.blog-hero .section-inner .row>.col-lg-8.col-xl-7,html body.ss-7-1-r .wp-block-ws-section.blog-hero .section-inner .row>.wp-block-ws-split-half{margin-left:0;-ms-flex-preferred-size:100%;flex-basis:100%;max-width:100%}
+html body.ss-7-1-l .wp-block-ws-split.variant-large-left.split-padding>.wp-block-ws-split-half:first-child,html body.ss-7-1-r .wp-block-ws-section.blog-hero .section-inner .row>.col-lg-8.col-xl-7,html body.ss-7-1-r .wp-block-ws-section.blog-hero .section-inner .row>.wp-block-ws-split-half{margin-left:0;-ms-flex-preferred-size:100%;flex-basis:100%;max-width:100%}
 }
 html body.ss-7-1-l .mktoForm .mktoFormRow[input-name=parent-optIn] .mktoFieldWrap,html body.ss-7-1-r .mktoForm .mktoFormRow[input-name=parent-optIn] .mktoFieldWrap{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}
 html body.ss-7-1-l .mktoForm .mktoCheckboxList,html body.ss-7-1-r .mktoForm .mktoCheckboxList{width:auto!important}

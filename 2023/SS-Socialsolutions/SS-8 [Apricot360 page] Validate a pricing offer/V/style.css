@@ -6,6 +6,7 @@
 html body{opacity:0;visibility:hidden}
 html body.ss-8{opacity:1;visibility:visible}
 html body.ss-8 #main>.spacer-50,html body.ss-8 .section-1 .wp-block-buttons .wp-block-button:nth-child(2),html body.ss-8 .section-10,html body.ss-8 .section-2,html body.ss-8 .section-7,html body.ss-8 .section-8,html body.ss-8 .section-9{display:none}
+html body.ss-8 .section-3 .wp-block-buttons,html body.ss-8 .section-4 .wp-block-buttons,html body.ss-8 .section-5 .wp-block-buttons,html body.ss-8 .section-6 .wp-block-buttons{display:none}
 html body.ss-8 .section-1{padding:80px 0}
 html body.ss-8 .section-1 h1{line-height:normal}
 html body.ss-8 .section-1 .hero-list{margin:0 0 30px 30px}
