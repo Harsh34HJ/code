@@ -176,7 +176,7 @@
                 document.querySelector(".section-10").insertAdjacentHTML("afterend", formSection);
             }
             if (document.querySelector('.section-1 .wp-block-buttons .wp-block-button')) {
-                document.querySelector(".section-1 .wp-block-button__link[href='https://trial.socialsolutions.com/']").innerText = 'Request a demo';
+                document.querySelector(".section-1 .wp-block-button__link[href='https://trial.socialsolutions.com/']").innerText = 'Request Pricing';
                 document.querySelector(".section-1 .wp-block-button__link[href='https://trial.socialsolutions.com/']").setAttribute('target', '_self');
                 document.querySelector(".section-1 .wp-block-button__link[href='https://trial.socialsolutions.com/']").setAttribute('href', 'https://www.socialsolutions.com/request-a-demo/');
             }

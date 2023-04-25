@@ -276,7 +276,7 @@
             }
             onLoadMktoForms2(function() {
                 form();
-            }, 50, 15000);
+            }, 100, 20000);
             optimizeEvents();
             var classBody = findContent(pageURLPath, pageData, 'bodyClass');
             addClass(document.querySelector('body'), 'ss-7-1-l');
@@ -308,7 +308,7 @@
             }
             onLoadMktoForms2(function() {
                 form();
-            }, 50, 15000);
+            }, 100, 20000);
             optimizeEvents();
             addClass(document.querySelector('.sidebar-block .at-above-post'), 'hide');
             var classBody = findContent(pageURLPath, pageData, 'bodyClass');
