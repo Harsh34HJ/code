@@ -97,7 +97,7 @@
             "                             <p>Unlock the value of your content with enterprise-grade security, privacy, and compliance.</p>" +
             "                         </div>" +
             '                         <div class="fe_slider_btn">' +
-            '                             <a href="#">Learn more</a>' +
+            '                             <a href="https://www.box.com/ai">Learn more</a>' +
             "                         </div>" +
             "                   </div>" +
             '                   <div class="fe_right">' +
