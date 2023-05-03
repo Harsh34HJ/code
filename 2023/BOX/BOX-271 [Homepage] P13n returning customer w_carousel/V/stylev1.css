@@ -337,7 +337,7 @@ html body.box-271 .slideshow--arrows .prev::before {
 	    width: calc(54.57143% + 1.125rem);
 	}
 }
-html body.box-271{	
+/* html body.box-271{	
 	visibility: hidden;	
 	opacity: 0;	
 	transition: 0.3s all ease-in-out;	
@@ -345,4 +345,4 @@ html body.box-271{
 html body.box-271.load{	
 	visibility: visible;	
 	opacity: 1;	
-}
+} */
