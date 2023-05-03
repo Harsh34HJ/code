@@ -257,14 +257,3 @@ html body.box-275 .fe_slider_section .fe_slider_content {
       display: none!important
     }
   }
-  html body.box-275 {
-    visibility: hidden;
-    opacity: 0;
-    -webkit-transition: .3s all ease-in-out;
-    -o-transition: .3s all ease-in-out;
-    transition: .3s all ease-in-out
-  }
-  html body.box-275.load {
-    visibility: visible;
-    opacity: 1
-  }
