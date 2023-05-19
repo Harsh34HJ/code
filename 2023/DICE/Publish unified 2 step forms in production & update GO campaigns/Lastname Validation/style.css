@@ -1,0 +1,11 @@
+form[id*="mktoForm"] .mktoButtonWrap button{
+	display: block!important;
+}
+
+form[id*="mktoForm"] .mktoButtonWrap.mktoSimple{
+	display: block;
+	padding: 0 5px;
+}
+html body form.mktoForm .mktoButtonWrap button.btn.btn-primary{
+	margin: 0 !important;
+}
