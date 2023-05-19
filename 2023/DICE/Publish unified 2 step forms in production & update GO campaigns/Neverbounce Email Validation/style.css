@@ -59,10 +59,10 @@ html body .mktoForm .mktoRequiredField {
 html body .mktoForm div[id^=nb-field-] {
   position: initial!important
 }
-.mktoFormRow.multi-step-step1.multi-step-show:nth-child(3) .mktoError,
+/* .mktoFormRow.multi-step-step1.multi-step-show:nth-child(3) .mktoError,
 html body form.mktoForm .Email .mktoError {
   display: none!important
-}
+} */
 html body.RcrPkg .sales-form-wrapper .sales-form-holder .mktoButtonRow .mktoButtonWrap {
   display: block;
   padding: 0!important

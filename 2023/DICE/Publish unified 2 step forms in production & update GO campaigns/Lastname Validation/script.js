@@ -152,6 +152,7 @@
             var domain = str.slice(0, str.indexOf("."));
             if (excludeEmail.indexOf(domain.toLowerCase()) != -1) {
                 form.showErrorMessage("Must be valid work email. example@yourdomain.com", emailElem);
+                emailElem.removeClass('mktoValid').addClass('mktoInvalid');
                 isEmailValid = false;
             } else {
                 isEmailValid = true;
@@ -334,7 +335,7 @@
 
      //  document.addEventListener('DOMContentLoaded', function () {
         // DOM manipulation and other code here
-        var interval = setInterval(function () {
+        /*var interval = setInterval(function () {
             var element = document.querySelector(".mktoForm");
             //console.log('out',element)
             if (element && !document.querySelector(".mktoForm input").value.length == 0) {
@@ -345,7 +346,7 @@
                 }, 1500);
             }
 
-        }, 500);
+        }, 500);*/
     //});
 
     function multiStepHandler() {
@@ -364,6 +365,13 @@
                     if (document.querySelector(".multi-step-step1-btn") != null) {
                         document.querySelector(".multi-step-step1-btn").style.display = "none";
                     }
+                    var interval = setInterval(function() {
+                    	var element = document.querySelector(".mktoForm");
+				        if (element && !document.querySelector(".mktoForm input").value.length == 0) {
+				            element.reset();
+				            clearInterval(interval);
+				        }
+                    },500);
                     // change button text
                     modifyForm.changeButtonText();
                     // form label

@@ -117,6 +117,11 @@
                     } else {
                         // Do stuff for bad email
                         document.getElementsByClassName('mktoButton').disabled = true;
+                        if(document.querySelector('.nb-feedback')){
+                        	if(document.querySelector('.nb-feedback .nb-result').innerText.trim() == 'Invalid email'){
+                        		document.querySelector('.nb-feedback .nb-result').innerText = 'Must be valid work email. example@yourdomain.com';
+                        	}
+                        }
                     }
                 });
             });
@@ -124,7 +129,8 @@
 
         /* Variation Init */
         function init() {
-            if (window.location.href.includes('techhub.dice.com')) {
+            document.body.classList.add('dice-90_1');
+            /*if (window.location.href.includes('techhub.dice.com')) {
                 document.body.classList.add('techhub-dice-90_1');
                 // parentClass();
             }
@@ -134,7 +140,7 @@
             }
             if (window.location.pathname == '/2019-homepagebannertest.html') {
                 document.body.classList.add('HBT-2019');
-            }
+            }*/
 
             var jsElm = document.createElement("script");
             // set the type attribute
