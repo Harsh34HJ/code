@@ -124,6 +124,9 @@ html body .mktoForm{
 html body form.mktoForm .Email div[id^=nb-field-].nb-error .mktoError {
   display: none!important
 }
+html body form.mktoForm .Email .mktoError {
+  right: inherit !important;
+}
 @media(max-width:500px){
 	html body div[id^=nb-field-] div.nb-feedback>div{
 		flex-direction: column;

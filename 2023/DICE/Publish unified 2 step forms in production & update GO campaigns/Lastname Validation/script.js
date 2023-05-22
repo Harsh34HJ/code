@@ -87,7 +87,7 @@
         triggerNextStep: function (steps, formRow, formLabel) {
             setTimeout(function () {
                 var isValid = modifyForm.checkFieldValidate(steps);
-                if (isValid && step === 1 && isLastNameValid) {
+                if (isValid && step === 1 && isEmailValid && isLastNameValid) {
                     modifyForm.removeError(formRow);
                     modifyForm.showSecondStep(formLabel);
                     // control CTA hidden here to
@@ -385,6 +385,7 @@
                     document.querySelector("form[id*='mktoForm'] button[type='submit']").addEventListener("click", function () {
                         // triggering multistep
                         setTimeout(function () {
+                            modifyForm.validateEmail(form);
                             modifyForm.validateLastName(form);
                             modifyForm.triggerNextStep(steps, formRow, formLabel);
                         }, 500);
