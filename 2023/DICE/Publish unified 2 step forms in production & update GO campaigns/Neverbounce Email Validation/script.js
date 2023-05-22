@@ -127,6 +127,61 @@
             });
         }
 
+        var isEmailValid = false;
+        function emailCheck(form) {
+            var emailElem = form.getFormElem().find("#Email");
+            var excludeEmail = [
+                "gmail",
+                "yahoo",
+                "hotmail",
+                "aol",
+                "me",
+                "icloud",
+                "comcast",
+                "msn",
+                "att",
+                "ios",
+                "outlook",
+                "inbox",
+                "mail",
+                "hotmail",
+                "live",
+                "verizon",
+                "bellsouth",
+                "charter",
+                "earthlink",
+                "mac",
+                "cox",
+                "email",
+                "cloudassociates",
+                "ril",
+                "work",
+                "w",
+                "gmai",
+                "microsoft",
+                "ail",
+                "suddenlink",
+                "ymail",
+                "asdasd",
+                "abc",
+                "ya",
+                "yah",
+                "ccb",
+                "aa",
+                "aim",
+            ];
+            var vals = form.vals();
+            var str = vals.Email.split("@").pop();
+            var domain = str.slice(0, str.indexOf("."));
+            if (excludeEmail.indexOf(domain.toLowerCase()) != -1) {
+                form.showErrorMessage("Must be valid work email. example@yourdomain.com", emailElem);
+                emailElem.removeClass('mktoValid').addClass('mktoInvalid');
+                isEmailValid = false;
+            } else {
+                isEmailValid = true;
+            }
+        }
+
         /* Variation Init */
         function init() {
             document.body.classList.add('dice-90_1');
@@ -160,6 +215,9 @@
                 onLoadMktoForms2(function() {
                     MktoForms2.whenReady(function(form) {
                         parentClass();
+                        form.onValidate(function(){
+                        	emailCheck(form);
+                        });
                         live('.mktoForm #Email', 'keypress', function(e) {
                             if (e.key === "Enter") {
                                 e.preventDefault();

@@ -10,14 +10,3 @@ html body form.mktoForm .mktoButtonWrap button.btn.btn-primary{
 	margin: 0 !important;
 	box-shadow: none !important;
 }
-/*html body form.mktoForm .Email.nb-error div[id^=nb-field-] .mktoError{*/
-/*	display: block!important*/
-/*}*/
-html body form.mktoForm .Email div[id^=nb-field-].nb-error .mktoError {
-  display: none!important
-}
-@media(max-width:500px){
-	html body div[id^=nb-field-] div.nb-feedback>div{
-		flex-direction: column;
-	}
-}
