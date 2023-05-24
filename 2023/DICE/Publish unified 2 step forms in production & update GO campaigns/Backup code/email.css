@@ -1,0 +1,134 @@
+html body.dice-90_1 .mktoForm .mktoFormRow div[id^=nb-field-] div.nb-feedback {
+  position: absolute!important;
+  top: 60px!important
+}
+html body.techhub-dice-90_1 .mktoForm .mktoFormRow div[id^=nb-field-] div.nb-feedback {
+  position: absolute!important;
+  top: 40px!important
+}
+html body .dice-base-container .marketo-form form .mktoFormRow.form-row.multi-step-show {
+  display: inline-block!important;
+  width: 50%;
+  margin: 0 0 8px
+}
+html body .dice-base-container .marketo-form form .mktoFormRow.form-row.multi-step-show.Email {
+  width: 100%
+}
+html body form.mktoForm .mktoButtonWrap .fe_button {
+  margin-top: 10px!important;
+  margin-left: 10px!important;
+  margin-bottom: -25px;
+  background-color: #c00!important;
+  border-color: #c00!important;
+  padding: .85em 1em!important;
+  border: 1px solid transparent!important;
+  border-radius: 3px!important;
+  -webkit-transition: background-color .25s ease-out,color .25s ease-out!important;
+  -o-transition: background-color .25s ease-out,color .25s ease-out!important;
+  transition: background-color .25s ease-out,color .25s ease-out!important;
+  max-width: 100px;
+  font-size: .9em!important;
+  text-align: center;
+  text-shadow: none
+}
+html body form.mktoForm .mktoButtonWrap .fe_button:hover {
+  color: #fff;
+  background-color: #e31717!important;
+  border-color: #e31717!important
+}
+.sales-form-wrapper .sales-form-holder .mktoButtonRow .mktoButtonWrap button,
+html body .bm_form_heading.step1Complete + .bm_form_heading + .mktoForm .mktoButtonWrap .fe_button,
+html body .bm_form_heading.step1Complete + .mktoForm .mktoButtonWrap .fe_button,
+html body .mktoButtonWrap button,
+html body.dice-90_1 .sales-form-wrapper .sales-form-holder .mktoButtonWrap button {
+  display: none!important
+}
+html body .bm_form_heading.step1Complete + .bm_form_heading + .mktoForm .mktoButtonWrap button,
+html body .bm_form_heading.step1Complete + .mktoForm .mktoButtonWrap button {
+  display: block!important
+}
+html body .mktoForm .mktoButtonWrap > button {
+  margin-left: 5px!important
+}
+html body .mktoForm .mktoFormRow:nth-child(3) {
+  padding: 0!important
+}
+html body .mktoForm .mktoRequiredField {
+  position: relative
+}
+html body .mktoForm div[id^=nb-field-] {
+  position: initial!important
+}
+/*.mktoFormRow.multi-step-step1.multi-step-show:nth-child(3) .mktoError,
+html body form.mktoForm .Email .mktoError {
+  display: none!important
+}*/
+html body.RcrPkg .sales-form-wrapper .sales-form-holder .mktoButtonRow .mktoButtonWrap {
+  display: block;
+  padding: 0!important
+}
+.sales-form-wrapper .sales-form-holder form .mktoFieldWrap input:focus {
+  border: none!important
+}
+html body.HBT-2019 .sales-form-wrapper .sales-form-holder form[id=mktoForm_3076] .mktoFormRow.multi-step-step1.multi-step-show.FirstName.LastName {
+  display: -webkit-box!important;
+  display: -ms-flexbox!important;
+  display: flex!important;
+  width: 100%!important
+}
+@media screen and (min-width:1200px) {
+  html body .sales-form-wrapper .sales-form-holder {
+    max-width: 545px;
+    max-height: 475px
+  }
+}
+@media screen and (max-width:767px) {
+  html body .mktoForm .mktoFormRow.multi-step-step1:nth-of-type(1) > div {
+    width: 100%!important
+  }
+  html body .mktoForm .mktoFormRow.multi-step-step1 input,
+  html body .mktoForm .mktoFormRow.multi-step-step2 input {
+    padding: 7px!important;
+    margin-bottom: 10px!important
+  }
+  html body .sales-form-wrapper .sales-form-holder form .mktoFormRow .mktoFormCol {
+    margin-bottom: 3px!important
+  }
+}
+html body .mktoForm .form-row.FirstName,
+html body .mktoForm .form-row.LastName {
+  display: inline-block!important;
+  width: 50%;
+  margin: 0 0 8px
+}
+html body .mktoForm .form-row.FirstName.multi-step-hide,
+html body .mktoForm .form-row.LastName.multi-step-hide {
+  display: none!important
+}
+html body .mktoForm .mktoFormRow div[id^=nb-field-] div.nb-feedback {
+  position: absolute!important;
+  top: 60px!important
+}
+html body form.mktoForm .mktoButtonWrap #tempStep1Btn{
+  cursor: pointer;
+}
+html body .mktoForm .multi-step-step2-btn {
+  display: block!important
+}
+html body .mktoForm{
+	width: 100%!important;
+}
+/*html body form.mktoForm .Email.nb-error div[id^=nb-field-] .mktoError{*/
+/*	display: block!important*/
+/*}*/
+html body form.mktoForm .Email div[id^=nb-field-].nb-error .mktoError {
+  display: none!important
+}
+html body form.mktoForm .Email .mktoError {
+  right: inherit !important;
+}  
+@media(max-width:500px){
+	html body div[id^=nb-field-] div.nb-feedback>div{
+		flex-direction: column;
+	}
+}
