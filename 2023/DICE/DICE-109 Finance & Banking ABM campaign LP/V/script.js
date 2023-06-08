@@ -81,14 +81,12 @@
                     step++;
                     modifyForm.changeButtonText();
                     document.querySelector('.hero-wrap .step-wrap .current-step').innerHTML = step;
-                    // trackGAEvents('click', 'Step_1_complete');
                 }
             }, 50);
         },
         triggerBackStep: function(steps, formLabel) {
             setTimeout(function() {
                 step--;
-                modifyForm.changeButtonText();
                 document.querySelector('.hero-wrap .step-wrap .current-step').innerHTML = step;
                 for (var i = 0; i < formLabel.length; i++) {
                     var field = formLabel[i].closest(".mktoFormRow");
@@ -275,6 +273,9 @@
                 if (currentName == 'Email') {
                     currentName = 'Email Address';
                 }
+                if (currentName == 'Phone') {
+                    currentName = 'Phone Number';
+                }
                 if (ele.querySelector('label')) {
                     ele.querySelector('label').innerHTML = currentName + ' <div class="mktoAsterix">*</div>';
                 }
@@ -283,44 +284,10 @@
         });
     };
 
-    const neverbounceSetup = () => {
-        var nbscript = '//cdn.neverbounce.com/widget/dist/NeverBounce.js';
-        window._NBSettings = {
-            apiKey: 'public_ae4f79b9aa58df9ed79ba99b1150e8a8',
-        }
-        addJsToPage(nbscript, 'nb');
-    };
-
     const validateEmail = (email) => {
         var re = /^(([^<>()\[\]\.,;:\s@"]+(\.[^<>()\[\]\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         return re.test(String(email).toLowerCase());
     }
-
-    const neverbounceDOM = () => {
-        document.addEventListener("DOMContentLoaded", (event) => {
-            var emailFieldId = 'Email';
-            var emailFieldTarget = document.getElementById(emailFieldId);
-            emailFieldTarget && emailFieldTarget.setAttribute('data-nb', '');
-        });
-    };
-
-    const neverbounceValidate = () => {
-        document.querySelector('body').addEventListener('nb:registered', (event) => {
-            document.querySelector('.mktoButtonWrap button').disabled = true;
-            let field = document.querySelector('[data-nb-id="' + event.detail.id + '"]');
-            field.addEventListener('nb:result', function(e) {
-                if (e.detail.result.is(_nb.settings.getAcceptedStatusCodes())) {
-                    document.querySelector('.mktoButtonWrap button').disabled = false;
-                } else {
-                    document.querySelector('.mktoButtonWrap button').disabled = true;
-                    if (document.querySelector('#Email').classList.contains('mktoValid')) {
-                        document.querySelector('#Email').classList.remove('mktoValid');
-                        document.querySelector('#Email').classList.add('mktoInvalid');
-                    }
-                }
-            });
-        });
-    };
 
 	const trackGAEvents = (action, label) => {
 		pollerLite([() => typeof window.ga.getAll === 'function'], () => {
@@ -409,7 +376,7 @@
 							</dhi-seds-column>
 						</dhi-seds-row>
 					</dhi-seds-column>
-					<dhi-seds-column class="hero-form" size="12" size-lg="5"><form id="mktoForm_${FORMID}"><div class="form-title">Start finding top tech talent!</div><div class="step-wrap">Step <span class="current-step">1</span> of 2</div></form></dhi-seds-column>
+					<dhi-seds-column class="hero-form" size="12" size-lg="5"><div class="multi-step-bm-form-heading"><div class="multi-step-step-sections-bar"><span class="multi-step-step1">1</span><span class="multi-step-step2">2</span><span class="multi-step-progressBar"></span></div></div><form id="mktoForm_${FORMID}"><div class="form-title">Start finding top tech talent!</div><div class="step-wrap">Step <span class="current-step">1</span> of 2</div><div id="disclaimer_${FORMID}" class="disclaimer text-muted text-center mt-4 multi-step-hide"><p>By submitting information I agree to the <a href="/about/privacy-policy" target="_blank">Privacy Policy</a> and <a href="/about/terms-and-conditions" target="_blank">Terms of Use</a>.</p></div></form></dhi-seds-column>
 				</dhi-seds-row>
 			</dhi-seds-container>
 		</div>`;
@@ -686,7 +653,6 @@
         if (document.querySelector(`.${ID}__landingpage`)) return;
         header.insertAdjacentHTML('afterend', landingpage(ID));
 
-        neverbounceValidate();
         onLoadMktoForms2(() => {
             const {
                 FORMURL,
@@ -695,52 +661,37 @@
                 TYURL
             } = shared;
             // MktoForms2.loadForm(`${FORMURL}`, `${FORMCODE}`, `${FORMID}`);
-            dhi.marketo.init(`${FORMID}`, `${FORMCODE}`, `${TYURL}`);
-            // dhi.marketo2.init(4480, "318-VQK-428", "/hiring/contact-us/thank-you", "Continue", "FirstName, LastName, Email", "Get In Touch", "Phone, Company");
+            // dhi.marketo.init(`${FORMID}`, `${FORMCODE}`, `${TYURL}`);
+            dhi.marketo2.init(4480, "318-VQK-428", "/hiring/contact-us/thank-you", "Continue", "FirstName, LastName, Email", "Get In Touch", "Phone, Company");
             MktoForms2.whenReady((form) => {
-                form.submittable(false);
                 updateFormField('.hero-wrap .mktoForm .mktoFormRow');
                 addInputName('.hero-wrap .mktoForm .mktoFormRow');
-
                 var formLabel = document.querySelectorAll(".hero-wrap form[id*='mktoForm'] .mktoFormRow label");
                 var steps = document.querySelectorAll(".hero-wrap form[id*='mktoForm'] .mktoFormRow.fe_show");
                 var formRow = document.querySelectorAll(".hero-wrap form[id*='mktoForm'] .mktoFormRow");
-                document.querySelector('.mktoButtonWrap > button').insertAdjacentHTML('afterend', '<p class="fe-button">Continue</p><p class="fe-back-button"><img src="https://fe-test-dev.s3.amazonaws.com/Dice/dice-109/arrow-left.svg" alt="Back Arrow"> Back</p>');
+                document.querySelector('.mktoButtonWrap > button').insertAdjacentHTML('afterend', '<p class="fe-back-button"><img src="https://fe-test-dev.s3.amazonaws.com/Dice/dice-109/arrow-left.svg" alt="Back Arrow"> Back</p>');
                 document.querySelector('.mktoForm').classList.add('fe-form-step1');
-
-                modifyForm.changeButtonText();
                 modifyForm.addClass(formLabel);
-                neverbounceDOM();
-
-                document.querySelector('.mktoButtonWrap > .fe-button').addEventListener('click', function(e) {
+				document.querySelector('.mktoButtonWrap > #tempStep1Btn').addEventListener('click', function(e) {
                     setTimeout(function() {
                         modifyForm.validateEmail(form);
                         modifyForm.validateFirstName(form);
                         modifyForm.validateLastName(form);
-                        if (document.querySelector('.mktoButtonWrap button').disabled == false) {
-                            modifyForm.triggerNextStep(steps, formRow, formLabel);
-                        }
+                        modifyForm.triggerNextStep(steps, formRow, formLabel);
                     }, 500);
                 });
-
                 document.querySelector('.mktoButtonWrap > .fe-back-button').addEventListener('click', function(e) {
                     setTimeout(function() {
                         modifyForm.triggerBackStep(steps, formLabel);
+                        if(document.querySelector('#FE-Form-Validator__tempStep1Btn').classList.contains('FE-Form-Validator__hide')){
+                        	document.querySelector('#FE-Form-Validator__tempStep1Btn').classList.remove('FE-Form-Validator__hide');
+                        }
+                        document.querySelector('body').classList.add('FE-Form-Validator__step1');
+                        if (document.querySelector('body').classList.contains('FE-Form-Validator__step2')) {
+                            document.querySelector('body').classList.remove('FE-Form-Validator__step2');
+                        }
                     }, 500);
                 });
-
-                form.onValidate(() => {
-                    if (document.querySelector('.mktoForm .mktoError')) {
-                        form.submittable(false);
-                    } else {
-                        form.submittable(true);
-                    }
-                });
-
-                form.onSuccess(() => {
-                    //trackGAEvents('click', 'Step_2_Complete');
-                });
-
                 document.querySelector('.hero-wrap .hero-form').classList.add('load');
             });
         }, 50, 15000);
@@ -801,11 +752,526 @@
 
         addJsToPage('//app-sjg.marketo.com/js/forms2/js/forms2.min.js', 'mkto');
         
-        addJsToPage('https://www.dice.com/webfiles/1684267845325/js/dhi/marketo_form.js', 'mkto-add');
-        // addJsToPage('https://www.dice.com/webfiles/1684267845325/js/dhi/marketo_2_step_form.js', 'mkto-add');
+        // addJsToPage('https://www.dice.com/webfiles/1684267845325/js/dhi/marketo_form.js', 'mkto-add');
+        addJsToPage('https://www.dice.com/webfiles/1684267845325/js/dhi/marketo_2_step_form.js', 'mkto-add');
         
-        neverbounceSetup();
-
         pollerLite([mainLayoutSelector], activate);
     }
 })();
+
+(function () {
+    'use strict';
+      
+    /*eslint-disable object-curly-newline */
+    /*eslint-disable no-console */
+    /*eslint-disable max-len */
+    /**
+     * Polls the DOM for a condition to be met before executing a callback.
+     *
+     * @param {array} conditions The array of conditions to check for.
+     * @param {function} callback The callback function when all conditions are true.
+     * @param {number} maxTime max time the check witll run before abort.
+     */
+    const pollerLite = (conditions, callback, maxTime = 15000) => {
+      const POLLING_INTERVAL = 25;
+      const startTime = Date.now();
+      const interval = setInterval(() => {
+        const allConditionsMet = conditions.every((condition) => {
+          if (typeof condition === 'function') {
+            return condition();
+          }
+          return !!document.querySelector(condition);
+        });
+        if (allConditionsMet) {
+          clearInterval(interval);
+          callback();
+        } else if (Date.now() - startTime >= maxTime) {
+          clearInterval(interval);
+          console.error('Polling exceeded maximum time limit');
+        }
+      }, POLLING_INTERVAL);
+    };
+  
+    const addJsToPage = (src, id, cb, classes) => {
+      if (document.querySelector(`#${id}`)) {
+        return;
+      }
+  
+      const s = document.createElement('script');
+      if (typeof cb === 'function') {
+        s.onload = cb;
+      }
+  
+      if (classes) {
+        s.className = classes;
+      }
+  
+      s.type = 'text/javascript';
+      s.src = src;
+      s.setAttribute('id', id);
+      document.body.appendChild(s);
+    };
+  
+    const addCssToPage = (href, id, classes) => {
+      if (document.querySelector(`#${id}`)) {
+        return;
+      }
+  
+      const c = document.createElement('link');
+      c.setAttribute('id', id);
+      c.setAttribute('rel', 'stylesheet');
+  
+      if (classes) {
+        c.className = classes;
+      }
+  
+      c.href = href;
+      document.head.appendChild(c);
+    };
+  
+    const gaTracking = (label, action = 'click') => {
+      const trackerIDs = [];
+      pollerLite([() => typeof window.ga.getAll === 'function'], () => {
+        window.ga.getAll().forEach((tracker) => {
+          const tracId = tracker.get('trackingId');
+  
+          if (trackerIDs.includes(tracId)) return;
+          tracker.send('event', {
+            eventCategory: 'Contact Sales',
+            eventAction: action,
+            eventLabel: label,
+          });
+          trackerIDs.push(tracId);
+        });
+      });
+    };
+  
+    var shared = {
+      ID: 'FE-Form-Validator',
+      VARIATION: 'control',
+      CLIENT: 'Dice',
+    };
+  
+    const validUrls = {
+      oldForms: [
+        '/hiring/contact-us',
+        '/hiring/contact-us/recruitment-package',
+        '/2018-WS-contact-us.html',
+        '/hiring/contact-us/virtual-career-events',
+        '/hiring/contact-us/employer-brand',
+        '/hiring/contact-us/sourcing-services',
+        '/hiring/contact-us/whats-new',
+        '/2017-contact-us.html',
+        '/Dice-Contact-Us---RcrPkg_2020v2.html',
+        '/hiring/contact-us/partners',
+        '/hiring/contact-us/recruitment-services',
+      ],
+      newForms: ['/hiring/contact-us/homepage', '/hiring/contact-us/homepage-banner', '/hiring/contact-us/webstore','/hiring/finance-banking'],
+    };
+  
+    const continueClickHandler = (event, mktForm, nextStepBtn) => {
+      const { ID } = shared;
+      const formVariant = validUrls.newForms.includes(window.location.pathname) ? 'newform' : 'oldform';
+      const { target } = event;
+      const fieldValues = mktForm.getValues();
+  
+      const { FirstName, LastName, Email } = fieldValues;
+      const lastNameField = mktForm.getFormElem().find('#LastName');
+  
+      if (!document.querySelector(`.${shared.ID}__step1`)) return;
+  
+      const showNextStep = () => {
+        const stpeOneInputs = ['FirstName', 'LastName', 'Email'];
+        const stpeTwoInputs = ['Phone', 'Company'];
+  
+        const getStepRows = (stepInputs) =>
+          stepInputs.map((item) => {
+            const inputElem = document.getElementById(item);
+            return inputElem.closest('.mktoFormRow');
+          });
+  
+        const stepOneRows = getStepRows(stpeOneInputs);
+        const stepTwoRows = getStepRows(stpeTwoInputs);
+        mktForm.submit();
+        stepOneRows.forEach((row) => {
+          row.classList.add('fe_hide');
+          row.classList.remove('fe_show');
+        });
+        stepTwoRows.forEach((row) => {
+          row.classList.add('fe_show');
+          row.classList.add('form-row');
+          row.classList.remove('fe_hide');
+        });
+        document.querySelector('.bm_form_heading').classList.add('step1Complete');
+        document.querySelector(`#${ID}__tempStep1Btn`).classList.add(`${ID}__hide`);
+        document.querySelector(`#${ID}__tempStep2Btn`).style.display = 'block';
+        document.body.classList.remove(`${ID}__step1`);
+        document.body.classList.add(`${ID}__step2`);
+      };
+      const mailHasNativeError = () => {
+        const errorField = document.querySelector('#Email + .mktoError');
+        if (!errorField) return false;
+        const styles = window.getComputedStyle(errorField);
+        return styles.getPropertyValue('display') !== 'none';
+      };
+      const renderNextStep = () => {
+        if (formVariant === 'oldform') {
+          showNextStep();
+        } else if (formVariant === 'newform') {
+          nextStepBtn.click();
+          target.classList.add(`${ID}__hide`);
+  
+          if (!mailHasNativeError()) {
+            document.body.classList.remove(`${ID}__step1`);
+            document.body.classList.add(`${ID}__step2`);
+          } else {
+            target.classList.remove(`${ID}__hide`);
+          }
+        }
+      };
+  
+      if (LastName.length === 1) {
+        mktForm.showErrorMessage('Must be a valid last name.', lastNameField);
+      } else if (FirstName === '' || LastName === '' || Email === '') {
+        formVariant === 'newform' ? nextStepBtn.click() : mktForm.submit();
+      } else if (FirstName !== '' && LastName.length >= 2 && target.dataset.email && target.dataset.email === 'true') {
+        renderNextStep();
+        //eslint-disable-next-line no-underscore-dangle
+        window._nb.fields.unregisterListener(document.querySelector('input[type="email"]'));
+        gaTracking('Step 1 completion');
+      } else if (LastName.length >= 2 && target.dataset.email && target.dataset.email === 'false') {
+        const NbWrapper = document.querySelector('[id^="nb-field-"]');
+        const nbFeedback = document.querySelector('.nb-feedback');
+        const clonedNbFeedback = nbFeedback ? nbFeedback.cloneNode(true) : '';
+        clonedNbFeedback.id = `${ID}__clonedFb`;
+        if (document.querySelector(`#${ID}__clonedFb`)) return;
+        nbFeedback.insertAdjacentElement('afterend', clonedNbFeedback);
+        clonedNbFeedback.removeAttribute('style');
+        NbWrapper.classList.add('nb-error');
+        setTimeout(() => {
+          NbWrapper.classList.remove('nb-error');
+          clonedNbFeedback.remove();
+        }, 3000);
+      }
+    };
+  
+    /*eslint-disable no-underscore-dangle */
+    const emailValidationHandler = (e) => {
+      const { type } = e;
+      const fakeContinue = document.getElementById(`${shared.ID}__tempStep1Btn`);
+  
+      if (type === 'nb:result') {
+        console.log(e.detail.result);
+        //if email is allowed overwrite to positive message
+        const { response } = e.detail.result;
+        const isAllowed = response.allow_entry && !response.flags.includes('free_email_host');
+        const emailMsgContainer = document.querySelector('#Email + .nb-feedback .nb-result');
+        if (isAllowed && emailMsgContainer) {
+          const validMsg = '<i class="nb-icon-ok"></i>&nbsp;Valid email';
+          emailMsgContainer.classList.add('fake-green');
+          emailMsgContainer.innerHTML = validMsg;
+        }
+        const status =
+          e.detail.result.is(window._nb.settings.getAcceptedStatusCodes()) &&
+          response.allow_entry &&
+          !response.flags.includes('free_email_host');
+        fakeContinue.dataset.email = status;
+      } else if (type === 'nb:clear') {
+        const status = e.detail.result && e.detail.result.isError();
+        fakeContinue.dataset.email = status;
+      } else if (type === 'nb:loading') {
+        fakeContinue.dataset.email = false;
+      }
+    };
+  
+    const phoneValidationHandler = (mktForm, submitBtn) => {
+      const { isValidPhoneNumber } = window.libphonenumber;
+      const vals = mktForm.vals();
+      const phoneNumStr = vals.Phone;
+      const formVariant = validUrls.newForms.includes(window.location.pathname) ? 'newform' : 'oldform';
+      if (!document.querySelector(`.${shared.ID}__step2`)) return;
+  
+      if (!phoneNumStr) {
+        mktForm.validate();
+        return;
+      }
+      console.log('isValidPhoneNumber(phoneNumStr)', isValidPhoneNumber(phoneNumStr, 'US'));
+  
+      if (isValidPhoneNumber(phoneNumStr, 'US')) {
+        if (formVariant === 'oldform') {
+          mktForm.onValidate(() => {
+            mktForm.submittable(true);
+          });
+        }
+  
+        submitBtn.click();
+        const phoneErrElem = document.querySelector('#Phone + .mktoError');
+        if (phoneErrElem) {
+          phoneErrElem.style.display = 'none';
+        }
+        vals.Company !== '' && submitBtn.classList.add('loading');
+        return;
+      }
+      //document.querySelector('#Phone + .mktoError').style.display = 'block';
+      const phnElem = mktForm.getFormElem().find('#Phone');
+  
+      phnElem.removeClass('mktoValid').addClass('mktoInvalid');
+      mktForm.showErrorMessage('Must be a phone number.\n 503-555-1212', phnElem);
+    };
+  
+    let timeoutId;
+  
+    const { ID: ID$2 } = shared;
+  
+    const handleErrMsg = (isValid, phoneInputField, phone_number, ErrMsg) => {
+      const errBlock = document.querySelector(`.${ID$2}__phone-status`);
+      errBlock.classList.remove(`${ID$2}__phone-loading`);
+      if (isValid) {
+        errBlock.innerHTML = 'Valid phone number';
+        errBlock.classList.remove(`${ID$2}__phone-err`);
+        errBlock.classList.add(`${ID$2}__phone-valid`);
+        errBlock.style.display = 'block';
+        phoneInputField.classList.remove(`${ID$2}__err`);
+        setTimeout(() => {
+          errBlock.style.display = 'none';
+        }, 2000);
+        return;
+      }
+      const errMsg = `Invalid phone number ${phone_number || ''}${ErrMsg ? `: ${ErrMsg[0]}` : ''}`;
+      errBlock.classList.remove(`${ID$2}__phone-valid`);
+      errBlock.classList.add(`${ID$2}__phone-err`);
+      errBlock.style.display = 'block';
+      errBlock.innerHTML = errMsg;
+      phoneInputField.classList.add(`${ID$2}__err`);
+    };
+  
+    const showLoader = () => {
+      const statusBlock = document.querySelector(`.${ID$2}__phone-status`);
+      statusBlock.classList.remove(`${ID$2}__phone-err`);
+      statusBlock.classList.remove(`${ID$2}__phone-valid`);
+      statusBlock.classList.add(`${ID$2}__phone-loading`);
+      statusBlock.style.display = 'block';
+      statusBlock.innerHTML = 'Checking ...';
+    };
+  
+    const twilioValidationHandler = (ev, telInputInstance, mktForm, phoneInputField, waitTime = 1) => {
+      if (!document.querySelector(`.${ID$2}__step2`)) return;
+      const { target } = ev;
+  
+      const vals = mktForm.vals();
+      //Clear any existing timeout
+      clearTimeout(timeoutId);
+  
+      //handleErrMsg(true, phoneInputField);
+  
+      //Start a new timeout to wait for 2 seconds
+      timeoutId = setTimeout(() => {
+        const phoneNumber = telInputInstance.getNumber();
+        //Make a request to n8n using the phone number
+        phoneInputField.classList.remove(`${ID$2}__err`);
+        showLoader();
+        fetch('https://funnelenvy.app.n8n.cloud/webhook/validatephonenumber', {
+          method: 'POST',
+          //eslint-disable-next-line object-curly-newline
+          body: JSON.stringify({ phoneNumber }),
+        })
+          .then((response) => response.json())
+          .then(({ body }) => {
+            console.log(body);
+            const { valid, validation_errors, phone_number } = body;
+            const userClickedSubmit = target.closest('.mktoButtonWrap');
+            if (valid && userClickedSubmit) {
+              const submitBtn = document.querySelector('button[type="submit"]');
+              vals.Company !== '' && (target.innerText = 'Please Wait');
+              submitBtn.click();
+            }
+            handleErrMsg(valid, phoneInputField, phone_number, validation_errors);
+          })
+          .catch((error) => console.error('Error sending phone number validation request:', error));
+      }, waitTime); //Wait for 2 seconds before making the request
+    };
+  
+    const setup = () => {
+      const { ID, VARIATION } = shared;
+      document.documentElement.classList.add(ID);
+      document.documentElement.classList.add(`${ID}-${VARIATION}`);
+    };
+  
+    /*eslint-disable no-underscore-dangle */
+  
+    const { ID: ID$1, VARIATION: VARIATION$1 } = shared;
+    const telCdnUrl = 'https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build';
+  
+    var activate = () => {
+      setup();
+      const formVariant = validUrls.newForms.includes(window.location.pathname) ? 'newform' : 'oldform';
+      const formId = document.querySelector('[name="formid"]').value;
+      const mktForm = window.MktoForms2.getForm(formId);
+  
+      const emailField = document.querySelector('input[type="email"]');
+  
+      //step 2
+      const submitBtn = document.querySelector('button[type="submit"]');
+      const nextStepBtn = document.getElementById('tempStep1Btn') || submitBtn;
+  
+      const emailWrapper = emailField.closest('.mktoFormRow');
+  
+      emailWrapper.classList.add(`${ID$1}__email-wrapper`);
+  
+      document.body.classList.add(`${ID$1}__${formVariant}`);
+      document.body.classList.add(`${ID$1}__step1`);
+      //clear previous data
+  
+      //render fake continue button
+  
+      const fakeContinueBtn = `<p id="${ID$1}__tempStep1Btn" class="multi-step-step1-btn">Continue</p>`;
+      const fakeSubmitBtn = `<p id="${ID$1}__tempStep2Btn" class="multi-step-step1-btn ">Get In Touch</p>`;
+  
+      if (!document.getElementById(`${ID$1}__tempStep1Btn`)) {
+        nextStepBtn.insertAdjacentHTML('afterend', fakeContinueBtn);
+      }
+  
+      if (!document.getElementById(`${ID$1}__tempStep2Btn`)) {
+        submitBtn.insertAdjacentHTML('afterend', fakeSubmitBtn);
+      }
+  
+      const fakeContinue = document.getElementById(`${ID$1}__tempStep1Btn`);
+      const fakeSubmit = document.getElementById(`${ID$1}__tempStep2Btn`);
+  
+      if (emailField.value !== '') {
+        fakeContinue.dataset.email = 'true';
+      }
+  
+      emailField.addEventListener('nb:result', (e) => emailValidationHandler(e));
+      emailField.addEventListener('nb:clear', (e) => emailValidationHandler(e));
+  
+      fakeContinue.addEventListener('click', (e) => continueClickHandler(e, mktForm, nextStepBtn));
+  
+      mktForm.onSuccess(() => gaTracking('Step 2 completion'));
+  
+      if (VARIATION$1 === 'control') {
+        const phnElem = document.querySelector('input[type="tel"]');
+        fakeSubmit.addEventListener('click', () => phoneValidationHandler(mktForm, submitBtn));
+        phnElem.addEventListener('focus', (e) => {
+          const phErrElem = document.querySelector('#Phone + .mktoError');
+          if (!e.target.value && phErrElem) {
+            document.querySelector('#Phone + .mktoError').style.display = 'block';
+            phnElem.classList.add('mktoInvalid');
+            phnElem.classList.remove('mktoValid');
+            const jqPhElem = mktForm.getFormElem().find('#Phone');
+            mktForm.showErrorMessage('Must be a valid phone number.', jqPhElem);
+          }
+        });
+        return;
+      }
+  
+      //Twilio phone number validation
+  
+      addCssToPage(`${telCdnUrl}/css/intlTelInput.css`, `${ID$1}_intlTelInputCss`);
+      addJsToPage(`${telCdnUrl}/js/intlTelInput.min.js`, `${ID$1}_intlTelInputJs`);
+  
+      const formElem = document.querySelector('form[id^="mktoForm_"]');
+      const phoneInputField = formElem.querySelector('input[type="tel"]');
+  
+      phoneInputField.setAttribute('placeholder', '');
+  
+      pollerLite([() => window.intlTelInput !== undefined], () => {
+        console.log('ini here');
+        //setup twilio
+        phoneInputField.closest('.mktoFormRow').classList.add(`${ID$1}__adjust`);
+  
+        if (formElem.querySelector('.iti--allow-dropdown')) {
+          return;
+        }
+  
+        //place custom errror container
+  
+        const errContainer = `<div class="${ID$1}__phone-status" style="display: none;"></div>`;
+  
+        phoneInputField.insertAdjacentHTML('afterend', errContainer);
+  
+        const telInputInstance = window.intlTelInput(phoneInputField, {
+          utilsScript: `${telCdnUrl}/js/utils.js`,
+          initialCountry: 'us',
+        });
+  
+        phoneInputField.addEventListener('focus', () => {
+          const statusBlock = document.querySelector(`.${ID$1}__phone-status`);
+          statusBlock.style.display = 'none';
+        });
+        phoneInputField.addEventListener('input', (e) => {
+          const VALIDATION_DELAY = 2000;
+          twilioValidationHandler(e, telInputInstance, mktForm, phoneInputField, VALIDATION_DELAY);
+        });
+  
+        fakeSubmit.addEventListener(
+          'click',
+          (e) => twilioValidationHandler(e, telInputInstance, mktForm, phoneInputField)
+          //eslint-disable-next-line function-paren-newline
+        );
+      });
+    };
+  
+    const emailValidationSetup = (ID) => {
+      //add neverbounce and register
+      const nbScript = 'https://cdn.neverbounce.com/widget/dist/NeverBounce.js';
+  
+      //eslint-disable-next-line no-underscore-dangle
+      window._NBSettings = {
+        acceptedMessage: 'Valid email',
+        acceptedStatusCodes: [0, 3, 4],
+        ajaxMode: false,
+        apiKey: 'public_ae4f79b9aa58df9ed79ba99b1150e8a8',
+        apiOnly: false,
+        autoFieldHookup: false,
+        blockFreemail: true,
+        blockRoleAccount: false,
+        blockThrottledAttempts: false,
+        debugMode: false,
+        displayPoweredBy: true,
+        feedback: true,
+        feedbackClass: 'nb-feedback',
+        hiddenField: true,
+        inputLatency: 600,
+        loadingMessage: 'Loading...',
+        rejectedMessage: 'Must be valid work email. example@yourdomain.com',
+        selector: 'input[type="email"]',
+        softRejectMessage: 'Enter a valid email',
+        freemailRejectMessage: 'Must be valid work email. example@yourdomain.com',
+        roleAccountRejectMessage:
+          'Role accounts are not permitted <br />&nbsp;<small style="margin-left: 20px">(i.e. sales@..., support@...)</small>',
+        throttleRejectMessage: 'Too many attempts, try again later',
+        timeout: 25,
+      };
+  
+      addJsToPage(nbScript, `${ID}__nb`);
+    };
+  
+    const { ID, VARIATION } = shared;
+  
+    const libPhone = 'https://unpkg.com/libphonenumber-js@1.10.18/bundle/libphonenumber-min.js';
+    const RENDER_DELAY = 2000;
+    const formVariant = validUrls.newForms.includes(window.location.pathname) ? 'newform' : 'oldform';
+    addJsToPage(libPhone, `${ID}__libPhone`);
+  
+    emailValidationSetup(ID);
+    pollerLite(
+      [
+        'form[id^="mktoForm_"]',
+        '#Phone',
+        'button[type="submit"]',
+        'input[type="email"]',
+        () => formVariant === 'oldform' || (!document.querySelector('.async-hide') && document.querySelector('.hydrated')),
+        () => VARIATION === '1' || window.libphonenumber !== undefined,
+        () => typeof window.MktoForms2.getForm === 'function' && window._nb !== undefined,
+      ],
+      () => {
+        //deleteCookie('formdata');
+        //programmatically register email field
+        const emailField = document.querySelector('input[type="email"]');
+        window._nb.fields.registerListener(emailField, true);
+        setTimeout(activate, RENDER_DELAY);
+      }
+    );
+    
+  })();
