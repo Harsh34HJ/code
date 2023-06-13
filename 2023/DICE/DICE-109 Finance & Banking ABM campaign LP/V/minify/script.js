@@ -11,6 +11,8 @@
 	};
     var step = 1;
     var isEmailValid = false;
+    var isFirstNameValid = false;
+    var isLastNameValid = false;
     const modifyForm = {
         addClass: function(formLabel) {
             for (var i = 0; i < formLabel.length; i++) {
@@ -66,7 +68,7 @@
         triggerNextStep: function(steps, formRow, formLabel) {
             setTimeout(function() {
                 var isValid = modifyForm.checkFieldValidate(steps);
-                if (isValid && step === 1 && isEmailValid) {
+                if (isValid && step === 1 && isFirstNameValid && isEmailValid && isLastNameValid) {
                     modifyForm.removeError(formRow);
                     modifyForm.showSecondStep(formLabel);
                     step++;
@@ -108,6 +110,46 @@
                 isEmailValid = false;
             } else {
                 isEmailValid = true;
+            }
+        },
+        validateFirstName: function(form) {
+            var firstName = form.getFormElem().find("#FirstName");
+            var vals = form.vals();
+            var str = vals.FirstName;
+            str = String(str);
+            str = str.split('');
+            if (str && str.length < 1) {
+                if (firstName.hasClass('mktoValid')) {
+                    firstName.removeClass('mktoValid').addClass('mktoInvalid');
+                }
+                form.showErrorMessage("This field is required.", firstName);
+                isFirstNameValid = false;
+            } else {
+                isFirstNameValid = true;
+            }
+        },
+        validateLastName: function(form) {
+            var lastName = form.getFormElem().find("#LastName");
+            var vals = form.vals();
+            var str = vals.LastName;
+            str = String(str);
+            str = str.split('');
+            if (isFirstNameValid) {
+                if (str && str.length == 1) {
+                    if (lastName.hasClass('mktoValid')) {
+                        lastName.removeClass('mktoValid').addClass('mktoInvalid');
+                    }
+                    form.showErrorMessage("Must be a valid last name.", lastName);
+                    isLastNameValid = false;
+                } else if (str && str.length < 1) {
+                    if (lastName.hasClass('mktoValid')) {
+                        lastName.removeClass('mktoValid').addClass('mktoInvalid');
+                    }
+                    form.showErrorMessage("This field is required.", lastName);
+                    isLastNameValid = false;
+                } else {
+                    isLastNameValid = true;
+                }
             }
         },
     };
@@ -267,6 +309,8 @@
 				document.querySelector('.mktoButtonWrap > #tempStep1Btn').addEventListener('click', function(e) {
                     setTimeout(function() {
                         modifyForm.validateEmail(form);
+                        modifyForm.validateFirstName(form);
+                        modifyForm.validateLastName(form);
                         modifyForm.triggerNextStep(steps, formRow, formLabel);
                     }, 500);
                 });
