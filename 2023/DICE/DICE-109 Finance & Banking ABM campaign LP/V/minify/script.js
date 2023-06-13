@@ -11,8 +11,6 @@
 	};
     var step = 1;
     var isEmailValid = false;
-    var isFirstNameValid = false;
-    var isLastNameValid = false;
     const modifyForm = {
         addClass: function(formLabel) {
             for (var i = 0; i < formLabel.length; i++) {
@@ -68,7 +66,7 @@
         triggerNextStep: function(steps, formRow, formLabel) {
             setTimeout(function() {
                 var isValid = modifyForm.checkFieldValidate(steps);
-                if (isValid && step === 1 && isFirstNameValid && isEmailValid && isLastNameValid) {
+                if (isValid && step === 1 && isEmailValid) {
                     modifyForm.removeError(formRow);
                     modifyForm.showSecondStep(formLabel);
                     step++;
@@ -110,52 +108,6 @@
                 isEmailValid = false;
             } else {
                 isEmailValid = true;
-            }
-        },
-        validateFirstName: function(form) {
-            var firstName = form.getFormElem().find("#FirstName");
-            var vals = form.vals();
-            var str = vals.FirstName;
-            str = String(str);
-            str = str.split('');
-            if (str && str.length == 1) {
-                if (firstName.hasClass('mktoValid')) {
-                    firstName.removeClass('mktoValid').addClass('mktoInvalid');
-                }
-                form.showErrorMessage("Must be a valid first name.", firstName);
-                isFirstNameValid = false;
-            } else if (str && str.length < 1) {
-                if (firstName.hasClass('mktoValid')) {
-                    firstName.removeClass('mktoValid').addClass('mktoInvalid');
-                }
-                form.showErrorMessage("This field is required.", firstName);
-                isFirstNameValid = false;
-            } else {
-                isFirstNameValid = true;
-            }
-        },
-        validateLastName: function(form) {
-            var lastName = form.getFormElem().find("#LastName");
-            var vals = form.vals();
-            var str = vals.LastName;
-            str = String(str);
-            str = str.split('');
-            if (isFirstNameValid) {
-                if (str && str.length == 1) {
-                    if (lastName.hasClass('mktoValid')) {
-                        lastName.removeClass('mktoValid').addClass('mktoInvalid');
-                    }
-                    form.showErrorMessage("Must be a valid last name.", lastName);
-                    isLastNameValid = false;
-                } else if (str && str.length < 1) {
-                    if (lastName.hasClass('mktoValid')) {
-                        lastName.removeClass('mktoValid').addClass('mktoInvalid');
-                    }
-                    form.showErrorMessage("This field is required.", lastName);
-                    isLastNameValid = false;
-                } else {
-                    isLastNameValid = true;
-                }
             }
         },
     };
@@ -284,7 +236,7 @@
         const singleLogoHtml = ({imgSrc,altText}, index) => `<div class="logo-item item-${index + 1}"><img src="${imgSrc}" alt="${altText}"></div>`;
         const heroHtml = `
         <div class="${id}__herosection ${id}__section"><dhi-seds-container><dhi-seds-row class="header-wrap"><dhi-seds-column size="5" size-lg="10"><dhi-seds-link url="/employer"><dhi-seds-dice-logo prominence="primary"></dhi-seds-dice-logo></dhi-seds-link></dhi-seds-column><dhi-seds-column class="section-cta" size="7" size-lg="2">${secondaryCta('Get Started','#')}</dhi-seds-column></dhi-seds-row><dhi-seds-row class="hero-wrap"><dhi-seds-column size="12" size-lg="7"><dhi-seds-row><dhi-seds-column size="12" size-lg="12"><dhi-seds-typography-display level="h1" class="desktop-show" size="350" weight="bold">Powering finance with the best tech talent</dhi-seds-typography-display><dhi-seds-typography-display level="h1" class="desktop-hide" size="300" weight="bold">Powering finance with the best tech talent</dhi-seds-typography-display></dhi-seds-column></dhi-seds-row><dhi-seds-row><dhi-seds-column size="12"><dhi-seds-typography-heading class="desktop-show" size="175" weight="regular" margin="default">To succeed in financial services today, you need top tech professionals — and the right hiring platform to connect you with them.</dhi-seds-typography-heading><dhi-seds-typography-heading class="desktop-hide" size="150" weight="regular" margin="default">To succeed in financial services today, you need top tech professionals — and the right hiring platform to connect you with them.</dhi-seds-typography-heading></dhi-seds-column></dhi-seds-row><dhi-seds-row><dhi-seds-column size="12"><dhi-seds-typography-heading class="logo-title" size="150" weight="bold" margin="default">Trusted by top companies</dhi-seds-typography-heading><div class="logo-wrap">${heroSectionData.map((data, i)=>singleLogoHtml(data, i)).join('\n')}
-        </div></dhi-seds-column></dhi-seds-row></dhi-seds-column><dhi-seds-column class="hero-form" size="12" size-lg="5"><div class="multi-step-bm-form-heading"><div class="multi-step-step-sections-bar"><span class="multi-step-step1">1</span><span class="multi-step-step2">2</span><span class="multi-step-progressBar"></span></div></div><form id="mktoForm_${FORMID}"><div class="form-title">Start finding top tech talent!</div><div class="step-wrap">Step <span class="current-step">1</span>of 2</div><div id="disclaimer_${FORMID}" class="disclaimer text-muted text-center mt-4 multi-step-hide"><p>By submitting information I agree to the <a href="/about/privacy-policy" target="_blank">Privacy Policy</a>and <a href="/about/terms-and-conditions" target="_blank">Terms of Use</a>.</p></div></form></dhi-seds-column></dhi-seds-row></dhi-seds-container></div>`;
+        </div></dhi-seds-column></dhi-seds-row></dhi-seds-column><dhi-seds-column class="hero-form marketo-form" size="12" size-lg="5"><div class="multi-step-bm-form-heading"><div class="multi-step-step-sections-bar"><span class="multi-step-step1">1</span><span class="multi-step-step2">2</span><span class="multi-step-progressBar"></span></div></div><form id="mktoForm_${FORMID}"><div class="form-title">Start finding top tech talent!</div><div class="step-wrap">Step <span class="current-step">1</span> of 2</div><div id="disclaimer_${FORMID}" class="disclaimer text-muted text-center mt-4 multi-step-hide"><p>By submitting information I agree to the <a href="/about/privacy-policy" target="_blank">Privacy Policy</a>and <a href="/about/terms-and-conditions" target="_blank">Terms of Use</a>.</p></div></form></dhi-seds-column></dhi-seds-row></dhi-seds-container></div>`;
         return heroHtml;
     };
     const {ID} = shared;
@@ -305,12 +257,16 @@
                 var formRow = document.querySelectorAll(".hero-wrap form[id*='mktoForm'] .mktoFormRow");
                 document.querySelector('.mktoButtonWrap > button').insertAdjacentHTML('afterend', '<p class="fe-back-button"><img src="https://fe-test-dev.s3.amazonaws.com/Dice/dice-109/arrow-left.svg" alt="Back Arrow"> Back</p>');
                 document.querySelector('.mktoForm').classList.add('fe-form-step1');
+                pollerLite(
+		            [() => document.querySelector('#FE-Form-Validator__tempStep2Btn') !== null],
+		            () => {
+		                document.querySelector('#FE-Form-Validator__tempStep2Btn').innerHTML = 'Submit';
+		            }
+		        );
                 modifyForm.addClass(formLabel);
 				document.querySelector('.mktoButtonWrap > #tempStep1Btn').addEventListener('click', function(e) {
                     setTimeout(function() {
                         modifyForm.validateEmail(form);
-                        modifyForm.validateFirstName(form);
-                        modifyForm.validateLastName(form);
                         modifyForm.triggerNextStep(steps, formRow, formLabel);
                     }, 500);
                 });
