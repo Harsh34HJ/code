@@ -299,12 +299,6 @@
                 var formRow = document.querySelectorAll(".hero-wrap form[id*='mktoForm'] .mktoFormRow");
                 document.querySelector('.mktoButtonWrap > button').insertAdjacentHTML('afterend', '<p class="fe-back-button"><img src="https://fe-test-dev.s3.amazonaws.com/Dice/dice-109/arrow-left.svg" alt="Back Arrow"> Back</p>');
                 document.querySelector('.mktoForm').classList.add('fe-form-step1');
-                pollerLite(
-		            [() => document.querySelector('#FE-Form-Validator__tempStep2Btn') !== null],
-		            () => {
-		                document.querySelector('#FE-Form-Validator__tempStep2Btn').innerHTML = 'Submit';
-		            }
-		        );
                 modifyForm.addClass(formLabel);
 				document.querySelector('.mktoButtonWrap > #tempStep1Btn').addEventListener('click', function(e) {
                     setTimeout(function() {
@@ -349,7 +343,7 @@
 	    ID: "financebanking",
 	    VARIATION: "1",
 	    CLIENT: "Dice",
-	    VIDEOLINK: "https://player.vimeo.com/video/832399342?badge=0&autopause=0&player_id=0&app_id=58479"
+	    VIDEOLINK: "https://www.youtube.com/embed/P6H1o4OIB88"
 	};
     const {ID} = shared;
 	const heroSelector = '.financebanking__herosection';
@@ -480,7 +474,7 @@
         const singleSolutionHtml = ({title,details}) => `<dhi-seds-column size="12" class="bullet-points"><dhi-seds-row><dhi-seds-typography-heading level="h3" size="150" weight="bold"><span>${bulletIcon}</span>${title} </dhi-seds-typography-heading></dhi-seds-row><dhi-seds-row><dhi-seds-typography-heading size="125" weight="regular">${details}</dhi-seds-typography-heading></dhi-seds-row></dhi-seds-column>`;
         const solutionsHtml = `<div class="${id}__solutionssection ${id}__section ${id}__full-bleed"><dhi-seds-container>${sectionTitle(id, 'Solutions tailormade to your hiring needs')}
         <dhi-seds-row class="md-col-rev"><dhi-seds-column size="12" size-lg="6">${solutionsSectionData.map((data)=>singleSolutionHtml(data)).join('\n')}
-        </dhi-seds-column><dhi-seds-column class="add-frame" size="12" size-lg="6"><div style="padding:56.25% 0 0 0;position:relative;"><iframe src="${VIDEOLINK}" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Dice: Where Tech Connects"></iframe></div><script src=https://player.vimeo.com/api/player.js></script></dhi-seds-column></dhi-seds-row></dhi-seds-container></div>`;
+        </dhi-seds-column><dhi-seds-column class="add-frame" size="12" size-lg="6"><iframe src="${VIDEOLINK}" title="YouTube video player" autoplay clipboard-write encrypted-media gyroscope picture-in-picture web-share allowfullscreen></iframe></div></dhi-seds-column></dhi-seds-row></dhi-seds-container></div>`;
         return solutionsHtml;
     };
     const getStartSection = (id) => {
