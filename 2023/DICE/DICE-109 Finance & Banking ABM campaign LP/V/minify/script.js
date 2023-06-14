@@ -1,3 +1,14 @@
+const addJsToPage = (src, id, cb, classes) => {
+    if (document.querySelector(`#${id}`)) {return;}
+    const s = document.createElement('script');
+    if (typeof cb === 'function') {s.onload = cb;}
+    if (classes) { s.className = classes;}
+    s.type = 'text/javascript';
+    s.src = src;
+    s.setAttribute('id', id);
+    document.body.appendChild(s);
+};
+addJsToPage('https://www.dice.com/webfiles/1684267845325/js/dhi/marketo_2_step_form.js', 'mkto-add');
 (function() {
     'use strict';
     var shared = {
@@ -288,8 +299,8 @@
         const landingpage = (id) => `<div class="${id}__landingpage container">${heroSection(id)}</div>`;
         if (document.querySelector(`.${ID}__landingpage`)) return;
         header.insertAdjacentHTML('afterend', landingpage(ID));
-        onLoadMktoForms2(() => {
-            const {FORMURL,FORMCODE,FORMID,TYURL} = shared;
+        const formLoad = () => {
+        	const {FORMURL,FORMCODE,FORMID,TYURL} = shared;
             dhi.marketo2.init(`${FORMID}`, `${FORMCODE}`, `${TYURL}`, "Continue", "FirstName, LastName, Email", "Get In Touch", "Phone, Company");
             MktoForms2.whenReady((form) => {
                 updateFormField('.hero-wrap .mktoForm .mktoFormRow');
@@ -318,7 +329,8 @@
                 });
                 document.querySelector('.hero-wrap .hero-form').classList.add('load');
             });
-        }, 50, 15000);
+        };
+        formLoad();
     };
     if (window.location.pathname.includes('/hiring/finance-banking')) {
         const mainLayoutSelector = '.layout-main-content-wrapper';
@@ -333,8 +345,8 @@
         addFileToSite(mktocssFile);
         addFileToSite(mktothemecssFile);
         addJsToPage('//app-sjg.marketo.com/js/forms2/js/forms2.min.js', 'mkto');
-        addJsToPage('https://www.dice.com/webfiles/1684267845325/js/dhi/marketo_2_step_form.js', 'mkto-add');
-        pollerLite([mainLayoutSelector], activate);
+        // addJsToPage('https://www.dice.com/webfiles/1684267845325/js/dhi/marketo_2_step_form.js', 'mkto-add');
+        pollerLite([mainLayoutSelector], () => typeof window.dhi != "undefined" && typeof window.MktoForms2 != "undefined", activate);
     }
 })();
 (function() {
