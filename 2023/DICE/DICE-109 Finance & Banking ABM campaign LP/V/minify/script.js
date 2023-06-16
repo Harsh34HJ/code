@@ -289,7 +289,7 @@ addJsToPage('https://www.dice.com/webfiles/1684267845325/js/dhi/marketo_2_step_f
         }];
         const singleLogoHtml = ({imgSrc,altText}, index) => `<div class="logo-item item-${index + 1}"><img src="${imgSrc}" alt="${altText}"></div>`;
         const heroHtml = `
-        <div class="${id}__herosection ${id}__section"><dhi-seds-container><dhi-seds-row class="header-wrap"><dhi-seds-column size="5" size-lg="10"><dhi-seds-link url="/employer"><dhi-seds-dice-logo prominence="primary"></dhi-seds-dice-logo></dhi-seds-link></dhi-seds-column><dhi-seds-column class="section-cta" size="7" size-lg="2">${secondaryCta('Get Started','#')}</dhi-seds-column></dhi-seds-row><dhi-seds-row class="hero-wrap"><dhi-seds-column size="12" size-lg="7"><dhi-seds-row><dhi-seds-column size="12" size-lg="12"><dhi-seds-typography-display level="h1" class="desktop-show" size="350" weight="bold">Powering finance with the best tech talent</dhi-seds-typography-display><dhi-seds-typography-display level="h1" class="desktop-hide" size="300" weight="bold">Powering finance with the best tech talent</dhi-seds-typography-display></dhi-seds-column></dhi-seds-row><dhi-seds-row><dhi-seds-column size="12"><dhi-seds-typography-heading class="desktop-show" size="175" weight="regular" margin="default">To succeed in financial services today, you need top tech professionals — and the right hiring platform to connect you with them.</dhi-seds-typography-heading><dhi-seds-typography-heading class="desktop-hide" size="150" weight="regular" margin="default">To succeed in financial services today, you need top tech professionals — and the right hiring platform to connect you with them.</dhi-seds-typography-heading></dhi-seds-column></dhi-seds-row><dhi-seds-row><dhi-seds-column size="12"><dhi-seds-typography-heading class="logo-title" size="150" weight="bold" margin="default">Trusted by top companies</dhi-seds-typography-heading><div class="logo-wrap">${heroSectionData.map((data, i)=>singleLogoHtml(data, i)).join('\n')}
+        <div class="${id}__herosection ${id}__section"><dhi-seds-container><dhi-seds-row class="header-wrap"><dhi-seds-column size="5" size-lg="10"><dhi-seds-link url="/employer"><dhi-seds-dice-logo prominence="primary"></dhi-seds-dice-logo></dhi-seds-link></dhi-seds-column><dhi-seds-column class="section-cta" size="7" size-lg="2">${secondaryCta('Get Started','#')}</dhi-seds-column></dhi-seds-row><dhi-seds-row class="hero-wrap"><dhi-seds-column size="12" size-lg="7"><dhi-seds-row><dhi-seds-column size="12" size-lg="12"><dhi-seds-typography-display level="h1" class="desktop-show" size="350" weight="bold">Powering finance with the best tech talent</dhi-seds-typography-display><dhi-seds-typography-display level="h1" class="desktop-hide" size="300" weight="bold">Powering finance with the best tech talent</dhi-seds-typography-display></dhi-seds-column></dhi-seds-row><dhi-seds-row><dhi-seds-column size="12"><dhi-seds-typography-heading class="desktop-show" size="175" weight="regular" margin="default">To succeed in financial services today, you need top tech professionals — and the right hiring platform to connect with them.</dhi-seds-typography-heading><dhi-seds-typography-heading class="desktop-hide" size="150" weight="regular" margin="default">To succeed in financial services today, you need top tech professionals — and the right hiring platform to connect with them.</dhi-seds-typography-heading></dhi-seds-column></dhi-seds-row><dhi-seds-row><dhi-seds-column size="12"><dhi-seds-typography-heading class="logo-title" size="150" weight="bold" margin="default">Trusted by top companies</dhi-seds-typography-heading><div class="logo-wrap">${heroSectionData.map((data, i)=>singleLogoHtml(data, i)).join('\n')}
         </div></dhi-seds-column></dhi-seds-row></dhi-seds-column><dhi-seds-column class="hero-form marketo-form" size="12" size-lg="5"><div class="multi-step-bm-form-heading"><div class="multi-step-step-sections-bar"><span class="multi-step-step1">1</span><span class="multi-step-step2">2</span><span class="multi-step-progressBar"></span></div></div><form id="mktoForm_${FORMID}"><div class="form-title">Start finding top tech talent!</div><div class="step-wrap">Step <span class="current-step">1</span> of 2</div><div id="disclaimer_${FORMID}" class="disclaimer text-muted text-center mt-4 multi-step-hide"><p>By submitting information I agree to the <a href="/about/privacy-policy" target="_blank">Privacy Policy</a>and <a href="/about/terms-and-conditions" target="_blank">Terms of Use</a>.</p></div></form></dhi-seds-column></dhi-seds-row></dhi-seds-container></div>`;
         return heroHtml;
     };
@@ -347,7 +347,7 @@ addJsToPage('https://www.dice.com/webfiles/1684267845325/js/dhi/marketo_2_step_f
         addFileToSite(mktothemecssFile);
         // addJsToPage('//app-sjg.marketo.com/js/forms2/js/forms2.min.js', 'mkto');
         // addJsToPage('https://www.dice.com/webfiles/1684267845325/js/dhi/marketo_2_step_form.js', 'mkto-add');
-        pollerLite([mainLayoutSelector], () => typeof window.dhi != "undefined" && typeof window.MktoForms2 != "undefined", activate);
+        pollerLite([mainLayoutSelector, () => typeof window.dhi != "undefined" && typeof window.MktoForms2 != "undefined"], activate);
     }
 })();
 (function() {
@@ -421,14 +421,14 @@ addJsToPage('https://www.dice.com/webfiles/1684267845325/js/dhi/marketo_2_step_f
             }
         ];
         const singleListHtml = ({title,details}, index) => `<dhi-seds-column size="12" class="bullet-points"><dhi-seds-row><dhi-seds-typography-heading level="h3" size="150" weight="bold"><span>${arrowIcon}</span>${title}</dhi-seds-typography-heading></dhi-seds-row><dhi-seds-row><dhi-seds-typography-heading size="125" weight="regular">${details}</dhi-seds-typography-heading></dhi-seds-row></dhi-seds-column>`;
-        const ourFinanceHtml = `<div class="${id}__ourfinancesection ${id}__section"><dhi-seds-container>${sectionTitle(id, 'Our finance, banking and insurance clients have seen')}
+        const ourFinanceHtml = `<div class="${id}__ourfinancesection ${id}__section"><dhi-seds-container>${sectionTitle(id, 'What our finance, banking and insurance clients get with Dice')}
         <dhi-seds-row class="content-wrap"><dhi-seds-column size="0" size-lg="2"></dhi-seds-column><dhi-seds-column size="12" size-lg="6">${ourFinanceSectionData.map((data, i)=>singleListHtml(data, i)).join('\n')}
         </dhi-seds-column><dhi-seds-column size="12" size-lg="2"><div class="result-wrap"><div class="apply-rate"><dhi-seds-typography-display class="apply-rate-count count" size="400" weight="bold">15%</dhi-seds-typography-display><dhi-seds-typography-heading class="apply-rate-text text" size="150" weight="regular">Apply Rate</dhi-seds-typography-heading></div><div class="divider"></div><div class="applicants-per-job"><dhi-seds-typography-display class="applicants-per-job-count count" size="400" weight="bold">5+</dhi-seds-typography-display><dhi-seds-typography-heading class="applicants-per-job-text text" size="150" weight="regular">Applicants Per Job</dhi-seds-typography-heading></div></div></dhi-seds-column><dhi-seds-column size="0" size-lg="2"></dhi-seds-column></dhi-seds-row></dhi-seds-container></div>`;
         return ourFinanceHtml;
     };
     const reviewSection = (id) => {
         const reviewHtml = `<div class="${id}__revsection ${id}__section ${id}__full-bleed"><dhi-seds-container><dhi-seds-row><dhi-seds-column size="12">${heartIcon}
-        <dhi-seds-typography-heading class="title-container" size="150" weight="bold">“We have partnered extremely closely with Dice to capitalize on our brand presence. There’s not a lot of solutions in the marketplace focusing on tech talent and for us Dice continues to be a leading solution for us to get in front of the right talent.”
+        <dhi-seds-typography-heading class="title-container" size="150" weight="bold">“We have partnered extremely closely with Dice to capitalize on our brand presence. There aren’t a lot of solutions in the marketplace focusing on tech talent and for us Dice continues to be a leading solution for us to get in front of the right talent.”
         </dhi-seds-typography-heading><dhi-seds-typography-heading class="title-container sub-title" size="150" weight="regular">BNY Mellon
         </dhi-seds-typography-heading></dhi-seds-column></dhi-seds-row></dhi-seds-container></div>`;
         return reviewHtml;
@@ -438,7 +438,7 @@ addJsToPage('https://www.dice.com/webfiles/1684267845325/js/dhi/marketo_2_step_f
                 imgSrc: 'https://fe-test-dev.s3.amazonaws.com/Dice/dice-109/all-the-tech-professionals.svg',
                 altText: 'All the tech professionals',
                 title: 'All the tech professionals <br>you need are here',
-                content: '83% of active tech professionals on Dice are not actively searching for jobs on other sites. *',
+                content: '46% of active tech professionals on Dice are not actively searching for jobs on sites like LinkedIn, Indeed, Monster and CareerBuilder.',
             },
             {
                 imgSrc: 'https://fe-test-dev.s3.amazonaws.com/Dice/dice-109/you-can-post-jobs.svg',
@@ -450,7 +450,7 @@ addJsToPage('https://www.dice.com/webfiles/1684267845325/js/dhi/marketo_2_step_f
                 imgSrc: 'https://fe-test-dev.s3.amazonaws.com/Dice/dice-109/you-wont-loose-candidates.svg',
                 altText: 'You wont loose candidates',
                 title: 'You won’t lose candidates to a <br>long application process',
-                content: 'Easy Apply lets tech professionals apply to your jobs in just a few clicks.',
+                content: 'Dice\'s Easy Apply lets tech professionals apply to your jobs in just a few clicks.',
             },
             {
                 imgSrc: 'https://fe-test-dev.s3.amazonaws.com/Dice/dice-109/we-take-sourcing.svg',
@@ -466,7 +466,7 @@ addJsToPage('https://www.dice.com/webfiles/1684267845325/js/dhi/marketo_2_step_f
             }
         ];
         const singleTechHtml = ({imgSrc,altText,title,content}, index) => `<dhi-seds-column size="12" size-lg="6"><img class="tech-img" src="${imgSrc}" alt="${altText}"><div class="tech-content"><dhi-seds-typography-heading level="h3" class="title-container desktop-show hydrated" size="200" weight="bold">${title}</dhi-seds-typography-heading><dhi-seds-typography-heading level="h3" class="title-container desktop-hide hydrated" size="150" weight="bold">${title}</dhi-seds-typography-heading><dhi-seds-typography-heading size="125" weight="regular" class="hydrated">${content}</dhi-seds-typography-heading></div></dhi-seds-column>`;
-        const whyChooseHtml = `<div class="${id}__whychoosesection ${id}__section ${id}__full-bleed"><dhi-seds-container><dhi-seds-row><dhi-seds-column size="12" size-lg="12"><dhi-seds-row class="financebanking__sectiontitle"><dhi-seds-column size="12"><dhi-seds-typography-heading class="desktop-hide" size="200" weight="bold">Why to choose Dice as your tech hiring partner</dhi-seds-typography-heading><dhi-seds-typography-display class="desktop-show" size="300" weight="bold">Why to choose Dice as your tech hiring partner</dhi-seds-typography-display></dhi-seds-column></dhi-seds-row></dhi-seds-column></dhi-seds-row><dhi-seds-row class="content-wrap">${whyChooseSectionData.map((data, i)=>singleTechHtml(data, i)).join('\n')}</dhi-seds-row><dhi-seds-row class="btn-wrap">${primaryCta('Try Dice Today','#')}</dhi-seds-row></dhi-seds-container></div>`;
+        const whyChooseHtml = `<div class="${id}__whychoosesection ${id}__section ${id}__full-bleed"><dhi-seds-container><dhi-seds-row><dhi-seds-column size="12" size-lg="12"><dhi-seds-row class="financebanking__sectiontitle"><dhi-seds-column size="12"><dhi-seds-typography-heading class="desktop-hide" size="200" weight="bold">Why you should choose Dice as your tech hiring partner</dhi-seds-typography-heading><dhi-seds-typography-display class="desktop-show" size="300" weight="bold">Why you should choose Dice as your tech hiring partner</dhi-seds-typography-display></dhi-seds-column></dhi-seds-row></dhi-seds-column></dhi-seds-row><dhi-seds-row class="content-wrap">${whyChooseSectionData.map((data, i)=>singleTechHtml(data, i)).join('\n')}</dhi-seds-row><dhi-seds-row class="btn-wrap">${primaryCta('Try Dice Today','#')}</dhi-seds-row></dhi-seds-container></div>`;
         return whyChooseHtml;
     };
     const solutionsSection = (id) => {
@@ -480,19 +480,19 @@ addJsToPage('https://www.dice.com/webfiles/1684267845325/js/dhi/marketo_2_step_f
                 details: 'Gain access to millions of tech professionals with complete profiles — and the tools to find which ones best fit your needs.'
             },
             {
-                title: 'Network & connect',
+                title: 'Network and connect',
                 details: 'Dice’s career events can be tailored to your personal hiring needs so you can connect 1:1 with tech professionals searching for their next opportunity.'
             }
         ];
         const singleSolutionHtml = ({title,details}) => `<dhi-seds-column size="12" class="bullet-points"><dhi-seds-row><dhi-seds-typography-heading level="h3" size="150" weight="bold"><span>${bulletIcon}</span>${title} </dhi-seds-typography-heading></dhi-seds-row><dhi-seds-row><dhi-seds-typography-heading size="125" weight="regular">${details}</dhi-seds-typography-heading></dhi-seds-row></dhi-seds-column>`;
-        const solutionsHtml = `<div class="${id}__solutionssection ${id}__section ${id}__full-bleed"><dhi-seds-container>${sectionTitle(id, 'Solutions tailormade to your hiring needs')}
+        const solutionsHtml = `<div class="${id}__solutionssection ${id}__section ${id}__full-bleed"><dhi-seds-container>${sectionTitle(id, 'Solutions tailor-made to your hiring needs')}
         <dhi-seds-row class="md-col-rev"><dhi-seds-column size="12" size-lg="6">${solutionsSectionData.map((data)=>singleSolutionHtml(data)).join('\n')}
         </dhi-seds-column><dhi-seds-column class="add-frame" size="12" size-lg="6"><iframe src="${VIDEOLINK}" title="YouTube video player" autoplay clipboard-write encrypted-media gyroscope picture-in-picture web-share allowfullscreen></iframe></div></dhi-seds-column></dhi-seds-row></dhi-seds-container></div>`;
         return solutionsHtml;
     };
     const getStartSection = (id) => {
-        const getStartHtml = `<div class="${id}__getstartsection ${id}__section ${id}__full-bleed"><dhi-seds-container class="container"><dhi-seds-row class="md-col-rev"><dhi-seds-column size="12" size-lg="12"><dhi-seds-row class="financebanking__sectiontitle"><dhi-seds-column size="12"><dhi-seds-typography-heading size="200" weight="bold" margin="default">Ready to get started?</dhi-seds-typography-heading></dhi-seds-column></dhi-seds-row><dhi-seds-row><dhi-seds-column size="12"><dhi-seds-typography-heading class="sub-title" size="150" weight="regular" margin="default">We\'ll take it from here.</dhi-seds-typography-heading></dhi-seds-column></dhi-seds-row><dhi-seds-row><dhi-seds-column size="12" size-md="12">${secondaryCta('Hire with Dice','#')}
-        </dhi-seds-column></dhi-seds-row><dhi-seds-row><dhi-seds-typography-paragraph class="note-text" size="75" weight="regular">*Compared to Indeed, ZipRecruiter, CareerBuilder and Monster</dhi-seds-typography-paragraph></dhi-seds-row></dhi-seds-column></dhi-seds-row></dhi-seds-container></div>`;
+        const getStartHtml = `<div class="${id}__getstartsection ${id}__section ${id}__full-bleed"><dhi-seds-container class="container"><dhi-seds-row class="md-col-rev"><dhi-seds-column size="12" size-lg="12"><dhi-seds-row class="financebanking__sectiontitle"><dhi-seds-column size="12"><dhi-seds-typography-heading size="200" weight="bold" margin="default">Ready to get started?</dhi-seds-typography-heading></dhi-seds-column></dhi-seds-row><dhi-seds-row><dhi-seds-column size="12"><dhi-seds-typography-heading class="sub-title" size="150" weight="regular" margin="default">We\'ll take it from here.</dhi-seds-typography-heading></dhi-seds-column></dhi-seds-row><dhi-seds-row><dhi-seds-column size="12" size-md="12">${secondaryCta('Hire With Dice','#')}
+        </dhi-seds-column></dhi-seds-row></dhi-seds-column></dhi-seds-row></dhi-seds-container></div>`;
         return getStartHtml;
     };
     const footerSection = (id) => {

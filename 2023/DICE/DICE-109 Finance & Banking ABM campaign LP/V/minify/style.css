@@ -53,10 +53,10 @@
     .financebanking img.section-img{margin-right:auto;margin-left:0}
     }
     .financebanking__sectiontitle{margin-bottom:40px;text-align:center}
-    .financebanking__getstartsection{padding:40px 0 0;background-color:#f5f9f9;-webkit-box-shadow:0 0 0 100vmax #f5f9f9;box-shadow:0 0 0 100vmax #f5f9f9;-webkit-clip-path:inset(0 -100vmax);clip-path:inset(0 -100vmax)}
+    .financebanking__getstartsection{padding:48px 0;background-color:#f5f9f9;-webkit-box-shadow:0 0 0 100vmax #f5f9f9;box-shadow:0 0 0 100vmax #f5f9f9;-webkit-clip-path:inset(0 -100vmax);clip-path:inset(0 -100vmax)}
     .financebanking__getstartsection .note-text{text-align:left;margin:24px 0;padding-top:40px;width:100%}
     @media screen and (min-width:800px){
-    .financebanking__getstartsection{padding:72px 0 0}
+    .financebanking__getstartsection{padding:80px 0}
     .financebanking__getstartsection .note-text{text-align:center;padding-top:72px;margin:24px auto}
     }
     @media screen and (min-width:1200px){
@@ -77,12 +77,12 @@
     .financebanking__getstartsection dhi-seds-core-button{width:-moz-max-content;width:-webkit-max-content;width:max-content}
     }
     .financebanking__getstartsection dhi-seds-link{text-decoration:none}
-    .financebanking__solutionssection{background-color:#fff;-webkit-box-shadow:0 0 0 100vmax #fff;box-shadow:0 0 0 100vmax #fff;-webkit-clip-path:inset(0 -100vmax);clip-path:inset(0 -100vmax);padding-top:56px;padding-bottom:96px}
+    .financebanking__solutionssection{background-color:#fff;-webkit-box-shadow:0 0 0 100vmax #fff;box-shadow:0 0 0 100vmax #fff;-webkit-clip-path:inset(0 -100vmax);clip-path:inset(0 -100vmax);padding-top:48px;padding-bottom:48px}
     @media screen and (min-width:800px){
-    .financebanking__solutionssection{padding-top:72px;padding-bottom:72px}
+    .financebanking__solutionssection{padding-top:80px;padding-bottom:80px}
     }
     @media screen and (min-width:1200px){
-    .financebanking__solutionssection{padding-bottom:74px}
+    .financebanking__solutionssection{padding-bottom:80px}
     }
     .financebanking__solutionssection .add-frame iframe{width:100%;border:none;aspect-ratio:3/2}
     .financebanking__solutionssection .bullet-points:not(:last-child){margin-bottom:64px}
@@ -90,7 +90,7 @@
     .financebanking__solutionssection .bullet-points:not(:last-child){margin-bottom:40px}
     }
     .financebanking__solutionssection .bullet-points>dhi-seds-row:first-of-type{margin-bottom:8px}
-    .financebanking__solutionssection .bullet-points>dhi-seds-row dhi-seds-typography-heading>span{display:inline-block;-webkit-transform:translateY(-2px);-ms-transform:translateY(-2px);transform:translateY(-2px)}
+    .financebanking__solutionssection .bullet-points>dhi-seds-row dhi-seds-typography-heading>span{padding-right:7px;display:inline-block;-webkit-transform:translateY(-2px);-ms-transform:translateY(-2px);transform:translateY(-2px)}
     .financebanking__ourfinancesection .section-cta{margin-top:7px}
     .financebanking__ourfinancesection.financebanking__section{padding-top:0;padding-bottom:48px}
     @media screen and (min-width:1200px){
