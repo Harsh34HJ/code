@@ -183,16 +183,6 @@ addJsToPage('https://www.dice.com/webfiles/1684267845325/js/dhi/marketo_2_step_f
         fileElement.onerror = () => {console.error(`Error loading file: ${filePath}`);};
         document.head.appendChild(fileElement);
     };
-    const addJsToPage = (src, id, cb, classes) => {
-        if (document.querySelector(`#${id}`)) {return;}
-        const s = document.createElement('script');
-        if (typeof cb === 'function') {s.onload = cb;}
-        if (classes) { s.className = classes;}
-        s.type = 'text/javascript';
-        s.src = src;
-        s.setAttribute('id', id);
-        document.body.appendChild(s);
-    };
     const pollerLite = (conditions, callback, maxTime = 10000) => {
 	    const POLLING_INTERVAL = 25;
 	    const startTime = Date.now();
@@ -212,15 +202,6 @@ addJsToPage('https://www.dice.com/webfiles/1684267845325/js/dhi/marketo_2_step_f
 	        }
 	    }, POLLING_INTERVAL);
 	};
-    const onLoadMktoForms2 = (trigger, delayInterval, delayTimeout) => {
-        var intervalForMktoForms2 = setInterval(() => {
-            if (typeof window.dhi != "undefined" && typeof window.MktoForms2 != "undefined") {
-                clearInterval(intervalForMktoForms2);
-                trigger();
-            }
-        }, delayInterval);
-        setTimeout(() => {clearInterval(intervalForMktoForms2);}, delayTimeout);
-    };
     const addInputName = (selector) => {
         document.querySelectorAll(selector).forEach((ele) => {
             ele.removeAttribute("input-name");
@@ -287,23 +268,36 @@ addJsToPage('https://www.dice.com/webfiles/1684267845325/js/dhi/marketo_2_step_f
             imgSrc: 'https://fe-test-dev.s3.amazonaws.com/Dice/dice-109/northwestern-mutual.png',
             altText: 'Northwestern Mutual'
         }];
+        const closeIcon = `<svg class="close-button" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M13.5919 12.0004L18.045 7.54724C18.2564 7.33627 18.3753 7.04998 18.3755 6.75136C18.3758 6.45274 18.2574 6.16624 18.0464 5.9549C17.8355 5.74355 17.5492 5.62467 17.2506 5.62441C16.9519 5.62414 16.6654 5.74252 16.4541 5.95349L12.001 10.4066L7.54785 5.95349C7.33651 5.74215 7.04986 5.62341 6.75098 5.62341C6.45209 5.62341 6.16544 5.74215 5.9541 5.95349C5.74276 6.16483 5.62402 6.45148 5.62402 6.75036C5.62402 7.04925 5.74276 7.3359 5.9541 7.54724L10.4072 12.0004L5.9541 16.4535C5.74276 16.6648 5.62402 16.9515 5.62402 17.2504C5.62402 17.5493 5.74276 17.8359 5.9541 18.0472C6.16544 18.2586 6.45209 18.3773 6.75098 18.3773C7.04986 18.3773 7.33651 18.2586 7.54785 18.0472L12.001 13.5941L16.4541 18.0472C16.6654 18.2586 16.9521 18.3773 17.251 18.3773C17.5499 18.3773 17.8365 18.2586 18.0478 18.0472C18.2592 17.8359 18.3779 17.5493 18.3779 17.2504C18.3779 16.9515 18.2592 16.6648 18.0478 16.4535L13.5919 12.0004Z" fill="#837E77"/></svg>`;
         const singleLogoHtml = ({imgSrc,altText}, index) => `<div class="logo-item item-${index + 1}"><img src="${imgSrc}" alt="${altText}"></div>`;
         const heroHtml = `
         <div class="${id}__herosection ${id}__section"><dhi-seds-container><dhi-seds-row class="header-wrap"><dhi-seds-column size="5" size-lg="10"><dhi-seds-link url="/employer"><dhi-seds-dice-logo prominence="primary"></dhi-seds-dice-logo></dhi-seds-link></dhi-seds-column><dhi-seds-column class="section-cta" size="7" size-lg="2">${secondaryCta('Get Started','javascript:void(0)')}</dhi-seds-column></dhi-seds-row><dhi-seds-row class="hero-wrap"><dhi-seds-column size="12" size-lg="7"><dhi-seds-row><dhi-seds-column size="12" size-lg="12"><dhi-seds-typography-display level="h1" class="desktop-show" size="350" weight="bold">Powering finance with the best tech talent</dhi-seds-typography-display><dhi-seds-typography-display level="h1" class="desktop-hide" size="300" weight="bold">Powering finance with the best tech talent</dhi-seds-typography-display></dhi-seds-column></dhi-seds-row><dhi-seds-row><dhi-seds-column size="12"><dhi-seds-typography-heading class="desktop-show sub-title" size="175" weight="regular" margin="default">To succeed in financial services today, you need top tech professionals — and the right hiring platform to connect with them.</dhi-seds-typography-heading><dhi-seds-typography-heading class="desktop-hide sub-title" size="150" weight="regular" margin="default">To succeed in financial services today, you need top tech professionals — and the right hiring platform to connect with them.</dhi-seds-typography-heading></dhi-seds-column></dhi-seds-row><dhi-seds-row><dhi-seds-column size="12"><dhi-seds-typography-heading class="logo-title" size="150" weight="bold" margin="default">Trusted by top companies</dhi-seds-typography-heading><div class="logo-wrap">${heroSectionData.map((data, i)=>singleLogoHtml(data, i)).join('\n')}
-        </div></dhi-seds-column></dhi-seds-row></dhi-seds-column><dhi-seds-column class="hero-form marketo-form" size="12" size-lg="5"><div class="multi-step-bm-form-heading"><div class="multi-step-step-sections-bar"><span class="multi-step-step1">1</span><span class="multi-step-step2">2</span><span class="multi-step-progressBar"></span></div></div><form id="mktoForm_${FORMID}"><div class="form-title">Start finding top tech talent!</div><div class="step-wrap">Step <span class="current-step">1</span> of 2</div><div id="disclaimer_${FORMID}" class="disclaimer text-muted text-center mt-4 multi-step-hide"><p>By submitting information I agree to the <a href="/about/privacy-policy" target="_blank">Privacy Policy</a>and <a href="/about/terms-and-conditions" target="_blank">Terms of Use</a>.</p></div></form></dhi-seds-column></dhi-seds-row></dhi-seds-container></div>`;
+        </div></dhi-seds-column></dhi-seds-row></dhi-seds-column><dhi-seds-column class="hero-form marketo-form" size="12" size-lg="5"><div class="multi-step-bm-form-heading"><div class="multi-step-step-sections-bar"><span class="multi-step-step1">1</span><span class="multi-step-step2">2</span><span class="multi-step-progressBar"></span></div></div><div class="dummy-wrap-popup"><form id="mktoForm_${FORMID}">${closeIcon}<div class="form-title">Start finding top tech talent!</div><div class="step-wrap">Step <span class="current-step">1</span> of 2</div><div id="disclaimer_${FORMID}" class="disclaimer text-muted text-center mt-4 multi-step-hide"><p>By submitting information I agree to the <a href="/about/privacy-policy" target="_blank">Privacy Policy</a>and <a href="/about/terms-and-conditions" target="_blank">Terms of Use</a>.</p></div></form></div><form class="dummy-form"><div class="form-title">Start finding top tech talent!</div><div class="step-wrap">Step <span class="current-step">1</span> of 2</div><div class="field-wrap"><label for="DummyFirstName" id="LblDummyFirstName">First Name <div class="asterix">*</div></label><input id="DummyFirstName" name="FirstName" type="text" class="dummy-input" placeholder="First Name"></div><div class="field-wrap"><label for="DummyLastName" id="LblDummyLastName">Last Name <div class="asterix">*</div></label><input id="DummyLastName" name="LastName" type="text" class="dummy-input" placeholder="Last Name"></div><div class="field-wrap"><label for="DummyEmail" id="LblDummyFirstName">Email Address<div class="asterix">*</div></label><input id="DummyEmail" name="Email" type="text" class="dummy-input" placeholder="Email Address"></div><p id="DummyCTA" class="dummy-cta">Continue</p></form></dhi-seds-column></dhi-seds-row></dhi-seds-container></div>`;
         return heroHtml;
     };
     const {ID} = shared;
     var activate = () => {
         setup();
         const header = document.querySelector('dhi-seds-nav-header-employer');
-        const landingpage = (id) => `<div class="${id}__landingpage container">${heroSection(id)}</div>`;
+        const landingpage = (id) => `<div class="modal-overlay"></div><div class="${id}__landingpage container">${heroSection(id)}</div>`;
         if (document.querySelector(`.${ID}__landingpage`)) return;
         header.insertAdjacentHTML('afterend', landingpage(ID));
         const formLoad = () => {
         	const {FORMURL,FORMCODE,FORMID,TYURL} = shared;
             dhi.marketo2.init(`${FORMID}`, `${FORMCODE}`, `${TYURL}`, "Continue", "FirstName, LastName, Email", "Get In Touch", "Phone, Company");
             MktoForms2.whenReady((form) => {
+                document.querySelectorAll('.dummy-form .field-wrap').forEach((ele) => {
+		            if (ele.querySelector('input, select, textarea')) {
+		                var currentName = ele.querySelector('input, select').getAttribute('name');
+		                if (currentName == 'FirstName') {currentName = 'First Name';}
+		                if (currentName == 'LastName') {currentName = 'Last Name';}
+		                if (currentName == 'Email') {currentName = 'Email Address';}
+		                ele.querySelector('input, select').setAttribute('placeholder', currentName);
+		            }
+		        });
+		        document.querySelector('.hero-wrap .close-button').addEventListener('click', () => {
+                    if(document.body.classList.contains('popup-open')){document.body.classList.remove('popup-open');}
+                });
                 updateFormField('.hero-wrap .mktoForm .mktoFormRow');
                 addInputName('.hero-wrap .mktoForm .mktoFormRow');
                 var formLabel = document.querySelectorAll(".hero-wrap form[id*='mktoForm'] .mktoFormRow label");
@@ -312,16 +306,16 @@ addJsToPage('https://www.dice.com/webfiles/1684267845325/js/dhi/marketo_2_step_f
                 document.querySelector('.mktoButtonWrap > button').insertAdjacentHTML('afterend', '<p class="fe-back-button"><img src="https://fe-test-dev.s3.amazonaws.com/Dice/dice-109/arrow-left.svg" alt="Back Arrow"> Back</p>');
                 document.querySelector('.mktoForm').classList.add('fe-form-step1');
                 modifyForm.addClass(formLabel);
-				document.querySelector('.mktoButtonWrap > #tempStep1Btn').addEventListener('click', function(e) {
-                    setTimeout(function() {
+				document.querySelector('.mktoButtonWrap > #tempStep1Btn').addEventListener('click', () => {
+                    setTimeout(() => {
                         modifyForm.validateEmail(form);
                         modifyForm.validateFirstName(form);
                         modifyForm.validateLastName(form);
                         modifyForm.triggerNextStep(steps, formRow, formLabel);
                     }, 500);
                 });
-                document.querySelector('.mktoButtonWrap > .fe-back-button').addEventListener('click', function(e) {
-                    setTimeout(function() {
+                document.querySelector('.mktoButtonWrap > .fe-back-button').addEventListener('click', () => {
+                    setTimeout(() => {
                         modifyForm.triggerBackStep(steps, formLabel);
                         if(document.querySelector('#FE-Form-Validator__tempStep1Btn').classList.contains('FE-Form-Validator__hide')){document.querySelector('#FE-Form-Validator__tempStep1Btn').classList.remove('FE-Form-Validator__hide');}
                         document.querySelector('body').classList.add('FE-Form-Validator__step1');
@@ -546,11 +540,12 @@ addJsToPage('https://www.dice.com/webfiles/1684267845325/js/dhi/marketo_2_step_f
 	    document.body.addEventListener('click', (e) => {
 	        const {target} = e;
 	        if (target.closest('dhi-seds-core-button') && target.hasAttribute('url')) {
-	            const targetUrl = target.getAttribute('url');
-	            const ctaText = target.closest('dhi-seds-core-button').textContent;
-	            const formElement = document.querySelector(".hero-form");
+	            // const targetUrl = target.getAttribute('url');
+	            // const ctaText = target.closest('dhi-seds-core-button').textContent;
+	            // const formElement = document.querySelector(".hero-form");
 	            // window.location.pathname = targetUrl;
 	            // trackGAEvents('click', `${ctaText}`);
+	            document.body.classList.add('popup-open');
 	        }
     	});
 	};
