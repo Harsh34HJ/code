@@ -270,7 +270,7 @@ addJsToPage('https://www.dice.com/webfiles/1686674116534/js/dhi/marketo_2_step_f
         }];
         const singleLogoHtml = ({imgSrc,altText}, index) => `<div class="logo-item item-${index + 1}"><img src="${imgSrc}" alt="${altText}"></div>`;
         const heroHtml = `
-        <div class="${id}__herosection ${id}__section"><dhi-seds-container><dhi-seds-row class="header-wrap"><dhi-seds-column size="5" size-lg="10"><dhi-seds-link url="/employer"><dhi-seds-dice-logo prominence="primary"></dhi-seds-dice-logo></dhi-seds-link></dhi-seds-column><dhi-seds-column class="section-cta" size="7" size-lg="2">${secondaryCta('Get Started','javascript:void(0)')}</dhi-seds-column></dhi-seds-row><dhi-seds-row class="hero-wrap"><dhi-seds-column size="12" size-lg="7"><dhi-seds-row><dhi-seds-column size="12" size-lg="12"><dhi-seds-typography-display level="h1" class="desktop-show" size="350" weight="bold">Powering finance with the best tech talent</dhi-seds-typography-display><dhi-seds-typography-display level="h1" class="desktop-hide" size="300" weight="bold">Powering finance with the best tech talent</dhi-seds-typography-display></dhi-seds-column></dhi-seds-row><dhi-seds-row><dhi-seds-column size="12"><dhi-seds-typography-heading class="desktop-show sub-title" size="175" weight="regular" margin="default">To succeed in financial services today, you need top tech professionals — and the right hiring platform to connect with them.</dhi-seds-typography-heading><dhi-seds-typography-heading class="desktop-hide sub-title" size="150" weight="regular" margin="default">To succeed in financial services today, you need top tech professionals — and the right hiring platform to connect with them.</dhi-seds-typography-heading></dhi-seds-column></dhi-seds-row><dhi-seds-row><dhi-seds-column size="12"><dhi-seds-typography-heading class="logo-title" size="150" weight="bold" margin="default">Trusted by top companies</dhi-seds-typography-heading><div class="logo-wrap">${heroSectionData.map((data, i)=>singleLogoHtml(data, i)).join('\n')}
+        <div class="${id}__herosection ${id}__section"><dhi-seds-container><dhi-seds-row class="header-wrap"><dhi-seds-column size="5" size-lg="10"><dhi-seds-link url="/hiring"><dhi-seds-dice-logo prominence="primary"></dhi-seds-dice-logo></dhi-seds-link></dhi-seds-column><dhi-seds-column class="section-cta" size="7" size-lg="2">${secondaryCta('Get Started','javascript:void(0)')}</dhi-seds-column></dhi-seds-row><dhi-seds-row class="hero-wrap"><dhi-seds-column size="12" size-lg="7"><dhi-seds-row><dhi-seds-column size="12" size-lg="12"><dhi-seds-typography-display level="h1" class="desktop-show" size="350" weight="bold">Powering finance with the best tech talent</dhi-seds-typography-display><dhi-seds-typography-display level="h1" class="desktop-hide" size="300" weight="bold">Powering finance with the best tech talent</dhi-seds-typography-display></dhi-seds-column></dhi-seds-row><dhi-seds-row><dhi-seds-column size="12"><dhi-seds-typography-heading class="desktop-show sub-title" size="175" weight="regular" margin="default">To succeed in financial services today, you need top tech professionals — and the right hiring platform to connect with them.</dhi-seds-typography-heading><dhi-seds-typography-heading class="desktop-hide sub-title" size="150" weight="regular" margin="default">To succeed in financial services today, you need top tech professionals — and the right hiring platform to connect with them.</dhi-seds-typography-heading></dhi-seds-column></dhi-seds-row><dhi-seds-row><dhi-seds-column size="12"><dhi-seds-typography-heading class="logo-title" size="150" weight="bold" margin="default">Trusted by top companies</dhi-seds-typography-heading><div class="logo-wrap">${heroSectionData.map((data, i)=>singleLogoHtml(data, i)).join('\n')}
         </div></dhi-seds-column></dhi-seds-row></dhi-seds-column><dhi-seds-column class="hero-form marketo-form" size="12" size-lg="5"><div class="multi-step-bm-form-heading"><div class="multi-step-step-sections-bar"><span class="multi-step-step1">1</span><span class="multi-step-step2">2</span><span class="multi-step-progressBar"></span></div></div><form id="mktoForm_${FORMID}"><div class="form-title">Start finding top tech talent!</div><div class="step-wrap">Step <span class="current-step">1</span> of 2</div><div id="disclaimer_${FORMID}" class="disclaimer text-muted text-center mt-4 multi-step-hide"><p>By submitting information I agree to the <a href="/about/privacy-policy" target="_blank">Privacy Policy</a>and <a href="/about/terms-and-conditions" target="_blank">Terms of Use</a>.</p></div></form></dhi-seds-column></dhi-seds-row></dhi-seds-container></div>`;
         return heroHtml;
     };
@@ -414,31 +414,31 @@ addJsToPage('https://www.dice.com/webfiles/1686674116534/js/dhi/marketo_2_step_f
     };
     const whyChooseSection = (id) => {
         const whyChooseSectionData = [{
-                imgSrc: 'https://fe-test-dev.s3.amazonaws.com/Dice/dice-109/all-the-tech-professionals.svg',
+                imgSrc: 'https://fe-test-dev.s3.amazonaws.com/Dice/dice-109/all-the-tech-professionals-new.png',
                 altText: 'All the tech professionals',
                 title: 'All the tech professionals <br>you need are here',
                 content: '46% of active tech professionals on Dice are not actively searching for jobs on sites like LinkedIn, Indeed, Monster and CareerBuilder.',
             },
             {
-                imgSrc: 'https://fe-test-dev.s3.amazonaws.com/Dice/dice-109/you-can-post-jobs.svg',
+                imgSrc: 'https://fe-test-dev.s3.amazonaws.com/Dice/dice-109/you-can-post-jobs.png',
                 altText: 'You can post jobs',
                 title: 'You can post jobs <br>without extra fees',
                 content: 'You don\'t pay for applications or views. Simply post your jobs and review all qualified candidates.',
             },
             {
-                imgSrc: 'https://fe-test-dev.s3.amazonaws.com/Dice/dice-109/you-wont-loose-candidates.svg',
+                imgSrc: 'https://fe-test-dev.s3.amazonaws.com/Dice/dice-109/you-wont-loose-candidates.png',
                 altText: 'You wont loose candidates',
                 title: 'You won’t lose candidates to a <br>long application process',
                 content: 'Dice\'s Easy Apply lets tech professionals apply to your jobs in just a few clicks.',
             },
             {
-                imgSrc: 'https://fe-test-dev.s3.amazonaws.com/Dice/dice-109/we-take-sourcing.svg',
+                imgSrc: 'https://fe-test-dev.s3.amazonaws.com/Dice/dice-109/we-take-sourcing.png',
                 altText: 'We take sourcing',
                 title: 'We take sourcing and <br>screening off your plate',
                 content: 'You’ll work with a dedicated team who will source and screen candidates. All you have to do is hire.',
             },
             {
-                imgSrc: 'https://fe-test-dev.s3.amazonaws.com/Dice/dice-109/we-know-tech.svg',
+                imgSrc: 'https://fe-test-dev.s3.amazonaws.com/Dice/dice-109/we-know-tech.png',
                 altText: 'We know tech',
                 title: 'We know tech — and the people <br>who make it happen',
                 content: 'Millions of tech professionals rely on our experience and expertise to find their next job.',
