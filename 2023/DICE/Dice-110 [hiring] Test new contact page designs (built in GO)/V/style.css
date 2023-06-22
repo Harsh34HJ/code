@@ -1,0 +1,80 @@
+.dice-110 .leadgen-hero,.dice-110 .leadgen-media-simple-doc,.dice-110 .stackable-page-component{display:none!important}
+.dice-110 .info-wrapper{max-width:1196px;width:100%;margin:0 auto;padding:48px 15px}
+.dice-110 .info-wrapper .title{font-family:Degular;font-style:normal;font-weight:700;font-size:48px;line-height:120%;text-align:center;color:#2b2927;margin:0 auto 8px}
+.dice-110 .info-wrapper .sub-title{font-family:'IBM Plex Sans',sans-serif;font-style:normal;font-weight:400;font-size:24px;line-height:150%;text-align:center;color:#2b2927;margin:0 auto 10px}
+.dice-110 .marketo-form-with-media-doc-component>.container{max-width:1220px}
+.dice-110 .marketo-form-with-media-doc-component>.container>div{gap:20px;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;padding-bottom:85px}
+.dice-110 .marketo-form-with-media-doc-component>.container .media-body:first-child{max-width:580px;width:100%}
+.dice-110 .marketo-form-with-media-doc-component>.container .media-body:last-child{max-width:530px;width:100%}
+.dice-110 .content-wrapper .list{padding:0;list-style:none}
+.dice-110 .content-wrapper .list>li{display:-webkit-box;display:-ms-flexbox;display:flex;margin-bottom:64px}
+.dice-110 .content-wrapper .list>li img{max-width:88px;width:100%;height:100%;margin-right:24px}
+.dice-110 .content-wrapper .list>li .text{font-family:'IBM Plex Sans',sans-serif;font-style:normal;font-weight:400;font-size:16px;line-height:150%;color:#2b2927;margin:0}
+.dice-110 .content-wrapper .list>li .text .bold-text{font-weight:700;font-size:24px;line-height:150%;margin-bottom:4px}
+.dice-110 .content-wrapper .list>li .sub-list{list-style:disc;padding:0 0 0 17px}
+.dice-110 .logo-wrapper{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
+.dice-110 .logo-wrapper .title{font-family:'IBM Plex Sans',sans-serif;font-style:normal;font-weight:700;font-size:20px;line-height:150%;text-align:center;color:#2b2927;margin:0 auto 24px}
+.dice-110 .logo-wrapper img{max-width:520px;width:100%;height:100%}
+.dice-110 .marketo-form-with-media-doc-component>.container .media-body:last-child .container{background:#f2f2ec!important;border-radius:8px;padding:32px 29px}
+.dice-110 .marketo-form-with-media-doc-component>.container .media-body:last-child .container .row{min-height:inherit;margin:0!important;padding:0!important;visibility:hidden}
+.dice-110.form-load .marketo-form-with-media-doc-component>.container .media-body:last-child .container .row{visibility:visible}
+.dice-110 .slider-wrapper{padding:80px 24px 100px;background:#f5f9f9}
+.dice-110 .slider-wrapper .splide{max-width:1090px;width:100%;margin:0 auto}
+.dice-110 .slider-wrapper .splide .splide__arrows{display:none}
+.dice-110 .slider-wrapper .splide .splide__arrows{position:absolute;bottom:-20px;left:50%;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%);max-width:190px;width:100%;z-index:2}
+.dice-110 .slider-wrapper .splide .splide__arrow{width:24px;height:24px;border-radius:0;opacity:1;background:0 0;color:#837e77;outline:0}
+.dice-110 .slider-wrapper .splide .splide__arrow svg{width:24px;height:24px}
+.dice-110 .slider-wrapper .splide .splide__arrow--prev{left:-1.5em}
+.dice-110 .slider-wrapper .splide .splide__arrow--next{right:-1.5em}
+.dice-110 .slider-wrapper .splide .splide__pagination__page{width:16px;height:16px;margin:8px;opacity:1;border:1px solid #837e77;background:0 0;outline:0!important}
+.dice-110 .slider-wrapper .splide .splide__pagination__page.is-active,.dice-110 .slider-wrapper .splide .splide__pagination__page:hover{-webkit-transform:scale(1);-ms-transform:scale(1);transform:scale(1);background:#837e77}
+.dice-110 .slider-wrapper .splide .splide__pagination{bottom:-50px}
+.dice-110 .slider-wrapper .splide__slide{display:-webkit-box;display:-ms-flexbox;display:flex;max-width:100%;width:100%;height:auto;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin:0!important}
+.dice-110 .slider-wrapper .splide__slide img{max-width:64px;width:100%;height:34px;margin-bottom:56px}
+.dice-110 .slider-wrapper .splide__slide .auth-review{text-align:center;font-family:'IBM Plex Sans',sans-serif;font-style:normal;font-weight:700;font-size:24px;line-height:150%;color:#2b2927;margin:0 0 56px}
+.dice-110 .slider-wrapper .splide__slide .auth-role{text-align:center;font-family:'IBM Plex Sans',sans-serif;font-style:normal;font-weight:400;font-size:14px;line-height:150%;color:#2b2927;margin:0}
+.dice-110 .support-wrapper{padding:56px 0}
+.dice-110 .support-wrapper .support-text{font-style:normal;font-weight:400;font-size:16px;line-height:150%;text-align:center;color:#2b2927;margin:0 auto;max-width:266px;width:100%}
+.dice-110 .support-wrapper .support-text a{color:#195581;text-decoration:none}
+.dice-110 .support-wrapper .support-text a:hover{text-decoration:underline}
+@media(max-width:991.98px){
+.dice-110 .marketo-form-with-media-doc-component>.container .media-body:first-child,.dice-110 .marketo-form-with-media-doc-component>.container .media-body:last-child{max-width:580px;margin:0 auto}
+.dice-110 .marketo-form-with-media-doc-component>.container>div{gap:48px;-webkit-box-orient:vertical!important;-webkit-box-direction:normal!important;-ms-flex-direction:column!important;flex-direction:column!important}
+}
+@media(max-width:767.98px){
+.dice-110 .info-wrapper{padding:32px 24px}
+.dice-110 .info-wrapper .title{font-size:32px;line-height:120%;margin:0 auto 16px}
+.dice-110 .info-wrapper .sub-title{font-size:20px;line-height:150%}
+.dice-110 .marketo-form-with-media-doc-component>.container{padding:0}
+.dice-110 .marketo-form-with-media-doc-component>.container .media-body:first-child{padding:0 24px}
+.dice-110 .marketo-form-with-media-doc-component>.container .media-body:last-child .container{padding:24px 29px}
+.dice-110 .content-wrapper .list>li{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
+.dice-110 .content-wrapper .list>li img{margin-bottom:24px;margin-right:0}
+.dice-110 .content-wrapper .list>li .text{text-align:center}
+.dice-110 .logo-wrapper .title{padding:0 20px}
+.dice-110 .logo-wrapper img{max-width:312px}
+.dice-110 .marketo-form-with-media-doc-component>.container>div{padding-bottom:40px}
+.dice-110 .slider-wrapper{padding:40px 24px 80px}
+.dice-110 .slider-wrapper .splide__slide .auth-review{font-size:20px}
+.dice-110 .slider-wrapper .splide__slide .auth-role{font-size:16px}
+}
+.dice-110 .marketo-form-with-media-doc-component .bm_form_heading,.dice-110 .marketo-form-with-media-doc-component .disclaimer,.dice-110 .marketo-form-with-media-doc-component .marketo-intro{display:none}
+.dice-110 .form-title-wrapper{max-width:272px;width:100%;margin:0 auto}
+.dice-110 .form-title-wrapper .title{font-style:normal;font-weight:700;font-size:16px;line-height:150%;text-align:center;color:#395a60;margin-bottom:8px}
+.dice-110 .form-title-wrapper .sub-title{font-style:normal;font-weight:400;font-size:20px;line-height:150%;text-align:center;color:#2b2927;margin-bottom:32px}
+.dice-110 .form-title-wrapper .step-wrap{font-style:normal;font-weight:700;font-size:14px;line-height:150%;text-align:center;letter-spacing:.02em;text-transform:uppercase;color:#2b2927;margin-bottom:38px}
+.dice-110 .marketo-form,.dice-110 .mktoRequiredField{padding:0;margin:0}
+.dice-110 .mktoForm{padding:0;-ms-grid-columns:inherit!important;grid-template-columns:inherit!important;display:-webkit-box!important;display:-ms-flexbox!important;display:flex!important;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;max-width:370px;width:100%;margin:0 auto}
+.dice-110 .mktoForm .mktoRequiredField .mktoAsterix{display:none}
+.dice-110 .mktoForm .mktoFormRow.fe_show{margin-bottom:24px}
+.dice-110 .mktoForm .mktoLabel{font-family:'IBM Plex Sans';position:relative;font-style:normal;font-weight:700!important;font-size:14px;line-height:150%;color:#2b2927;padding:0;margin-bottom:4px;width:auto!important;outline:0}
+.dice-110 .mktoForm .mktoField{width:100%!important;height:48px!important;border:1px solid #d4d2ce!important;border-radius:4px!important;font-style:normal;font-weight:400!important;font-size:16px!important;line-height:150%!important;color:#2b2927!important;padding:0 16px!important;outline:0!important;-webkit-box-shadow:none!important;box-shadow:none!important}
+.dice-110 .mktoForm .mktoField[aria-describedby^=ValidMsg],.dice-110 .mktoForm div[id^=nb-field-].nb-error .mktoField{outline-color:#952827;outline-style:solid;outline-width:2px;outline-offset:-1px}
+.dice-110 .mktoForm .mktoField.mktoValid{outline-color:#2a6437;outline-style:solid;outline-width:2px;outline-offset:-1px}
+.dice-110 .mktoForm .mktoField:hover{outline-color:#837e77;outline-style:solid;outline-width:2px;outline-offset:-1px}
+.dice-110 .mktoForm .mktoField:focus{outline-color:#7a9cb6;outline-style:solid;outline-width:2px;outline-offset:-1px}
+.dice-110 .mktoForm .mktoField.mktoInvalid[aria-describedby^=ValidMsg]:focus{outline-color:#952827;outline-style:solid;outline-width:2px;outline-offset:-1px}
+.dice-110 .mktoForm .mktoField:active{outline-color:#195581;outline-style:solid;outline-width:2px;outline-offset:-1px}
+.dice-110 .mktoForm .mktoButtonWrap{padding:0!important;margin:0!important}
+.dice-110 .mktoForm .mktoButtonWrap button,.dice-110 .mktoForm .multi-step-step1-btn{max-width:220px!important;width:100%!important;height:48px;background:#195581!important;border-radius:50px;font-style:normal;font-weight:700;font-size:16px!important;line-height:150%;text-align:center;color:#fff!important;outline:0;border:none!important;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin:0 auto!important;cursor:pointer}
+.dice-110 .mktoForm .mktoButtonWrap button:hover,.dice-110 .mktoForm .multi-step-step1-btn:hover{opacity:.8}
