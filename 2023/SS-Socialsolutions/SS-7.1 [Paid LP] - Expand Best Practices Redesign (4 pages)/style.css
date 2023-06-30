@@ -12,6 +12,8 @@ html body.ss-7-1-r #main~.wp-block-ws-section,html body.ss-7-1-r .wp-block-ws-se
 html body.ss-7-1-l #wpfront-notification-bar-table tbody,html body.ss-7-1-r #wpfront-notification-bar-table tbody{display:none}
 html body.ss-7-1-l .wp-block-ws-card.card .mktoFormRow label:not(#LbloptIn),html body.ss-7-1-r .wp-block-ws-card.card .mktoFormRow label:not(#LbloptIn){display:none}
 html body.ss-7-1-l .desktop-nav,html body.ss-7-1-r .desktop-nav{padding:19px 13px}
+html body.ss-7-1-l .header-scroll-top .desktop-nav,html body.ss-7-1-r .header-scroll-top .desktop-nav{background:transparent!important}  
+html body.ss-7-1-l .header-not-scroll-top .desktop-nav,html body.ss-7-1-r .header-not-scroll-top .desktop-nav{background:#fff!important} 
 html body.ss-7-1-l .desktop-nav .logo svg,html body.ss-7-1-r .desktop-nav .logo svg{width:214px;height:44px}
 html body.ss-7-1-l .card-body .mktoFormRow{max-width:500px;width:100%}
 html body.ss-7-1-l .wp-block-ws-section,html body.ss-7-1-r .wp-block-ws-section{padding-top:39px;padding-bottom:0}
