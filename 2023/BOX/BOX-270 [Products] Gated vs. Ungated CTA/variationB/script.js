@@ -95,14 +95,14 @@
             if (currentLoc.indexOf('/esignature') > -1) {
                 changeContent('.hero .buttons-wrapper .button-secondary', 'Get ebook', '/thankyou/idc-marketscape-esignature');
                 live(".hero .buttons-wrapper .button-secondary", "click", function() {
-                    setCookie('opt_campaign', 'BOX-270-v0b', 7);
+                    setCookie('opt_campaign', 'BOX-270-v1a', 7);
                     setTracking();
                 });
             }
             if (currentLoc.indexOf('/security-compliance') > -1) {
                 changeContent('.hero .buttons-wrapper .button-primary', 'Get ebook', '/thankyou/sdp-idc-spotlight-datasecurity');
                 live(".hero .buttons-wrapper .button-primary", "click", function() {
-                    setCookie('opt_campaign', 'BOX-270-v0b', 7);
+                    setCookie('opt_campaign', 'BOX-270-v1a', 7);
                     setTracking();
                 });
             }
