@@ -1,10 +1,12 @@
 (function() {
+    const debug = 0;
+    const variationName = "BOX-270";
     try {
-        var debug = 0;
-        var variation_name = "BOX-270";
+        const CHECK_INTERVAL = 50;
+        const TIMEOUT_DURATION = 15000;
 
         function waitForElement(selector, trigger, delayInterval, delayTimeout) {
-            var interval = setInterval(function() {
+            let interval = setInterval(function() {
                 if (document && document.querySelector(selector) && document.querySelectorAll(selector).length > 0) {
                     clearInterval(interval);
                     trigger();
@@ -31,7 +33,7 @@
         }
 
         function changeContent(selector, content, link) {
-            var el = document.querySelector(selector);
+            let el = document.querySelector(selector);
             if (el) {
                 el.innerHTML = content;
                 el.setAttribute('href', link);
@@ -52,7 +54,7 @@
                         ElementPrototype.webkitMatchesSelector ||
                         ElementPrototype.msMatchesSelector ||
                         function(selector) {
-                            var node = this,
+                            let node = this,
                                 nodes = (node.parentNode || node.document).querySelectorAll(selector),
                                 i = -1;
                             while (nodes[++i] && nodes[i] != node);
@@ -62,7 +64,7 @@
 
             function live(selector, event, callback, context) {
                 addEvent(context || document, event, function(e) {
-                    var found,
+                    let found,
                         el = e.target || e.srcElement;
                     while (el && el.matches && el !== context && !(found = el.matches(selector))) el = el.parentElement;
                     if (found) callback.call(el, e);
@@ -72,10 +74,10 @@
         }
 
         function setCookie(cname, cvalue, exdays) {
-            var d = new Date();
+            let d = new Date();
             d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
-            var expires = "expires=" + d.toUTCString();
-            var newVal = getCookie(cname);
+            let expires = "expires=" + d.toUTCString();
+            let newVal = getCookie(cname);
             document.cookie = cname + "=" + newVal + " " + cvalue + ";secure;" + expires + ";domain=box.com;path=/";
         }
 
@@ -90,16 +92,17 @@
 
         /* Variation Init */
         function init() {
-            var currentLoc = window.location.href;
+            const currentLoc = window.location.href;
+            document.body.classList.add('box-270');
             /*V1*/
-            if (currentLoc.indexOf('/esignature') > -1) {
+            if (currentLoc.includes('/esignature')) {
                 changeContent('.hero .buttons-wrapper .button-secondary', 'Get ebook', '/resources/idc-marketscape-esignature');
                 live(".hero .buttons-wrapper .button-secondary", "click", function() {
                     setCookie('opt_campaign', 'BOX-270-v0a', 7);
                     setTracking();
                 });
             }
-            if (currentLoc.indexOf('/security-compliance') > -1) {
+            if (currentLoc.includes('/security-compliance')) {
                 changeContent('.hero .buttons-wrapper .button-primary', 'Get ebook', '/resources/sdp-idc-spotlight-datasecurity');
                 live(".hero .buttons-wrapper .button-primary", "click", function() {
                     setCookie('opt_campaign', 'BOX-270-v0a', 7);
@@ -107,9 +110,8 @@
                 });
             }
         }
-        document.body.classList.add('box-270');
-        waitForElement(".hero .buttons-wrapper", init, 50, 15000);
+        waitForElement(".hero .buttons-wrapper", init, CHECK_INTERVAL, TIMEOUT_DURATION);
     } catch (e) {
-        if (debug) console.log(e, "error in Test" + variation_name);
+        if (debug) console.log(e, "error in Test" + variationName);
     }
 })();
