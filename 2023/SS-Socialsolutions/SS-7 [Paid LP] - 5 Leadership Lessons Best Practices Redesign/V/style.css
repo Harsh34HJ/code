@@ -16,6 +16,8 @@ html body.ss-7 .card-body .mktoFormRow{max-width:500px;width:100%}
 html body.ss-7 .wp-block-ws-section{padding-top:39px;padding-bottom:0}
 html body.ss-7 .wp-block-ws-section .block-background{top:-200px;height:816px}
 html body.ss-7 .wp-block-ws-section .block-background .block-background-media{background-image:url(https://www.socialsolutions.com/wp-content/uploads/2021/03/Dark_Transition-Small.png)!important;background-position:100% 0!important;background-repeat:no-repeat;-webkit-transform:scale(1,-1);-ms-transform:scale(1,-1);transform:scale(1,-1)}
+html body.ss-7 .header-scroll-top .desktop-nav,html body.ss-7 .header-scroll-top .desktop-nav{background:transparent!important}  
+html body.ss-7 .header-not-scroll-top .desktop-nav,html body.ss-7 .header-not-scroll-top .desktop-nav{background:#fff!important}
 html body.ss-7 .site-header.header-scroll-top .desktop-nav .logo .cls-1,html body.ss-7 .site-header.header-scroll-top .logo .cls-1{fill:#ffffff!important}
 html body.ss-7 .wp-block-ws-page-title,html body.ss-7 h1.tab-mob-only.title{color:#fff;font-size:36px;font-weight:700;line-height:43px;padding-bottom:10px;border-bottom:1px solid #fff;margin:0 0 20px}
 html body.ss-7 .fe-subheading{color:#fff;font-size:16px;font-weight:400;line-height:24px;margin-bottom:23px;padding-right:10px}
