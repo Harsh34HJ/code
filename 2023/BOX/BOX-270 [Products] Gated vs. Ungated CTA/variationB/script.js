@@ -77,8 +77,10 @@
             let d = new Date();
             d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
             let expires = "expires=" + d.toUTCString();
-            let newVal = getCookie(cname);
-            document.cookie = cname + "=" + newVal + " " + cvalue + ";secure;" + expires + ";domain=box.com;path=/";
+            let oldVal = getCookie(cname);
+            if(!oldVal.includes(cvalue)){
+            	document.cookie = cname + "=" + cvalue + "|" + oldVal + ";secure;" + expires + ";domain=box.com;path=/";
+            }
         }
 
         function getCookie(cname) {
