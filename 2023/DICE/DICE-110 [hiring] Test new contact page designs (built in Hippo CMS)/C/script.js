@@ -106,8 +106,16 @@
 				        trackGAEvents('funnelenvy','click','form_engagement');
 				    });
 				    
-				    helper.live('.mktoForm #tempStep1Btn','click', function(){
-				        trackGAEvents('funnelenvy','click','step_1_completion');
+				    helper.live('.mktoForm #tempStep1Btn, .mktoForm #FE-Form-Validator__tempStep1Btn','click', function(){
+				        let count = 0;
+				    	document.querySelectorAll('.mktoFormRow.multi-step-step1').forEach(function(el){
+				    		if(el.querySelector('.mktoRequiredField .mktoError')){
+				    			count++;
+				    		}
+				    	});
+				    	if(count === 0){
+				        	trackGAEvents('funnelenvy','click','step_1_completion');
+				    	}
 				    });
 				    
 				    form.onSuccess(function() {
