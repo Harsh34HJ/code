@@ -76,6 +76,12 @@
 
         const helper = _$();
         const currentPath = window.location.pathname;
+        let currentParams = window.location.search.substring(0);
+        let finalParams = '';
+        if(currentParams){
+        	finalParams = currentParams;
+        }
+        
         const newURLs = ['/hiring/new/contact-us/homepage', '/hiring/new/contact-us/homepage-banner', '/hiring/new/contact-us/webstore', '/hiring/new/contact-us/', '/hiring/new/contact-us/thank-you'];
 
         function trackGAEvents(eventCategory, eventAction, eventLabel) {
@@ -100,26 +106,26 @@
             }, delayTimeout);
         }
 
-        function redirectToNewPage(currentPath) {
+        function redirectToNewPage(currentPath,params) {
             switch (currentPath) {
                 case "/hiring/contact-us/homepage":
-                    window.open('/hiring/new/contact-us/homepage', '_self');
+                    window.open('/hiring/new/contact-us/homepage'+params, '_self');
                     break;
 
                 case "/hiring/contact-us/homepage-banner":
-                    window.open('/hiring/new/contact-us/homepage-banner', '_self');
+                    window.open('/hiring/new/contact-us/homepage-banner'+params, '_self');
                     break;
 
                 case "/hiring/contact-us/webstore":
-                    window.open('/hiring/new/contact-us/webstore', '_self');
+                    window.open('/hiring/new/contact-us/webstore'+params, '_self');
                     break;
 
                 case "/hiring/contact-us/":
-                    window.open('/hiring/new/contact-us/', '_self');
+                    window.open('/hiring/new/contact-us/'+params, '_self');
                     break;
 
                 case "/hiring/contact-us/thank-you":
-                    window.open('/hiring/new/contact-us/thank-you', '_self');
+                    window.open('/hiring/new/contact-us/thank-you'+params, '_self');
                     break;
             }
         }
@@ -152,7 +158,7 @@
         }
 
         /* Initialize variation */
-        redirectToNewPage(currentPath);
+        redirectToNewPage(currentPath,finalParams);
         let selectorEle;
         const checkURL = newURLs.includes(currentPath);
         if (checkURL) {
