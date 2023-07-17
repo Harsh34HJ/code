@@ -90,7 +90,7 @@
 
         function onLoadMktoForms2(trigger, delayInterval, delayTimeout) {
             let intervalForMktoForms2 = setInterval(function() {
-                if (typeof window.dhi != "undefined" && typeof window.MktoForms2 != "undefined") {
+                if (typeof window.MktoForms2 != "undefined") {
                     clearInterval(intervalForMktoForms2);
                     trigger();
                 }
@@ -128,7 +128,7 @@
             document.body.classList.add('dice-110-v1');
             onLoadMktoForms2(function() {
                 MktoForms2.whenReady(function(form) {
-                    /*helper.live('.mktoForm #FirstName, .mktoForm #LastName, .mktoForm #Email','click',function(){
+                    helper.live('.mktoForm #FirstName, .mktoForm #LastName, .mktoForm #Email','click',function(){
 				        trackGAEvents('funnelenvy','click','form_engagement');
 				    });
 				    
@@ -146,9 +146,9 @@
 				    
 				    form.onSuccess(function() {
 				        trackGAEvents('funnelenvy','click','step_2_completion');
-				    });*/
+				    });
                 });
-            });
+            }, CHECK_INTERVAL, TIMEOUT_DURATION);
         }
 
         /* Initialize variation */

@@ -88,7 +88,7 @@
 
         function onLoadMktoForms2(trigger, delayInterval, delayTimeout) {
             let intervalForMktoForms2 = setInterval(function() {
-                if (typeof window.dhi != "undefined" && typeof window.MktoForms2 != "undefined") {
+                if (typeof window.MktoForms2 != "undefined") {
                     clearInterval(intervalForMktoForms2);
                     trigger();
                 }
@@ -122,7 +122,7 @@
 				        trackGAEvents('funnelenvy','click','step_2_completion');
 				    });
                 });
-            });
+            }, CHECK_INTERVAL, TIMEOUT_DURATION);
         }
 
         /* Initialize variation */
