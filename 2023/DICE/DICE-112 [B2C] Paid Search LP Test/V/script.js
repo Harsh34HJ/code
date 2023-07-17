@@ -76,6 +76,11 @@
 
         const helper = _$();
         const currentPath = window.location.pathname;
+        let currentParams = window.location.search.substring(0);
+        let finalParams = '';
+        if(currentParams){
+        	finalParams = currentParams;
+        }
 
         function trackGAEvents(eventCategory, eventAction, eventLabel) {
             if ('ga' in window) {
@@ -87,9 +92,9 @@
             }
         }
 
-        function redirectToNewPage(currentPath) {
+        function redirectToNewPage(currentPath,params) {
         	if(currentPath == '/register'){
-        		window.open('/why-join-dice', '_self');
+        		window.open('/why-join-dice'+params, '_self');
         	}
         }
 
@@ -104,7 +109,7 @@
         }
 
         /* Initialize variation */
-        redirectToNewPage(currentPath);
+        redirectToNewPage(currentPath,finalParams);
         if (currentPath == '/why-join-dice') {
             helper.waitForElement('body', init, CHECK_INTERVAL, TIMEOUT_DURATION);
         }
