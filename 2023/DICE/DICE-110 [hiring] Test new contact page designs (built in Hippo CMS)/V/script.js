@@ -138,7 +138,7 @@
 				        trackGAEvents('funnelenvy','click','form_engagement');
 				    });
 				    
-				    helper.live('.mktoForm #tempStep1Btn','click',function(){
+				    helper.live('.mktoForm #tempStep1Btn, .mktoForm #FE-Form-Validator__tempStep1Btn','click',function(){
 				    	let count = 0;
 				    	document.querySelectorAll('.mktoFormRow.multi-step-step1').forEach(function(el){
 				    		if(el.querySelector('.mktoRequiredField .mktoError')){
