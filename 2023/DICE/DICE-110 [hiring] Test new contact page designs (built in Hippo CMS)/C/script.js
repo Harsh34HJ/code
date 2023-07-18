@@ -100,6 +100,7 @@
 
         function init() {
             document.body.classList.add('dice-110-v0');
+            let fireOnlyOnces = 0 ;
             onLoadMktoForms2(function() {
                 MktoForms2.whenReady(function(form) {
                     helper.live('.mktoForm #FirstName, .mktoForm #LastName, .mktoForm #Email','click', function(){
@@ -113,8 +114,9 @@
 				    			count++;
 				    		}
 				    	});
-				    	if(count === 0){
+				    	if(count === 0 && fireOnlyOnces === 0){
 				        	trackGAEvents('funnelenvy','click','step_1_completion');
+                            fireOnlyOnces = 1;
 				    	}
 				    });
 				    
